@@ -12,4 +12,4 @@ Encoding: UTF-8
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
-ProjectName: Analysis of Speech-Language Data from NHIS 2022 data set
+ProjectName: Analysis of NHIS 2022
