@@ -1,0 +1,2386 @@
+Variable,Variable Description,Data Type,Code,Code Description
+URBRRL,2013 NCHS Urban-Rural Classification Scheme for Counties,Numeric,1,Large central metro
+URBRRL,2013 NCHS Urban-Rural Classification Scheme for Counties,Numeric,2,Large fringe metro
+URBRRL,2013 NCHS Urban-Rural Classification Scheme for Counties,Numeric,3,Medium and small metro
+URBRRL,2013 NCHS Urban-Rural Classification Scheme for Counties,Numeric,4,Nonmetropolitan
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,01,0.00 - 0.49
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,02,0.50 - 0.74
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,03,0.75 - 0.99
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,04,1.00 - 1.24
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,05,1.25 - 1.49
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,06,1.50 - 1.74
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,07,1.75 - 1.99
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,08,2.00 - 2.49
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,09,2.50 - 2.99
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,10,3.00 - 3.49
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,11,3.50 - 3.99
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,12,4.00 - 4.49
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,13,4.50 - 4.99
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,14,5.00 or greater
+RATCAT_C,Ratio of family income to poverty threshold for SC's family,Numeric,98,Not Ascertained
+INCTCFLG_C,Sample child family income top-code flag,Numeric,0,No
+INCTCFLG_C,Sample child family income top-code flag,Numeric,1,Yes
+IMPINCFLG_C,Imputed SC family income imputation flag,Numeric,0,Income reported
+IMPINCFLG_C,Imputed SC family income imputation flag,Numeric,1,Income imputed; no other information
+IMPINCFLG_C,Imputed SC family income imputation flag,Numeric,2,Income imputed; reported in income brackets
+IMPINCFLG_C,Imputed SC family income imputation flag,Numeric,Blank,No Sample Adult or Sample Child in household
+PPSU,Pseudo-PSU for public-use file variance estimation,Numeric,Range of values,
+PSTRAT,Pseudo-stratum for public-use file variance estimation,Numeric,Range of values,
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,01,Hispanic
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,02,Non-Hispanic White only
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,03,Non-Hispanic Black/African American only
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,04,Non-Hispanic Asian only
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,05,Non-Hispanic AIAN only
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,06,Non-Hispanic AIAN and any other group
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,07,Other single and multiple races
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,97,Refused
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,98,Not Ascertained
+HISPALLP_C,Single and multiple race groups with Hispanic origin,Numeric,99,Don't Know
+RACEALLP_C,Single and multiple race groups,Numeric,1,White only
+RACEALLP_C,Single and multiple race groups,Numeric,2,Black/African American only
+RACEALLP_C,Single and multiple race groups,Numeric,3,Asian only
+RACEALLP_C,Single and multiple race groups,Numeric,4,AIAN only
+RACEALLP_C,Single and multiple race groups,Numeric,5,AIAN and any other group
+RACEALLP_C,Single and multiple race groups,Numeric,6,Other single and multiple races
+RACEALLP_C,Single and multiple race groups,Numeric,7,Refused
+RACEALLP_C,Single and multiple race groups,Numeric,8,Not Ascertained
+RACEALLP_C,Single and multiple race groups,Numeric,9,Don't know
+SDQIMPTOT_C,SDQ Impact Score,Numeric,0-40,Sum Total
+SDQIMPTOT_C,SDQ Impact Score,Numeric,88,Not Ascertained
+SDQTOT_C,SDQ total score,Numeric,0-40,Sum Total
+SDQTOT_C,SDQ total score,Numeric,88,Not Ascertained
+SDQPROS_C,Prosocial Subscale Score,Numeric,0-10,Sum Total
+SDQPROS_C,Prosocial Subscale Score,Numeric,88,Not Ascertained
+SDQPEER_C,Peer problem Subscale Score,Numeric,0-10,Sum Total
+SDQPEER_C,Peer problem Subscale Score,Numeric,88,Not Ascertained
+SDQHYPE_C,Hyperactivity Subscale Score,Numeric,0-10,Sum Total
+SDQHYPE_C,Hyperactivity Subscale Score,Numeric,88,Not Ascertained
+SDQCOND_C,Conduct Subscale Score,Numeric,0-10,Sum Total
+SDQCOND_C,Conduct Subscale Score,Numeric,88,Not Ascertained
+SDQEMOT_C,Emotional Subscale Score,Numeric,0-10,Sum Total
+SDQEMOT_C,Emotional Subscale Score,Numeric,88,Not Ascertained
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,00,None
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,01-39,1-39 days
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,40,40+ days
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,96,Did not go to school
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,97,Refused
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,98,Not Ascertained
+SCHDYMSSTC_C,"Days of school missed due to illness/injury past 12 months, top-coded",Numeric,99,Don't Know
+AFNOW,Full-time active duty screener,Numeric,1,Yes
+AFNOW,Full-time active duty screener,Numeric,2,No
+AFNOW,Full-time active duty screener,Numeric,7,Refused
+AFNOW,Full-time active duty screener,Numeric,8,Not Ascertained
+AFNOW,Full-time active duty screener,Numeric,9,Don't Know
+YRSINUS_C,Years that sample child has been in the United States,Numeric,1,Less than 1 year
+YRSINUS_C,Years that sample child has been in the United States,Numeric,2,1 to less than 5 years
+YRSINUS_C,Years that sample child has been in the United States,Numeric,3,5 to less than 10 years
+YRSINUS_C,Years that sample child has been in the United States,Numeric,4,10 to less than 15 years
+YRSINUS_C,Years that sample child has been in the United States,Numeric,5,15 years or more
+YRSINUS_C,Years that sample child has been in the United States,Numeric,9,Unknown
+CITZNSTP_C,Citizenship status,Numeric,1,"Yes, a citizen of the United States"
+CITZNSTP_C,Citizenship status,Numeric,2,"No, not a citizen of the United States"
+CITZNSTP_C,Citizenship status,Numeric,7,Refused
+CITZNSTP_C,Citizenship status,Numeric,8,Not Ascertained
+CITZNSTP_C,Citizenship status,Numeric,9,Don't Know
+HHRESPSC_FLG,Sample Child respondent is the household respondent,Numeric,1,Yes
+PCNTADTWFP_C,Number of adults in sample child's family who are working full-time,Numeric,0,0 adults
+PCNTADTWFP_C,Number of adults in sample child's family who are working full-time,Numeric,1,1 adult
+PCNTADTWFP_C,Number of adults in sample child's family who are working full-time,Numeric,2,2 adults
+PCNTADTWFP_C,Number of adults in sample child's family who are working full-time,Numeric,3,3+ adults
+PCNTADTWFP_C,Number of adults in sample child's family who are working full-time,Numeric,8,Not Ascertained
+PCNTADTWKP_C,Number of adults in sample child's family who are working,Numeric,0,0 adults
+PCNTADTWKP_C,Number of adults in sample child's family who are working,Numeric,1,1 adult
+PCNTADTWKP_C,Number of adults in sample child's family who are working,Numeric,2,2 adults
+PCNTADTWKP_C,Number of adults in sample child's family who are working,Numeric,3,3+ adults
+PCNTADTWKP_C,Number of adults in sample child's family who are working,Numeric,8,Not Ascertained
+FDSCAT4_C,Child 4 category food security recode,Numeric,1,High food security
+FDSCAT4_C,Child 4 category food security recode,Numeric,2,Marginal food security
+FDSCAT4_C,Child 4 category food security recode,Numeric,3,Low food security
+FDSCAT4_C,Child 4 category food security recode,Numeric,4,Very low food security
+FDSCAT4_C,Child 4 category food security recode,Numeric,8,Not Ascertained
+FDSCAT3_C,Child 3 category food security recode,Numeric,1,Food secure
+FDSCAT3_C,Child 3 category food security recode,Numeric,2,Low food security
+FDSCAT3_C,Child 3 category food security recode,Numeric,3,Very low food security
+FDSCAT3_C,Child 3 category food security recode,Numeric,8,Not Ascertained
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,1,"Parent (biological, adoptive, or step)"
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,2,Grandparent
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,3,Aunt/Uncle
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,4,Brother/Sister
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,5,Other relative or other non-relative
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,7,Refused
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,8,Not Ascertained
+RELTIVP_C,Respondent's relationship to Sample Child,Numeric,9,Don't Know
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,0,0 times
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,1,1 time
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,2,2 times
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,3,3 times
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,4,4 times
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,5,5+ times
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,7,Refused
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,8,Not Ascertained
+URGNT12MTC_C,"Number of times visited urgent care, past 12m, top-coded",Numeric,9,Don't Know
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,0,0 times
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,1,1 time
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,2,2 times
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,3,3 times
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,4,4+ times
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,7,Refused
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,8,Not Ascertained
+EMERG12MTC_C,"Number of times visited hospital emergency room, past 12m, top-coded",Numeric,9,Don't Know
+PCNT18UPTC,Top-coded count of persons 18 or older in the household,Numeric,0,0 adults
+PCNT18UPTC,Top-coded count of persons 18 or older in the household,Numeric,1,1 adult
+PCNT18UPTC,Top-coded count of persons 18 or older in the household,Numeric,2,2 adults
+PCNT18UPTC,Top-coded count of persons 18 or older in the household,Numeric,3,3+ adults
+PCNT18UPTC,Top-coded count of persons 18 or older in the household,Numeric,8,Not Ascertained
+PCNTLT18TC,Top-coded count of persons under 18 in the household,Numeric,0,0 children
+PCNTLT18TC,Top-coded count of persons under 18 in the household,Numeric,1,1 child
+PCNTLT18TC,Top-coded count of persons under 18 in the household,Numeric,2,2 children
+PCNTLT18TC,Top-coded count of persons under 18 in the household,Numeric,3,3+ children
+PCNTLT18TC,Top-coded count of persons under 18 in the household,Numeric,8,Not Ascertained
+PCNTPARNTS_C,Count of all residential parents of the sample child,Numeric,0,0 parents
+PCNTPARNTS_C,Count of all residential parents of the sample child,Numeric,1,1 parent
+PCNTPARNTS_C,Count of all residential parents of the sample child,Numeric,2,2+ parents
+PCNTPARNTS_C,Count of all residential parents of the sample child,Numeric,8,Not Ascertained
+PARWKFT2_C,Sample child's second residential parent works 35+ hours per week,Numeric,1,Yes
+PARWKFT2_C,Sample child's second residential parent works 35+ hours per week,Numeric,2,No
+PARWKFT2_C,Sample child's second residential parent works 35+ hours per week,Numeric,7,Refused
+PARWKFT2_C,Sample child's second residential parent works 35+ hours per week,Numeric,8,Not Ascertained
+PARWKFT2_C,Sample child's second residential parent works 35+ hours per week,Numeric,9,Don't Know
+PARWKFT1_C,Sample child's first residential parent works 35+ hours per week,Numeric,1,Yes
+PARWKFT1_C,Sample child's first residential parent works 35+ hours per week,Numeric,2,No
+PARWKFT1_C,Sample child's first residential parent works 35+ hours per week,Numeric,7,Refused
+PARWKFT1_C,Sample child's first residential parent works 35+ hours per week,Numeric,8,Not Ascertained
+PARWKFT1_C,Sample child's first residential parent works 35+ hours per week,Numeric,9,Don't Know
+PARWORK2_C,Second residential parent of sample child works for pay at job/business,Numeric,1,Yes
+PARWORK2_C,Second residential parent of sample child works for pay at job/business,Numeric,2,No
+PARWORK2_C,Second residential parent of sample child works for pay at job/business,Numeric,7,Refused
+PARWORK2_C,Second residential parent of sample child works for pay at job/business,Numeric,8,Not Ascertained
+PARWORK2_C,Second residential parent of sample child works for pay at job/business,Numeric,9,Don't Know
+PARWORK1_C,First residential parent of sample child works for pay at job/business,Numeric,1,Yes
+PARWORK1_C,First residential parent of sample child works for pay at job/business,Numeric,2,No
+PARWORK1_C,First residential parent of sample child works for pay at job/business,Numeric,7,Refused
+PARWORK1_C,First residential parent of sample child works for pay at job/business,Numeric,8,Not Ascertained
+PARWORK1_C,First residential parent of sample child works for pay at job/business,Numeric,9,Don't Know
+PARSEX2_C,Sex of sample child's second residential parent,Numeric,1,Male
+PARSEX2_C,Sex of sample child's second residential parent,Numeric,2,Female
+PARSEX2_C,Sex of sample child's second residential parent,Numeric,7,Refused
+PARSEX2_C,Sex of sample child's second residential parent,Numeric,8,Not Ascertained
+PARSEX2_C,Sex of sample child's second residential parent,Numeric,9,Don't Know
+PARSEX1_C,Sex of sample child's first residential parent,Numeric,1,Male
+PARSEX1_C,Sex of sample child's first residential parent,Numeric,2,Female
+PARSEX1_C,Sex of sample child's first residential parent,Numeric,7,Refused
+PARSEX1_C,Sex of sample child's first residential parent,Numeric,8,Not Ascertained
+PARSEX1_C,Sex of sample child's first residential parent,Numeric,9,Don't Know
+RACPARSC_C,All residential parents of the sample child are of the same race,Numeric,1,Yes
+RACPARSC_C,All residential parents of the sample child are of the same race,Numeric,2,No
+RACPARSC_C,All residential parents of the sample child are of the same race,Numeric,9,Unknown
+HISPPARSC_C,All residential parents of the sample child are of the same Hispanic ethnicity,Numeric,1,Yes
+HISPPARSC_C,All residential parents of the sample child are of the same Hispanic ethnicity,Numeric,2,No
+HISPPARSC_C,All residential parents of the sample child are of the same Hispanic ethnicity,Numeric,9,Unknown
+SCPARRAC_C,Sample child has the same race as ALL residential parents,Numeric,1,Yes
+SCPARRAC_C,Sample child has the same race as ALL residential parents,Numeric,2,No
+SCPARRAC_C,Sample child has the same race as ALL residential parents,Numeric,9,Unknown
+SCPARHISP_C,Sample child has the same Hispanic ethnicity as ALL residential parents,Numeric,1,Yes
+SCPARHISP_C,Sample child has the same Hispanic ethnicity as ALL residential parents,Numeric,2,No
+SCPARHISP_C,Sample child has the same Hispanic ethnicity as ALL residential parents,Numeric,9,Unknown
+PARAGETC2_C,"Age of sample child's second residential parent, top-and bottom-coded",Numeric,20,20 years or younger
+PARAGETC2_C,"Age of sample child's second residential parent, top-and bottom-coded",Numeric,21-64,21-64 years
+PARAGETC2_C,"Age of sample child's second residential parent, top-and bottom-coded",Numeric,65,65+ years
+PARAGETC2_C,"Age of sample child's second residential parent, top-and bottom-coded",Numeric,97,Refused
+PARAGETC2_C,"Age of sample child's second residential parent, top-and bottom-coded",Numeric,98,Not Ascertained
+PARAGETC2_C,"Age of sample child's second residential parent, top-and bottom-coded",Numeric,99,Don't Know
+PARAGETC1_C,"Age of sample child's first residential parent, top-and bottom-coded",Numeric,20,20 years or younger
+PARAGETC1_C,"Age of sample child's first residential parent, top-and bottom-coded",Numeric,21-64,21-64 years
+PARAGETC1_C,"Age of sample child's first residential parent, top-and bottom-coded",Numeric,65,65+ years
+PARAGETC1_C,"Age of sample child's first residential parent, top-and bottom-coded",Numeric,97,Refused
+PARAGETC1_C,"Age of sample child's first residential parent, top-and bottom-coded",Numeric,98,Not Ascertained
+PARAGETC1_C,"Age of sample child's first residential parent, top-and bottom-coded",Numeric,99,Don't Know
+LEGMSTAT2_C,Legal marital status of the sample child's second residential parent,Numeric,1,Separated
+LEGMSTAT2_C,Legal marital status of the sample child's second residential parent,Numeric,2,Divorced
+LEGMSTAT2_C,Legal marital status of the sample child's second residential parent,Numeric,3,Married
+LEGMSTAT2_C,Legal marital status of the sample child's second residential parent,Numeric,4,Single/never married
+LEGMSTAT2_C,Legal marital status of the sample child's second residential parent,Numeric,5,Widowed
+LEGMSTAT2_C,Legal marital status of the sample child's second residential parent,Numeric,9,Unknown legal marital status
+LEGMSTAT1_C,Legal marital status of the sample child's first residential parent,Numeric,1,Separated
+LEGMSTAT1_C,Legal marital status of the sample child's first residential parent,Numeric,2,Divorced
+LEGMSTAT1_C,Legal marital status of the sample child's first residential parent,Numeric,3,Married
+LEGMSTAT1_C,Legal marital status of the sample child's first residential parent,Numeric,4,Single/never married
+LEGMSTAT1_C,Legal marital status of the sample child's first residential parent,Numeric,5,Widowed
+LEGMSTAT1_C,Legal marital status of the sample child's first residential parent,Numeric,9,Unknown legal marital status
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,1,"Married, spouse is present"
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,2,"Married, spouse is not present"
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,3,"Married, spouse presence unknown"
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,4,Widowed
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,5,Divorced
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,6,Separated
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,7,Never married
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,8,Living with a partner
+MARSTAT2_C,Marital status of the sample child's second residential parent,Numeric,9,Unknown marital status
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,1,"Married, spouse is present"
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,2,"Married, spouse is not present"
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,3,"Married, spouse presence unknown"
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,4,Widowed
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,5,Divorced
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,6,Separated
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,7,Never married
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,8,Living with a partner
+MARSTAT1_C,Marital status of the sample child's first residential parent,Numeric,9,Unknown marital status
+PARSAMEOPP_C,"In two-parent SC families, are the parents of the same sex or opposite sex?",Numeric,1,"SC in two parent family, parents are opposite sex"
+PARSAMEOPP_C,"In two-parent SC families, are the parents of the same sex or opposite sex?",Numeric,2,"SC in two parent family, parents are same sex"
+PARSAMEOPP_C,"In two-parent SC families, are the parents of the same sex or opposite sex?",Numeric,9,Unknown
+PARSAMEOPP_C,"In two-parent SC families, are the parents of the same sex or opposite sex?",Numeric,blank,SC not living with two parents
+SCFAMSTR_C,Family structure of sample child,Numeric,1,"Single parent, never married"
+SCFAMSTR_C,Family structure of sample child,Numeric,2,"Single parent, ever married"
+SCFAMSTR_C,Family structure of sample child,Numeric,3,Married parents residing in the same household as SC
+SCFAMSTR_C,Family structure of sample child,Numeric,4,Cohabiting parents residing in the same household as SC
+SCFAMSTR_C,Family structure of sample child,Numeric,5,At least 1 related or unrelated adult (not a parent) in the same
+SCFAMSTR_C,Family structure of sample child,Numeric,6,Could not be coded
+SCFAMSTR_C,Family structure of sample child,Numeric,household,as SC
+HIKIND01R_C,Kind(s) of health insurance - private health insurance public use file,Numeric,1,Mentioned
+HIKIND01R_C,Kind(s) of health insurance - private health insurance public use file,Numeric,2,Not mentioned
+HIKIND01R_C,Kind(s) of health insurance - private health insurance public use file,Numeric,7,Refused
+HIKIND01R_C,Kind(s) of health insurance - private health insurance public use file,Numeric,8,Not Ascertained
+HIKIND01R_C,Kind(s) of health insurance - private health insurance public use file,Numeric,9,Don't Know
+OGFLGR_C,Other government reassignment flag,Numeric,1,Reassigned to other government from private 0
+PLN2PAY6R_C,Paid for by other government program - plan 2,Numeric,1,Mentioned
+PLN2PAY6R_C,Paid for by other government program - plan 2,Numeric,2,Not mentioned
+PLN2PAY6R_C,Paid for by other government program - plan 2,Numeric,7,Refused
+PLN2PAY6R_C,Paid for by other government program - plan 2,Numeric,8,Not Ascertained
+PLN2PAY6R_C,Paid for by other government program - plan 2,Numeric,9,Don't Know
+PLN1PAY6R_C,Paid for by other government program - plan 1,Numeric,1,Mentioned
+PLN1PAY6R_C,Paid for by other government program - plan 1,Numeric,2,Not mentioned
+PLN1PAY6R_C,Paid for by other government program - plan 1,Numeric,7,Refused
+PLN1PAY6R_C,Paid for by other government program - plan 1,Numeric,8,Not Ascertained
+PLN1PAY6R_C,Paid for by other government program - plan 1,Numeric,9,Don't Know
+HIKIND09R_C,Kind(s) of health insurance - Other government program public use file,Numeric,1,Mentioned
+HIKIND09R_C,Kind(s) of health insurance - Other government program public use file,Numeric,2,Not mentioned
+HIKIND09R_C,Kind(s) of health insurance - Other government program public use file,Numeric,7,Refused
+HIKIND09R_C,Kind(s) of health insurance - Other government program public use file,Numeric,8,Not Ascertained
+HIKIND09R_C,Kind(s) of health insurance - Other government program public use file,Numeric,9,Don't Know
+PLEXCHOGR_C,"Exchange company coding, NCHS (other government program)",Numeric,1,Company provides exchange plans
+PLEXCHOGR_C,"Exchange company coding, NCHS (other government program)",Numeric,2,Not an exchange company
+PLEXCHOGR_C,"Exchange company coding, NCHS (other government program)",Numeric,3,Exchange Portal or exact exchange plan name
+PLEXCHOGR_C,"Exchange company coding, NCHS (other government program)",Numeric,8,Not Ascertained
+OGHDHPR_C,Other government program HDHP,Numeric,1,"Deductible is less than $1,400"
+OGHDHPR_C,Other government program HDHP,Numeric,2,"Deductible is $1,400 or more"
+OGHDHPR_C,Other government program HDHP,Numeric,7,Refused
+OGHDHPR_C,Other government program HDHP,Numeric,8,Not Ascertained
+OGHDHPR_C,Other government program HDHP,Numeric,9,Don't Know
+OGDEDUCR_C,Other government program deductible,Numeric,1,Yes
+OGDEDUCR_C,Other government program deductible,Numeric,2,No
+OGDEDUCR_C,Other government program deductible,Numeric,7,Refused
+OGDEDUCR_C,Other government program deductible,Numeric,8,Not Ascertained
+OGDEDUCR_C,Other government program deductible,Numeric,9,Don't Know
+OGPREMR_C,Pay premium for other government program,Numeric,1,Yes
+OGPREMR_C,Pay premium for other government program,Numeric,2,No
+OGPREMR_C,Pay premium for other government program,Numeric,7,Refused
+OGPREMR_C,Pay premium for other government program,Numeric,8,Not Ascertained
+OGPREMR_C,Pay premium for other government program,Numeric,9,Don't Know
+OGXCHNGR_C,Other government program through Marketplace,Numeric,1,Yes
+OGXCHNGR_C,Other government program through Marketplace,Numeric,2,No
+OGXCHNGR_C,Other government program through Marketplace,Numeric,7,Refused
+OGXCHNGR_C,Other government program through Marketplace,Numeric,8,Not Ascertained
+OGXCHNGR_C,Other government program through Marketplace,Numeric,9,Don't Know
+OTHGOVR_C,Other government program public use file recode,Numeric,1,"Yes, information"
+OTHGOVR_C,Other government program public use file recode,Numeric,2,"Yes, but no information"
+OTHGOVR_C,Other government program public use file recode,Numeric,3,No
+OTHGOVR_C,Other government program public use file recode,Numeric,7,Refused
+OTHGOVR_C,Other government program public use file recode,Numeric,8,Not Ascertained
+OTHGOVR_C,Other government program public use file recode,Numeric,9,Don't Know
+COVER_C,Health insurance hierarchy,Numeric,1,Private
+COVER_C,Health insurance hierarchy,Numeric,2,Medicaid and other public
+COVER_C,Health insurance hierarchy,Numeric,3,Other coverage
+COVER_C,Health insurance hierarchy,Numeric,4,Uninsured
+COVER_C,Health insurance hierarchy,Numeric,5,Don't Know
+EXCHANGE_C,"Plan through Health Insurance Exchange, NCHS algorithm",Numeric,1,Exchange plan
+EXCHANGE_C,"Plan through Health Insurance Exchange, NCHS algorithm",Numeric,2,Not exchange plan
+EXCHANGE_C,"Plan through Health Insurance Exchange, NCHS algorithm",Numeric,8,Not Ascertained
+NOTCOV_C,Coverage status as used in Health United States,Numeric,1,Not covered
+NOTCOV_C,Coverage status as used in Health United States,Numeric,2,Covered
+NOTCOV_C,Coverage status as used in Health United States,Numeric,7,Refused
+NOTCOV_C,Coverage status as used in Health United States,Numeric,8,Not Ascertained
+NOTCOV_C,Coverage status as used in Health United States,Numeric,9,Don't Know
+OPFLG_C,State-sponsored reassignment flag,Numeric,1,Reassigned to other public from private
+CHFLG_C,CHIP reassignment flag,Numeric,1,Reassigned to CHIP from private
+MAFLG_C,Medicaid reassignment flag,Numeric,1,Reassigned to Medicaid from private
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,01,"Through an employer, union, or professional organization"
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,02,Purchased directly
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,03,"Through Healthcare.gov or the Affordable Care Act, also known as"
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,04,Through a state or local government or community program
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,05,Other
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,06,Through school
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,07,Through parents
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,08,Through other relative
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,97,Refused
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,98,Not Ascertained
+PLNWRKR2_C,How plan was originally obtained - plan 2,Numeric,99,Don't Know
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,01,"Through an employer, union, or professional organization"
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,02,Purchased directly
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,03,"Through Healthcare.gov or the Affordable Care Act, also known as"
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,04,Through a state or local government or community program
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,05,Other
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,06,Through school
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,07,Through parents
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,08,Through other relative
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,97,Refused
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,98,Not Ascertained
+PLNWRKR1_C,How plan was originally obtained - plan 1,Numeric,99,Don't Know
+RSNHIMISS_C,Missed deadline,Numeric,1,Yes
+RSNHIMISS_C,Missed deadline,Numeric,2,No
+RSNHIMISS_C,Missed deadline,Numeric,7,Refused
+RSNHIMISS_C,Missed deadline,Numeric,8,Not Ascertained
+RSNHIMISS_C,Missed deadline,Numeric,9,Don't Know
+RSNHIJOB_C,Lost job,Numeric,1,Yes
+RSNHIJOB_C,Lost job,Numeric,2,No
+RSNHIJOB_C,Lost job,Numeric,7,Refused
+RSNHIJOB_C,Lost job,Numeric,8,Not Ascertained
+RSNHIJOB_C,Lost job,Numeric,9,Don't Know
+PRFLG_C,Private reassignment flag,Numeric,1,Reassigned to private from public
+PLEXCHPR1_C,"Exchange company coding, NCHS, reassigned from public to private",Numeric,1,Company provides exchange plans
+PLEXCHPR1_C,"Exchange company coding, NCHS, reassigned from public to private",Numeric,2,Not an exchange company
+PLEXCHPR1_C,"Exchange company coding, NCHS, reassigned from public to private",Numeric,3,Exchange Portal or exact exchange plan name
+PLEXCHPR1_C,"Exchange company coding, NCHS, reassigned from public to private",Numeric,8,Not Ascertained
+PRPREM1_C,Premium on plan reassigned from public to private,Numeric,1,Yes
+PRPREM1_C,Premium on plan reassigned from public to private,Numeric,2,No
+PRPREM1_C,Premium on plan reassigned from public to private,Numeric,7,Refused
+PRPREM1_C,Premium on plan reassigned from public to private,Numeric,8,Not Ascertained
+PRPREM1_C,Premium on plan reassigned from public to private,Numeric,9,Don't Know
+PXCHNG1_C,"Marketplace or state exchange, reassigned from public to private",Numeric,1,Yes
+PXCHNG1_C,"Marketplace or state exchange, reassigned from public to private",Numeric,2,No
+PXCHNG1_C,"Marketplace or state exchange, reassigned from public to private",Numeric,7,Refused
+PXCHNG1_C,"Marketplace or state exchange, reassigned from public to private",Numeric,8,Not Ascertained
+PXCHNG1_C,"Marketplace or state exchange, reassigned from public to private",Numeric,9,Don't Know
+HICOSTR2_C,Out-of-pocket premium cost - plan 2,Numeric,00001-39999,"$1 - $39,999"
+HICOSTR2_C,Out-of-pocket premium cost - plan 2,Numeric,40000,"$40,000 or more"
+HICOSTR2_C,Out-of-pocket premium cost - plan 2,Numeric,99997,Refused
+HICOSTR2_C,Out-of-pocket premium cost - plan 2,Numeric,99998,Not Ascertained
+HICOSTR2_C,Out-of-pocket premium cost - plan 2,Numeric,99999,Don't Know
+HICOSTR1_C,Out-of-pocket premium cost - plan 1,Numeric,00001-39999,"$1 - $39,999"
+HICOSTR1_C,Out-of-pocket premium cost - plan 1,Numeric,40000,"$40,000 or more"
+HICOSTR1_C,Out-of-pocket premium cost - plan 1,Numeric,99997,Refused
+HICOSTR1_C,Out-of-pocket premium cost - plan 1,Numeric,99998,Not Ascertained
+HICOSTR1_C,Out-of-pocket premium cost - plan 1,Numeric,99999,Don't Know
+OTHPUB_C,State-sponsored health plan recode,Numeric,1,"Yes, information"
+OTHPUB_C,State-sponsored health plan recode,Numeric,2,"Yes, but no information"
+OTHPUB_C,State-sponsored health plan recode,Numeric,3,No
+OTHPUB_C,State-sponsored health plan recode,Numeric,7,Refused
+OTHPUB_C,State-sponsored health plan recode,Numeric,8,Not Ascertained
+OTHPUB_C,State-sponsored health plan recode,Numeric,9,Don't Know
+IHS_C,Indian Health Service recode,Numeric,1,Yes
+IHS_C,Indian Health Service recode,Numeric,2,No
+IHS_C,Indian Health Service recode,Numeric,7,Refused
+IHS_C,Indian Health Service recode,Numeric,8,Not Ascertained
+IHS_C,Indian Health Service recode,Numeric,9,Don't Know
+MILITARY_C,Military health care coverage recode,Numeric,1,"Yes, information"
+MILITARY_C,Military health care coverage recode,Numeric,2,"Yes, but no information"
+MILITARY_C,Military health care coverage recode,Numeric,3,No
+MILITARY_C,Military health care coverage recode,Numeric,7,Refused
+MILITARY_C,Military health care coverage recode,Numeric,8,Not Ascertained
+MILITARY_C,Military health care coverage recode,Numeric,9,Don't Know
+CHIP_C,Children's Health Insurance Program (CHIP) recode,Numeric,1,"Yes, information"
+CHIP_C,Children's Health Insurance Program (CHIP) recode,Numeric,2,"Yes, but no information"
+CHIP_C,Children's Health Insurance Program (CHIP) recode,Numeric,3,No
+CHIP_C,Children's Health Insurance Program (CHIP) recode,Numeric,7,Refused
+CHIP_C,Children's Health Insurance Program (CHIP) recode,Numeric,8,Not Ascertained
+CHIP_C,Children's Health Insurance Program (CHIP) recode,Numeric,9,Don't Know
+MEDICAID_C,Medicaid recode,Numeric,1,"Yes, information"
+MEDICAID_C,Medicaid recode,Numeric,2,"Yes, but no information"
+MEDICAID_C,Medicaid recode,Numeric,3,No
+MEDICAID_C,Medicaid recode,Numeric,7,Refused
+MEDICAID_C,Medicaid recode,Numeric,8,Not Ascertained
+MEDICAID_C,Medicaid recode,Numeric,9,Don't Know
+PRIVATE_C,Private health insurance recode,Numeric,1,"Yes, information"
+PRIVATE_C,Private health insurance recode,Numeric,2,"Yes, but no information"
+PRIVATE_C,Private health insurance recode,Numeric,3,No
+PRIVATE_C,Private health insurance recode,Numeric,7,Refused
+PRIVATE_C,Private health insurance recode,Numeric,8,Not Ascertained
+PRIVATE_C,Private health insurance recode,Numeric,9,Don't Know
+PRPLCOV1_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 1,Numeric,1,Yes
+PRPLCOV1_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 1,Numeric,2,No
+PRPLCOV1_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 1,Numeric,7,Refused
+PRPLCOV1_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 1,Numeric,8,Not Ascertained
+PRPLCOV1_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 1,Numeric,9,Don't Know
+PRPLCOV2_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 2,Numeric,1,Yes
+PRPLCOV2_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 2,Numeric,2,No
+PRPLCOV2_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 2,Numeric,7,Refused
+PRPLCOV2_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 2,Numeric,8,Not Ascertained
+PRPLCOV2_A_C,Response to PRPLCOV1_A or PRPLCOV2_A from adult - plan 2,Numeric,9,Don't Know
+PLEXCHOP_C,"Exchange company coding, NCHS (state-sponsored plan)",Numeric,1,Company provides exchange plans
+PLEXCHOP_C,"Exchange company coding, NCHS (state-sponsored plan)",Numeric,2,Not an exchange company
+PLEXCHOP_C,"Exchange company coding, NCHS (state-sponsored plan)",Numeric,3,Exchange Portal or exact exchange plan name
+PLEXCHOP_C,"Exchange company coding, NCHS (state-sponsored plan)",Numeric,8,Not Ascertained
+EXCHPR2_C,"Exchange company coding, NCHS - plan 2",Numeric,1,Company provides exchange plans
+EXCHPR2_C,"Exchange company coding, NCHS - plan 2",Numeric,2,Not an exchange company
+EXCHPR2_C,"Exchange company coding, NCHS - plan 2",Numeric,3,Exchange Portal or exact exchange plan name
+EXCHPR2_C,"Exchange company coding, NCHS - plan 2",Numeric,8,Not Ascertained
+EXCHPR1_C,"Exchange company coding, NCHS - plan 1",Numeric,1,Company provides exchange plans
+EXCHPR1_C,"Exchange company coding, NCHS - plan 1",Numeric,2,Not an exchange company
+EXCHPR1_C,"Exchange company coding, NCHS - plan 1",Numeric,3,Exchange Portal or exact exchange plan name
+EXCHPR1_C,"Exchange company coding, NCHS - plan 1",Numeric,8,Not Ascertained
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,00,Never attended/kindergarten only
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,01,Grade 1-11
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,02,"12th grade, no diploma"
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,03,GED or equivalent
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,04,High School Graduate
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,05,"Some college, no degree"
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,06,"Associate degree: occupational, technical, or vocational program"
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,07,Associate degree: academic program
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,08,"Bachelor's degree (Example: BA, AB, BS, BBA)"
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,09,"Master's degree (Example: MA, MS, MEng, MEd, MBA)"
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,10,"Professional School or Doctoral degree (Example: MD, DDS, DVM, JD,"
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,97,Refused
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,98,Not Ascertained
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,99,Don't Know
+MAXPAREDUP_C,Highest level of education of all SC's parents,Numeric,"PhD,",EdD)
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,00,Never attended/kindergarten only
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,01,Grade 1-11
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,02,"12th grade, no diploma"
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,03,GED or equivalent
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,04,High School Graduate
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,05,"Some college, no degree"
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,06,"Associate degree: occupational, technical, or vocational program"
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,07,Associate degree: academic program
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,08,"Bachelor's degree (Example: BA, AB, BS, BBA)"
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,09,"Master's degree (Example: MA, MS, MEng, MEd, MBA)"
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,10,"Professional School or Doctoral degree (Example: MD, DDS, DVM, JD,"
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,97,Refused
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,98,Not Ascertained
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,99,Don't Know
+MAXEDUCP_C,Highest level of education of the adults in the SC's family,Numeric,"PhD,",EdD)
+SCPARENTSC_C,Sample child relationship to sample adult,Numeric,1,Sample adult is parent of sample child
+SCPARENTSC_C,Sample child relationship to sample adult,Numeric,2,Sample adult is not parent of sample child
+SCPARENTSC_C,Sample child relationship to sample adult,Numeric,3,No sample adult in sample child's family
+SCPARENTSC_C,Sample child relationship to sample adult,Numeric,9,Unknown
+MLTFAMFLG_C,Indicator for multifamily household,Numeric,1,Multiple families in household
+MLTFAMFLG_C,Indicator for multifamily household,Numeric,2,Only one family in household
+MLTFAMFLG_C,Indicator for multifamily household,Numeric,9,Unknown
+OVER65FLG_C,Indicator for at least 1 person aged 65+ in SC family,Numeric,0,None
+OVER65FLG_C,Indicator for at least 1 person aged 65+ in SC family,Numeric,1,1 or more
+PCNTADLT_C,"Number of adults in Sample Child family, top-coded 3+",Numeric,0,0 adults
+PCNTADLT_C,"Number of adults in Sample Child family, top-coded 3+",Numeric,1,1 adult
+PCNTADLT_C,"Number of adults in Sample Child family, top-coded 3+",Numeric,2,2 adults
+PCNTADLT_C,"Number of adults in Sample Child family, top-coded 3+",Numeric,3,3+ adults
+PCNTADLT_C,"Number of adults in Sample Child family, top-coded 3+",Numeric,8,Not Ascertained
+PCNTKIDS_C,"Number of children in Sample Child family, top-coded 3+",Numeric,1,1 child
+PCNTKIDS_C,"Number of children in Sample Child family, top-coded 3+",Numeric,2,2 children
+PCNTKIDS_C,"Number of children in Sample Child family, top-coded 3+",Numeric,3,3+ children
+PCNTKIDS_C,"Number of children in Sample Child family, top-coded 3+",Numeric,8,Not Ascertained
+BMICAT_C,"Body Mass Index (BMI), public use",Numeric,1,Underweight
+BMICAT_C,"Body Mass Index (BMI), public use",Numeric,2,Healthy weight
+BMICAT_C,"Body Mass Index (BMI), public use",Numeric,3,Overweight
+BMICAT_C,"Body Mass Index (BMI), public use",Numeric,4,Obese
+BMICAT_C,"Body Mass Index (BMI), public use",Numeric,9,Unknown
+WEIGHTLBTC_C,"Weight without shoes (pounds), public use",Numeric,050-280,50-280 pounds
+WEIGHTLBTC_C,"Weight without shoes (pounds), public use",Numeric,996,Not available
+WEIGHTLBTC_C,"Weight without shoes (pounds), public use",Numeric,997,Refused
+WEIGHTLBTC_C,"Weight without shoes (pounds), public use",Numeric,998,Not Ascertained
+WEIGHTLBTC_C,"Weight without shoes (pounds), public use",Numeric,999,Don't Know
+HEIGHTTC_C,"Total height in inches, public use",Numeric,43-76,43-76 inches
+HEIGHTTC_C,"Total height in inches, public use",Numeric,96,Not available
+HEIGHTTC_C,"Total height in inches, public use",Numeric,97,Refused
+HEIGHTTC_C,"Total height in inches, public use",Numeric,98,Not Ascertained
+HEIGHTTC_C,"Total height in inches, public use",Numeric,99,Don't Know
+DISAB5_C,"The Washington Group Short Set Composite Disability Indicator, children 5-17",Numeric,1,Yes
+DISAB5_C,"The Washington Group Short Set Composite Disability Indicator, children 5-17",Numeric,2,No
+DISAB5_C,"The Washington Group Short Set Composite Disability Indicator, children 5-17",Numeric,9,Don't Know
+DISAB2_C,"The Washington Group Short Set Composite Disability Indicator, children 2-4",Numeric,1,Yes
+DISAB2_C,"The Washington Group Short Set Composite Disability Indicator, children 2-4",Numeric,2,No
+DISAB2_C,"The Washington Group Short Set Composite Disability Indicator, children 2-4",Numeric,9,Don't Know
+HISDETP_C,Hispanic origin detail,Numeric,1,Hispanic (Mexican/Mexican American)
+HISDETP_C,Hispanic origin detail,Numeric,2,Hispanic (all other groups)
+HISDETP_C,Hispanic origin detail,Numeric,3,Not Hispanic
+HISDETP_C,Hispanic origin detail,Numeric,7,Refused
+HISDETP_C,Hispanic origin detail,Numeric,8,Not Ascertained
+HISDETP_C,Hispanic origin detail,Numeric,9,Don't Know
+HISP_C,Recode: Hispanic ethnicity of SC,Numeric,1,Yes
+HISP_C,Recode: Hispanic ethnicity of SC,Numeric,2,No
+HISP_C,Recode: Hispanic ethnicity of SC,Numeric,7,Refused
+HISP_C,Recode: Hispanic ethnicity of SC,Numeric,8,Not Ascertained
+HISP_C,Recode: Hispanic ethnicity of SC,Numeric,9,Don't Know
+REGION,Household region,Numeric,1,Northeast
+REGION,Household region,Numeric,2,Midwest
+REGION,Household region,Numeric,3,South
+REGION,Household region,Numeric,4,West
+INTV_QRT,Interview quarter,Numeric,1,Quarter 1
+INTV_QRT,Interview quarter,Numeric,2,Quarter 2
+INTV_QRT,Interview quarter,Numeric,3,Quarter 3
+INTV_QRT,Interview quarter,Numeric,4,Quarter 4
+SRVY_YR,Year of the National Health Interview Survey,Numeric,1963-current,Survey year
+SEX_C,Sex of Sample Child,Numeric,1,Male
+SEX_C,Sex of Sample Child,Numeric,2,Female
+SEX_C,Sex of Sample Child,Numeric,7,Refused
+SEX_C,Sex of Sample Child,Numeric,8,Not Ascertained
+SEX_C,Sex of Sample Child,Numeric,9,Don't Know
+AGEP_C,Age of SC,Numeric,00,Under 1 year
+AGEP_C,Age of SC,Numeric,01-17,1-17 years
+AGEP_C,Age of SC,Numeric,97,Refused
+AGEP_C,Age of SC,Numeric,98,Not Ascertained
+AGEP_C,Age of SC,Numeric,99,Don't Know
+CSTATNEW,Recoded CSTAT,Numeric,0,Not applicable/None eligible
+CSTATNEW,Recoded CSTAT,Numeric,1,Completed
+CSTATNEW,Recoded CSTAT,Numeric,2,HH member selected
+CSTATNEW,Recoded CSTAT,Numeric,3,Reached Sample Adult
+CSTATNEW,Recoded CSTAT,Numeric,4,Started HIS section
+CSTATNEW,Recoded CSTAT,Numeric,5,Sufficient Partial
+CSTATNEW,Recoded CSTAT,Numeric,6,HH member selected and no longer eligible
+CSTATNEW,Recoded CSTAT,Numeric,7,Refused
+HOUGVASST_C,Paying lower rent,Numeric,1,Yes
+HOUGVASST_C,Paying lower rent,Numeric,2,No
+HOUGVASST_C,Paying lower rent,Numeric,7,Refused
+HOUGVASST_C,Paying lower rent,Numeric,8,Not Ascertained
+HOUGVASST_C,Paying lower rent,Numeric,9,Don't Know
+HOUTENURE_C,Residence owned/rented,Numeric,1,Owned or being bought
+HOUTENURE_C,Residence owned/rented,Numeric,2,Rented
+HOUTENURE_C,Residence owned/rented,Numeric,3,Other arrangement
+HOUTENURE_C,Residence owned/rented,Numeric,7,Refused
+HOUTENURE_C,Residence owned/rented,Numeric,8,Not Ascertained
+HOUTENURE_C,Residence owned/rented,Numeric,9,Don't Know
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,1,Less than 1 year
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,2,1 to 3 years
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,3,4 to 10 years
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,4,More than 10 years
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,7,Refused
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,8,Not Ascertained
+HOUYRSLIV_C,Length of time in house/apartment,Numeric,9,Don't Know
+FDSNEDAYS_C,How many days not eat,Numeric,01-30,Range of values
+FDSNEDAYS_C,How many days not eat,Numeric,97,Refused
+FDSNEDAYS_C,How many days not eat,Numeric,98,Not Ascertained
+FDSNEDAYS_C,How many days not eat,Numeric,99,Don't Know
+FDSNOTEAT_C,Not eat for a whole day,Numeric,1,Yes
+FDSNOTEAT_C,Not eat for a whole day,Numeric,2,No
+FDSNOTEAT_C,Not eat for a whole day,Numeric,7,Refused
+FDSNOTEAT_C,Not eat for a whole day,Numeric,8,Not Ascertained
+FDSNOTEAT_C,Not eat for a whole day,Numeric,9,Don't Know
+FDSWEIGHT_C,Lose weight because not enough money for food,Numeric,1,Yes
+FDSWEIGHT_C,Lose weight because not enough money for food,Numeric,2,No
+FDSWEIGHT_C,Lose weight because not enough money for food,Numeric,7,Refused
+FDSWEIGHT_C,Lose weight because not enough money for food,Numeric,8,Not Ascertained
+FDSWEIGHT_C,Lose weight because not enough money for food,Numeric,9,Don't Know
+FDSHUNGRY_C,Ever hungry because not enough money for food,Numeric,1,Yes
+FDSHUNGRY_C,Ever hungry because not enough money for food,Numeric,2,No
+FDSHUNGRY_C,Ever hungry because not enough money for food,Numeric,7,Refused
+FDSHUNGRY_C,Ever hungry because not enough money for food,Numeric,8,Not Ascertained
+FDSHUNGRY_C,Ever hungry because not enough money for food,Numeric,9,Don't Know
+FDSLESS_C,Eat less than should,Numeric,1,Yes
+FDSLESS_C,Eat less than should,Numeric,2,No
+FDSLESS_C,Eat less than should,Numeric,7,Refused
+FDSLESS_C,Eat less than should,Numeric,8,Not Ascertained
+FDSLESS_C,Eat less than should,Numeric,9,Don't Know
+FDSSKIPDYS_C,How many days did you/adults in the family cut the size of meals or skip meals,Numeric,01-30,Range of values
+FDSSKIPDYS_C,How many days did you/adults in the family cut the size of meals or skip meals,Numeric,97,Refused
+FDSSKIPDYS_C,How many days did you/adults in the family cut the size of meals or skip meals,Numeric,98,Not Ascertained
+FDSSKIPDYS_C,How many days did you/adults in the family cut the size of meals or skip meals,Numeric,99,Don't Know
+FDSSKIP_C,Cut the size of meals or skip meals,Numeric,1,Yes
+FDSSKIP_C,Cut the size of meals or skip meals,Numeric,2,No
+FDSSKIP_C,Cut the size of meals or skip meals,Numeric,7,Refused
+FDSSKIP_C,Cut the size of meals or skip meals,Numeric,8,Not Ascertained
+FDSSKIP_C,Cut the size of meals or skip meals,Numeric,9,Don't Know
+FDSBALANCE_C,Couldn't afford to eat balanced meals,Numeric,1,Often true
+FDSBALANCE_C,Couldn't afford to eat balanced meals,Numeric,2,Sometimes true
+FDSBALANCE_C,Couldn't afford to eat balanced meals,Numeric,3,Never true
+FDSBALANCE_C,Couldn't afford to eat balanced meals,Numeric,7,Refused
+FDSBALANCE_C,Couldn't afford to eat balanced meals,Numeric,8,Not Ascertained
+FDSBALANCE_C,Couldn't afford to eat balanced meals,Numeric,9,Don't Know
+FDSLAST_C,Food didn't last,Numeric,1,Often true
+FDSLAST_C,Food didn't last,Numeric,2,Sometimes true
+FDSLAST_C,Food didn't last,Numeric,3,Never true
+FDSLAST_C,Food didn't last,Numeric,7,Refused
+FDSLAST_C,Food didn't last,Numeric,8,Not Ascertained
+FDSLAST_C,Food didn't last,Numeric,9,Don't Know
+FDSRUNOUT_C,Worry food would run out,Numeric,1,Often true
+FDSRUNOUT_C,Worry food would run out,Numeric,2,Sometimes true
+FDSRUNOUT_C,Worry food would run out,Numeric,3,Never true
+FDSRUNOUT_C,Worry food would run out,Numeric,7,Refused
+FDSRUNOUT_C,Worry food would run out,Numeric,8,Not Ascertained
+FDSRUNOUT_C,Worry food would run out,Numeric,9,Don't Know
+FLUNCH12M_C,Free or reduced meals at school,Numeric,1,Yes
+FLUNCH12M_C,Free or reduced meals at school,Numeric,2,No
+FLUNCH12M_C,Free or reduced meals at school,Numeric,7,Refused
+FLUNCH12M_C,Free or reduced meals at school,Numeric,8,Not Ascertained
+FLUNCH12M_C,Free or reduced meals at school,Numeric,9,Don't Know
+FWIC12M_C,"Received WIC benefits, past 12m",Numeric,1,Yes
+FWIC12M_C,"Received WIC benefits, past 12m",Numeric,2,No
+FWIC12M_C,"Received WIC benefits, past 12m",Numeric,7,Refused
+FWIC12M_C,"Received WIC benefits, past 12m",Numeric,8,Not Ascertained
+FWIC12M_C,"Received WIC benefits, past 12m",Numeric,9,Don't Know
+FSNAP30D_C,"Received food stamps, past 30d",Numeric,1,Yes
+FSNAP30D_C,"Received food stamps, past 30d",Numeric,2,No
+FSNAP30D_C,"Received food stamps, past 30d",Numeric,7,Refused
+FSNAP30D_C,"Received food stamps, past 30d",Numeric,8,Not Ascertained
+FSNAP30D_C,"Received food stamps, past 30d",Numeric,9,Don't Know
+FSNAP12M_C,"Receive food stamps, past 12m",Numeric,1,Yes
+FSNAP12M_C,"Receive food stamps, past 12m",Numeric,2,No
+FSNAP12M_C,"Receive food stamps, past 12m",Numeric,7,Refused
+FSNAP12M_C,"Receive food stamps, past 12m",Numeric,8,Not Ascertained
+FSNAP12M_C,"Receive food stamps, past 12m",Numeric,9,Don't Know
+INCOTHR_C,Income from other sources,Numeric,1,Yes
+INCOTHR_C,Income from other sources,Numeric,2,No
+INCOTHR_C,Income from other sources,Numeric,7,Refused
+INCOTHR_C,Income from other sources,Numeric,8,Not Ascertained
+INCOTHR_C,Income from other sources,Numeric,9,Don't Know
+INCRETIRE_C,Income from retirement,Numeric,1,Yes
+INCRETIRE_C,Income from retirement,Numeric,2,No
+INCRETIRE_C,Income from retirement,Numeric,7,Refused
+INCRETIRE_C,Income from retirement,Numeric,8,Not Ascertained
+INCRETIRE_C,Income from retirement,Numeric,9,Don't Know
+INCWELF_C,Income from public assistance,Numeric,1,Yes
+INCWELF_C,Income from public assistance,Numeric,2,No
+INCWELF_C,Income from public assistance,Numeric,7,Refused
+INCWELF_C,Income from public assistance,Numeric,8,Not Ascertained
+INCWELF_C,Income from public assistance,Numeric,9,Don't Know
+SSISSDIDSB_C,SSI/SSDI due to disability,Numeric,1,Yes
+SSISSDIDSB_C,SSI/SSDI due to disability,Numeric,2,No
+SSISSDIDSB_C,SSI/SSDI due to disability,Numeric,7,Refused
+SSISSDIDSB_C,SSI/SSDI due to disability,Numeric,8,Not Ascertained
+SSISSDIDSB_C,SSI/SSDI due to disability,Numeric,9,Don't Know
+SSISSDIBTH_C,Which family income SSI/SSDI,Numeric,1,SSI
+SSISSDIBTH_C,Which family income SSI/SSDI,Numeric,2,SSDI
+SSISSDIBTH_C,Which family income SSI/SSDI,Numeric,3,Both SSI and SSDI
+SSISSDIBTH_C,Which family income SSI/SSDI,Numeric,7,Refused
+SSISSDIBTH_C,Which family income SSI/SSDI,Numeric,8,Not Ascertained
+SSISSDIBTH_C,Which family income SSI/SSDI,Numeric,9,Don't Know
+INCSSISSDI_C,Family income from SSDI,Numeric,1,Yes
+INCSSISSDI_C,Family income from SSDI,Numeric,2,No
+INCSSISSDI_C,Family income from SSDI,Numeric,7,Refused
+INCSSISSDI_C,Family income from SSDI,Numeric,8,Not Ascertained
+INCSSISSDI_C,Family income from SSDI,Numeric,9,Don't Know
+INCSSRR_C,Income from SS/Railroad Retirement,Numeric,1,Yes
+INCSSRR_C,Income from SS/Railroad Retirement,Numeric,2,No
+INCSSRR_C,Income from SS/Railroad Retirement,Numeric,7,Refused
+INCSSRR_C,Income from SS/Railroad Retirement,Numeric,8,Not Ascertained
+INCSSRR_C,Income from SS/Railroad Retirement,Numeric,9,Don't Know
+INCINTER_C,Income from accounts,Numeric,1,Yes
+INCINTER_C,Income from accounts,Numeric,2,No
+INCINTER_C,Income from accounts,Numeric,7,Refused
+INCINTER_C,Income from accounts,Numeric,8,Not Ascertained
+INCINTER_C,Income from accounts,Numeric,9,Don't Know
+INCWRKO_C,Income from wages,Numeric,1,Yes
+INCWRKO_C,Income from wages,Numeric,2,No
+INCWRKO_C,Income from wages,Numeric,7,Refused
+INCWRKO_C,Income from wages,Numeric,8,Not Ascertained
+INCWRKO_C,Income from wages,Numeric,9,Don't Know
+NATUSBORN_C,Born in U.S. or U.S. territory,Numeric,1,Yes
+NATUSBORN_C,Born in U.S. or U.S. territory,Numeric,2,No
+NATUSBORN_C,Born in U.S. or U.S. territory,Numeric,7,Refused
+NATUSBORN_C,Born in U.S. or U.S. territory,Numeric,8,Not Ascertained
+NATUSBORN_C,Born in U.S. or U.S. territory,Numeric,9,Don't Know
+MARITAL2_C,Marital status of second residential parent of sample child,Numeric,1,Married
+MARITAL2_C,Marital status of second residential parent of sample child,Numeric,2,Living with a partner together as an unmarried couple
+MARITAL2_C,Marital status of second residential parent of sample child,Numeric,3,Neither
+MARITAL2_C,Marital status of second residential parent of sample child,Numeric,7,Refused
+MARITAL2_C,Marital status of second residential parent of sample child,Numeric,8,Not Ascertained
+MARITAL2_C,Marital status of second residential parent of sample child,Numeric,9,Don't Know
+MARITAL1_C,Marital status of first residential parent of sample child,Numeric,1,Married
+MARITAL1_C,Marital status of first residential parent of sample child,Numeric,2,Living with a partner together as an unmarried couple
+MARITAL1_C,Marital status of first residential parent of sample child,Numeric,3,Neither
+MARITAL1_C,Marital status of first residential parent of sample child,Numeric,7,Refused
+MARITAL1_C,Marital status of first residential parent of sample child,Numeric,8,Not Ascertained
+MARITAL1_C,Marital status of first residential parent of sample child,Numeric,9,Don't Know
+VSLBTWR_C,VSL problem better or worse,Numeric,1,Get a lot better
+VSLBTWR_C,VSL problem better or worse,Numeric,2,Get a little better
+VSLBTWR_C,VSL problem better or worse,Numeric,3,Stay the same
+VSLBTWR_C,VSL problem better or worse,Numeric,4,Get a little worse
+VSLBTWR_C,VSL problem better or worse,Numeric,5,Get a lot worse
+VSLBTWR_C,VSL problem better or worse,Numeric,7,Refused
+VSLBTWR_C,VSL problem better or worse,Numeric,8,Not Ascertained
+VSLBTWR_C,VSL problem better or worse,Numeric,9,Don't Know
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,1,Improved greatly
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,2,Improved somewhat
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,3,Stayed the same
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,4,Gotten worse
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,7,Refused
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,8,Not Ascertained
+VSLPALF_C,Seeing a doctor for treatment in the past 12 months affected life,Numeric,9,Don't Know
+VSLPA_C,Saw a doctor for treatment in the past 12 months,Numeric,1,Yes
+VSLPA_C,Saw a doctor for treatment in the past 12 months,Numeric,2,No
+VSLPA_C,Saw a doctor for treatment in the past 12 months,Numeric,7,Refused
+VSLPA_C,Saw a doctor for treatment in the past 12 months,Numeric,8,Not Ascertained
+VSLPA_C,Saw a doctor for treatment in the past 12 months,Numeric,9,Don't Know
+VSLBRAIN_C,VSL problems following a brain injury,Numeric,1,Yes
+VSLBRAIN_C,VSL problems following a brain injury,Numeric,2,No
+VSLBRAIN_C,VSL problems following a brain injury,Numeric,7,Refused
+VSLBRAIN_C,VSL problems following a brain injury,Numeric,8,Not Ascertained
+VSLBRAIN_C,VSL problems following a brain injury,Numeric,9,Don't Know
+VSLLGDIF_C,Amount of difficulty with language problem,Numeric,1,A little
+VSLLGDIF_C,Amount of difficulty with language problem,Numeric,2,A lot
+VSLLGDIF_C,Amount of difficulty with language problem,Numeric,3,Somewhere in between
+VSLLGDIF_C,Amount of difficulty with language problem,Numeric,7,Refused
+VSLLGDIF_C,Amount of difficulty with language problem,Numeric,8,Not Ascertained
+VSLLGDIF_C,Amount of difficulty with language problem,Numeric,9,Don't Know
+VSLLGDYS_C,Duration of language problem,Numeric,1,1 to 6 days (“less than a week”)
+VSLLGDYS_C,Duration of language problem,Numeric,2,"7 to 13 days (“one week or more, but less than two weeks”)"
+VSLLGDYS_C,Duration of language problem,Numeric,3,"14 to 29 days (“2 weeks or more, but less than a month”)"
+VSLLGDYS_C,Duration of language problem,Numeric,4,"30 to 89 days (“a month or more, but less than 3 months”)"
+VSLLGDYS_C,Duration of language problem,Numeric,5,"90 days to 179 days (“3 months or more, but less than 6 months”)"
+VSLLGDYS_C,Duration of language problem,Numeric,6,180 days or more (“6 months or more”)
+VSLLGDYS_C,Duration of language problem,Numeric,7,Refused
+VSLLGDYS_C,Duration of language problem,Numeric,8,Not Ascertained
+VSLLGDYS_C,Duration of language problem,Numeric,9,Don't Know
+VSLLGYR_C,Language problem in the past 12m,Numeric,1,Yes
+VSLLGYR_C,Language problem in the past 12m,Numeric,2,No
+VSLLGYR_C,Language problem in the past 12m,Numeric,7,Refused
+VSLLGYR_C,Language problem in the past 12m,Numeric,8,Not Ascertained
+VSLLGYR_C,Language problem in the past 12m,Numeric,9,Don't Know
+VSLSPST_C,Stuttering problem in the past 12m,Numeric,1,Stuttering
+VSLSPST_C,Stuttering problem in the past 12m,Numeric,2,Trouble pronouncing words correctly
+VSLSPST_C,Stuttering problem in the past 12m,Numeric,3,Both
+VSLSPST_C,Stuttering problem in the past 12m,Numeric,7,Refused
+VSLSPST_C,Stuttering problem in the past 12m,Numeric,8,Not Ascertained
+VSLSPST_C,Stuttering problem in the past 12m,Numeric,9,Don't Know
+VSLSPDIF_C,Amount of difficulty with speech problem,Numeric,1,A little
+VSLSPDIF_C,Amount of difficulty with speech problem,Numeric,2,A lot
+VSLSPDIF_C,Amount of difficulty with speech problem,Numeric,3,Somewhere in between
+VSLSPDIF_C,Amount of difficulty with speech problem,Numeric,7,Refused
+VSLSPDIF_C,Amount of difficulty with speech problem,Numeric,8,Not Ascertained
+VSLSPDIF_C,Amount of difficulty with speech problem,Numeric,9,Don't Know
+VSLSPDYS_C,Duration of speech problem,Numeric,1,1 to 6 days (“less than a week”)
+VSLSPDYS_C,Duration of speech problem,Numeric,2,"7 to 13 days (“one week or more, but less than two weeks”)"
+VSLSPDYS_C,Duration of speech problem,Numeric,3,"14 to 29 days (“2 weeks or more, but less than a month”)"
+VSLSPDYS_C,Duration of speech problem,Numeric,4,"30 to 89 days (“a month or more, but less than 3 months”)"
+VSLSPDYS_C,Duration of speech problem,Numeric,5,"90 days to 179 days (“3 months or more, but less than 6 months”)"
+VSLSPDYS_C,Duration of speech problem,Numeric,6,180 days or more (“6 months or more”)
+VSLSPDYS_C,Duration of speech problem,Numeric,7,Refused
+VSLSPDYS_C,Duration of speech problem,Numeric,8,Not Ascertained
+VSLSPDYS_C,Duration of speech problem,Numeric,9,Don't Know
+VSLSPYR_C,Speech problem in the past 12m,Numeric,1,Yes
+VSLSPYR_C,Speech problem in the past 12m,Numeric,2,No
+VSLSPYR_C,Speech problem in the past 12m,Numeric,7,Refused
+VSLSPYR_C,Speech problem in the past 12m,Numeric,8,Not Ascertained
+VSLSPYR_C,Speech problem in the past 12m,Numeric,9,Don't Know
+VSLSWDIF_C,Amount of difficulty with swallowing problem,Numeric,1,A little
+VSLSWDIF_C,Amount of difficulty with swallowing problem,Numeric,2,A lot
+VSLSWDIF_C,Amount of difficulty with swallowing problem,Numeric,3,Somewhere in between
+VSLSWDIF_C,Amount of difficulty with swallowing problem,Numeric,7,Refused
+VSLSWDIF_C,Amount of difficulty with swallowing problem,Numeric,8,Not Ascertained
+VSLSWDIF_C,Amount of difficulty with swallowing problem,Numeric,9,Don't Know
+VSLSWDYS_C,Duration of swallowing problem,Numeric,1,1 to 6 days (“less than a week”)
+VSLSWDYS_C,Duration of swallowing problem,Numeric,2,"7 to 13 days (“one week or more, but less than two weeks”)"
+VSLSWDYS_C,Duration of swallowing problem,Numeric,3,"14 to 29 days (“2 weeks or more, but less than a month”)"
+VSLSWDYS_C,Duration of swallowing problem,Numeric,4,"30 to 89 days (“a month or more, but less than 3 months”)"
+VSLSWDYS_C,Duration of swallowing problem,Numeric,5,"90 days to 179 days (“3 months or more, but less than 6 months”)"
+VSLSWDYS_C,Duration of swallowing problem,Numeric,6,180 days or more (“6 months or more”)
+VSLSWDYS_C,Duration of swallowing problem,Numeric,7,Refused
+VSLSWDYS_C,Duration of swallowing problem,Numeric,8,Not Ascertained
+VSLSWDYS_C,Duration of swallowing problem,Numeric,9,Don't Know
+VSLSWYR_C,Swallowing problem in the past 12m,Numeric,1,Yes
+VSLSWYR_C,Swallowing problem in the past 12m,Numeric,2,No
+VSLSWYR_C,Swallowing problem in the past 12m,Numeric,7,Refused
+VSLSWYR_C,Swallowing problem in the past 12m,Numeric,8,Not Ascertained
+VSLSWYR_C,Swallowing problem in the past 12m,Numeric,9,Don't Know
+VSLVDIF_C,Amount of difficulty with voice problem,Numeric,1,A little
+VSLVDIF_C,Amount of difficulty with voice problem,Numeric,2,A lot
+VSLVDIF_C,Amount of difficulty with voice problem,Numeric,3,Somewhere in between
+VSLVDIF_C,Amount of difficulty with voice problem,Numeric,7,Refused
+VSLVDIF_C,Amount of difficulty with voice problem,Numeric,8,Not Ascertained
+VSLVDIF_C,Amount of difficulty with voice problem,Numeric,9,Don't Know
+VSLVDYS_C,Duration of voice problem,Numeric,1,1 to 6 days (“less than a week”)
+VSLVDYS_C,Duration of voice problem,Numeric,2,"7 to 13 days (“one week or more, but less than two weeks”)"
+VSLVDYS_C,Duration of voice problem,Numeric,3,"14 to 29 days (“2 weeks or more, but less than a month”)"
+VSLVDYS_C,Duration of voice problem,Numeric,4,"30 to 89 days (“a month or more, but less than 3 months”)"
+VSLVDYS_C,Duration of voice problem,Numeric,5,"90 days to 179 days (“3 months or more, but less than 6 months”)"
+VSLVDYS_C,Duration of voice problem,Numeric,6,180 days or more (“6 months or more”)
+VSLVDYS_C,Duration of voice problem,Numeric,7,Refused
+VSLVDYS_C,Duration of voice problem,Numeric,8,Not Ascertained
+VSLVDYS_C,Duration of voice problem,Numeric,9,Don't Know
+VSLVYR_C,Voice problem in the past 12m,Numeric,1,Yes
+VSLVYR_C,Voice problem in the past 12m,Numeric,2,No
+VSLVYR_C,Voice problem in the past 12m,Numeric,7,Refused
+VSLVYR_C,Voice problem in the past 12m,Numeric,8,Not Ascertained
+VSLVYR_C,Voice problem in the past 12m,Numeric,9,Don't Know
+YOGAHLTH_C,Yoga to restore overall health,Numeric,1,Yes
+YOGAHLTH_C,Yoga to restore overall health,Numeric,2,No
+YOGAHLTH_C,Yoga to restore overall health,Numeric,7,Refused
+YOGAHLTH_C,Yoga to restore overall health,Numeric,8,Not Ascertained
+YOGAHLTH_C,Yoga to restore overall health,Numeric,9,Don't Know
+YOGAPAIN_C,Yoga to treat or manage pain,Numeric,1,Yes
+YOGAPAIN_C,Yoga to treat or manage pain,Numeric,2,No
+YOGAPAIN_C,Yoga to treat or manage pain,Numeric,7,Refused
+YOGAPAIN_C,Yoga to treat or manage pain,Numeric,8,Not Ascertained
+YOGAPAIN_C,Yoga to treat or manage pain,Numeric,9,Don't Know
+YOGAMED_C,Meditation as part of yoga,Numeric,1,Yes
+YOGAMED_C,Meditation as part of yoga,Numeric,2,No
+YOGAMED_C,Meditation as part of yoga,Numeric,7,Refused
+YOGAMED_C,Meditation as part of yoga,Numeric,8,Not Ascertained
+YOGAMED_C,Meditation as part of yoga,Numeric,9,Don't Know
+YOGABRTH_C,Breathing exercises as part of yoga,Numeric,1,Yes
+YOGABRTH_C,Breathing exercises as part of yoga,Numeric,2,No
+YOGABRTH_C,Breathing exercises as part of yoga,Numeric,7,Refused
+YOGABRTH_C,Breathing exercises as part of yoga,Numeric,8,Not Ascertained
+YOGABRTH_C,Breathing exercises as part of yoga,Numeric,9,Don't Know
+YOGA_C,Practice yoga,Numeric,1,Yes
+YOGA_C,Practice yoga,Numeric,2,No
+YOGA_C,Practice yoga,Numeric,7,Refused
+YOGA_C,Practice yoga,Numeric,8,Not Ascertained
+YOGA_C,Practice yoga,Numeric,9,Don't Know
+GIPRHLTH_C,Use guided imagery or progressive relaxation to restore overall health,Numeric,1,Yes
+GIPRHLTH_C,Use guided imagery or progressive relaxation to restore overall health,Numeric,2,No
+GIPRHLTH_C,Use guided imagery or progressive relaxation to restore overall health,Numeric,7,Refused
+GIPRHLTH_C,Use guided imagery or progressive relaxation to restore overall health,Numeric,8,Not Ascertained
+GIPRHLTH_C,Use guided imagery or progressive relaxation to restore overall health,Numeric,9,Don't Know
+GIPRPAIN_C,Use guided imagery or progressive relaxation for pain,Numeric,1,Yes
+GIPRPAIN_C,Use guided imagery or progressive relaxation for pain,Numeric,2,No
+GIPRPAIN_C,Use guided imagery or progressive relaxation for pain,Numeric,7,Refused
+GIPRPAIN_C,Use guided imagery or progressive relaxation for pain,Numeric,8,Not Ascertained
+GIPRPAIN_C,Use guided imagery or progressive relaxation for pain,Numeric,9,Don't Know
+GIPR_C,Use guided imagery or progressive relaxation,Numeric,1,Yes
+GIPR_C,Use guided imagery or progressive relaxation,Numeric,2,No
+GIPR_C,Use guided imagery or progressive relaxation,Numeric,7,Refused
+GIPR_C,Use guided imagery or progressive relaxation,Numeric,8,Not Ascertained
+GIPR_C,Use guided imagery or progressive relaxation,Numeric,9,Don't Know
+MEDIHLTH_C,Meditation to restore overall health,Numeric,1,Yes
+MEDIHLTH_C,Meditation to restore overall health,Numeric,2,No
+MEDIHLTH_C,Meditation to restore overall health,Numeric,7,Refused
+MEDIHLTH_C,Meditation to restore overall health,Numeric,8,Not Ascertained
+MEDIHLTH_C,Meditation to restore overall health,Numeric,9,Don't Know
+MEDIPAIN_C,Meditation for pain,Numeric,1,Yes
+MEDIPAIN_C,Meditation for pain,Numeric,2,No
+MEDIPAIN_C,Meditation for pain,Numeric,7,Refused
+MEDIPAIN_C,Meditation for pain,Numeric,8,Not Ascertained
+MEDIPAIN_C,Meditation for pain,Numeric,9,Don't Know
+MEDITATE_C,Practice meditation,Numeric,1,Yes
+MEDITATE_C,Practice meditation,Numeric,2,No
+MEDITATE_C,Practice meditation,Numeric,7,Refused
+MEDITATE_C,Practice meditation,Numeric,8,Not Ascertained
+MEDITATE_C,Practice meditation,Numeric,9,Don't Know
+MUSICTHPY_C,Saw a music therapist,Numeric,1,Yes
+MUSICTHPY_C,Saw a music therapist,Numeric,2,No
+MUSICTHPY_C,Saw a music therapist,Numeric,7,Refused
+MUSICTHPY_C,Saw a music therapist,Numeric,8,Not Ascertained
+MUSICTHPY_C,Saw a music therapist,Numeric,9,Don't Know
+ARTTHPY_C,Saw an art therapist,Numeric,1,Yes
+ARTTHPY_C,Saw an art therapist,Numeric,2,No
+ARTTHPY_C,Saw an art therapist,Numeric,7,Refused
+ARTTHPY_C,Saw an art therapist,Numeric,8,Not Ascertained
+ARTTHPY_C,Saw an art therapist,Numeric,9,Don't Know
+NATURHLTH_C,Naturopath visit to restore overall health,Numeric,1,Yes
+NATURHLTH_C,Naturopath visit to restore overall health,Numeric,2,No
+NATURHLTH_C,Naturopath visit to restore overall health,Numeric,7,Refused
+NATURHLTH_C,Naturopath visit to restore overall health,Numeric,8,Not Ascertained
+NATURHLTH_C,Naturopath visit to restore overall health,Numeric,9,Don't Know
+NATURPAIN_C,Naturopath visit for pain,Numeric,1,Yes
+NATURPAIN_C,Naturopath visit for pain,Numeric,2,No
+NATURPAIN_C,Naturopath visit for pain,Numeric,7,Refused
+NATURPAIN_C,Naturopath visit for pain,Numeric,8,Not Ascertained
+NATURPAIN_C,Naturopath visit for pain,Numeric,9,Don't Know
+NATUR_C,Saw a practitioner of naturopathy,Numeric,1,Yes
+NATUR_C,Saw a practitioner of naturopathy,Numeric,2,No
+NATUR_C,Saw a practitioner of naturopathy,Numeric,7,Refused
+NATUR_C,Saw a practitioner of naturopathy,Numeric,8,Not Ascertained
+NATUR_C,Saw a practitioner of naturopathy,Numeric,9,Don't Know
+MASSHLTH_C,Massage visit to restore overall health,Numeric,1,Yes
+MASSHLTH_C,Massage visit to restore overall health,Numeric,2,No
+MASSHLTH_C,Massage visit to restore overall health,Numeric,7,Refused
+MASSHLTH_C,Massage visit to restore overall health,Numeric,8,Not Ascertained
+MASSHLTH_C,Massage visit to restore overall health,Numeric,9,Don't Know
+MASSPAIN_C,Massage visit for pain,Numeric,1,Yes
+MASSPAIN_C,Massage visit for pain,Numeric,2,No
+MASSPAIN_C,Massage visit for pain,Numeric,7,Refused
+MASSPAIN_C,Massage visit for pain,Numeric,8,Not Ascertained
+MASSPAIN_C,Massage visit for pain,Numeric,9,Don't Know
+MASS_C,Saw a practitioner of massage,Numeric,1,Yes
+MASS_C,Saw a practitioner of massage,Numeric,2,No
+MASS_C,Saw a practitioner of massage,Numeric,7,Refused
+MASS_C,Saw a practitioner of massage,Numeric,8,Not Ascertained
+MASS_C,Saw a practitioner of massage,Numeric,9,Don't Know
+ACUHLTH_C,Acupuncture visit to restore overall health,Numeric,1,Yes
+ACUHLTH_C,Acupuncture visit to restore overall health,Numeric,2,No
+ACUHLTH_C,Acupuncture visit to restore overall health,Numeric,7,Refused
+ACUHLTH_C,Acupuncture visit to restore overall health,Numeric,8,Not Ascertained
+ACUHLTH_C,Acupuncture visit to restore overall health,Numeric,9,Don't Know
+ACUPAIN_C,Acupuncture visit for pain,Numeric,1,Yes
+ACUPAIN_C,Acupuncture visit for pain,Numeric,2,No
+ACUPAIN_C,Acupuncture visit for pain,Numeric,7,Refused
+ACUPAIN_C,Acupuncture visit for pain,Numeric,8,Not Ascertained
+ACUPAIN_C,Acupuncture visit for pain,Numeric,9,Don't Know
+ACU_C,Saw a practitioner of acupuncture,Numeric,1,Yes
+ACU_C,Saw a practitioner of acupuncture,Numeric,2,No
+ACU_C,Saw a practitioner of acupuncture,Numeric,7,Refused
+ACU_C,Saw a practitioner of acupuncture,Numeric,8,Not Ascertained
+ACU_C,Saw a practitioner of acupuncture,Numeric,9,Don't Know
+CHIROHLTH_C,Chiropractor visit to restore overall health,Numeric,1,Yes
+CHIROHLTH_C,Chiropractor visit to restore overall health,Numeric,2,No
+CHIROHLTH_C,Chiropractor visit to restore overall health,Numeric,7,Refused
+CHIROHLTH_C,Chiropractor visit to restore overall health,Numeric,8,Not Ascertained
+CHIROHLTH_C,Chiropractor visit to restore overall health,Numeric,9,Don't Know
+CHIROPAIN_C,Chiropractor visit for pain,Numeric,1,Yes
+CHIROPAIN_C,Chiropractor visit for pain,Numeric,2,No
+CHIROPAIN_C,Chiropractor visit for pain,Numeric,7,Refused
+CHIROPAIN_C,Chiropractor visit for pain,Numeric,8,Not Ascertained
+CHIROPAIN_C,Chiropractor visit for pain,Numeric,9,Don't Know
+CHIRO_C,Seen or talked to a chiropractor,Numeric,1,Yes
+CHIRO_C,Seen or talked to a chiropractor,Numeric,2,No
+CHIRO_C,Seen or talked to a chiropractor,Numeric,7,Refused
+CHIRO_C,Seen or talked to a chiropractor,Numeric,8,Not Ascertained
+CHIRO_C,Seen or talked to a chiropractor,Numeric,9,Don't Know
+SCREENTIME_C,Does child get 2+ hours screen time daily,Numeric,1,Yes
+SCREENTIME_C,Does child get 2+ hours screen time daily,Numeric,2,No
+SCREENTIME_C,Does child get 2+ hours screen time daily,Numeric,7,Refused
+SCREENTIME_C,Does child get 2+ hours screen time daily,Numeric,8,Not Ascertained
+SCREENTIME_C,Does child get 2+ hours screen time daily,Numeric,9,Don't Know
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,1,Never
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,2,Some days
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,3,Most days
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,4,Every day
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,7,Refused
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,8,Not Ascertained
+WAKETIME_C,Frequency of regular waketime during school days,Numeric,9,Don't Know
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,1,Never
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,2,Some days
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,3,Most days
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,4,Every day
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,7,Refused
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,8,Not Ascertained
+BEDTIME_C,Frequency of regular bedtime during school/week nights,Numeric,9,Don't Know
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,1,Never
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,2,Some days
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,3,Most days
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,4,Every day
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,7,Refused
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,8,Not Ascertained
+NAPS_C,"Frequency of napping, falling asleep during day",Numeric,9,Don't Know
+TIRED_C,Frequency of tired during daytime,Numeric,1,Never
+TIRED_C,Frequency of tired during daytime,Numeric,2,Some days
+TIRED_C,Frequency of tired during daytime,Numeric,3,Most days
+TIRED_C,Frequency of tired during daytime,Numeric,4,Every day
+TIRED_C,Frequency of tired during daytime,Numeric,7,Refused
+TIRED_C,Frequency of tired during daytime,Numeric,8,Not Ascertained
+TIRED_C,Frequency of tired during daytime,Numeric,9,Don't Know
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,1,Never
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,2,Some days
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,3,Most days
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,4,Every day
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,7,Refused
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,8,Not Ascertained
+OUTOFBED_C,Frequency of difficulty getting out of bed,Numeric,9,Don't Know
+RESTED_C,Frequency of well-rested,Numeric,1,Never
+RESTED_C,Frequency of well-rested,Numeric,2,Some days
+RESTED_C,Frequency of well-rested,Numeric,3,Most days
+RESTED_C,Frequency of well-rested,Numeric,4,Every day
+RESTED_C,Frequency of well-rested,Numeric,7,Refused
+RESTED_C,Frequency of well-rested,Numeric,8,Not Ascertained
+RESTED_C,Frequency of well-rested,Numeric,9,Don't Know
+CRIME_C,Crime causes safety issues,Numeric,1,Yes
+CRIME_C,Crime causes safety issues,Numeric,2,No
+CRIME_C,Crime causes safety issues,Numeric,7,Refused
+CRIME_C,Crime causes safety issues,Numeric,8,Not Ascertained
+CRIME_C,Crime causes safety issues,Numeric,9,Don't Know
+TRAFFIC_C,Traffic causes safety issues,Numeric,1,Yes
+TRAFFIC_C,Traffic causes safety issues,Numeric,2,No
+TRAFFIC_C,Traffic causes safety issues,Numeric,7,Refused
+TRAFFIC_C,Traffic causes safety issues,Numeric,8,Not Ascertained
+TRAFFIC_C,Traffic causes safety issues,Numeric,9,Don't Know
+PARKS_C,Parks/playgrounds to travel to,Numeric,1,Yes
+PARKS_C,Parks/playgrounds to travel to,Numeric,2,No
+PARKS_C,Parks/playgrounds to travel to,Numeric,7,Refused
+PARKS_C,Parks/playgrounds to travel to,Numeric,8,Not Ascertained
+PARKS_C,Parks/playgrounds to travel to,Numeric,9,Don't Know
+SIDEWALK_C,Areas for walking/bicycling,Numeric,1,Yes
+SIDEWALK_C,Areas for walking/bicycling,Numeric,2,No
+SIDEWALK_C,Areas for walking/bicycling,Numeric,7,Refused
+SIDEWALK_C,Areas for walking/bicycling,Numeric,8,Not Ascertained
+SIDEWALK_C,Areas for walking/bicycling,Numeric,9,Don't Know
+BIKE_C,How often does sample child bike,Numeric,1,Never
+BIKE_C,How often does sample child bike,Numeric,2,Some days
+BIKE_C,How often does sample child bike,Numeric,3,Most days
+BIKE_C,How often does sample child bike,Numeric,4,Every day
+BIKE_C,How often does sample child bike,Numeric,7,Refused
+BIKE_C,How often does sample child bike,Numeric,8,Not Ascertained
+BIKE_C,How often does sample child bike,Numeric,9,Don't Know
+WALK_C,How often does sample child walk,Numeric,1,Never
+WALK_C,How often does sample child walk,Numeric,2,Some days
+WALK_C,How often does sample child walk,Numeric,3,Most days
+WALK_C,How often does sample child walk,Numeric,4,Every day
+WALK_C,How often does sample child walk,Numeric,7,Refused
+WALK_C,How often does sample child walk,Numeric,8,Not Ascertained
+WALK_C,How often does sample child walk,Numeric,9,Don't Know
+STRENGTH_C,How often sample child does strength training,Numeric,1,Never
+STRENGTH_C,How often sample child does strength training,Numeric,2,Some days
+STRENGTH_C,How often sample child does strength training,Numeric,3,Most days
+STRENGTH_C,How often sample child does strength training,Numeric,4,Every day
+STRENGTH_C,How often sample child does strength training,Numeric,7,Refused
+STRENGTH_C,How often sample child does strength training,Numeric,8,Not Ascertained
+STRENGTH_C,How often sample child does strength training,Numeric,9,Don't Know
+PADAYS_C,How often does sample child exercise,Numeric,1,Never
+PADAYS_C,How often does sample child exercise,Numeric,2,Some days
+PADAYS_C,How often does sample child exercise,Numeric,3,Most days
+PADAYS_C,How often does sample child exercise,Numeric,4,Every day
+PADAYS_C,How often does sample child exercise,Numeric,7,Refused
+PADAYS_C,How often does sample child exercise,Numeric,8,Not Ascertained
+PADAYS_C,How often does sample child exercise,Numeric,9,Don't Know
+PEGYM_C,Attend physical education class,Numeric,1,Yes
+PEGYM_C,Attend physical education class,Numeric,2,No
+PEGYM_C,Attend physical education class,Numeric,7,Refused
+PEGYM_C,Attend physical education class,Numeric,8,Not Ascertained
+PEGYM_C,Attend physical education class,Numeric,9,Don't Know
+SPORT_C,"Participate on sports team, past 12m",Numeric,1,Yes
+SPORT_C,"Participate on sports team, past 12m",Numeric,2,No
+SPORT_C,"Participate on sports team, past 12m",Numeric,7,Refused
+SPORT_C,"Participate on sports team, past 12m",Numeric,8,Not Ascertained
+SPORT_C,"Participate on sports team, past 12m",Numeric,9,Don't Know
+TBIDRCONC_C,Ever told had a concussion,Numeric,1,Yes
+TBIDRCONC_C,Ever told had a concussion,Numeric,2,No
+TBIDRCONC_C,Ever told had a concussion,Numeric,7,Refused
+TBIDRCONC_C,Ever told had a concussion,Numeric,8,Not Ascertained
+TBIDRCONC_C,Ever told had a concussion,Numeric,9,Don't Know
+TBICHKCONC_C,Ever checked for concussion,Numeric,1,Yes
+TBICHKCONC_C,Ever checked for concussion,Numeric,2,No
+TBICHKCONC_C,Ever checked for concussion,Numeric,7,Refused
+TBICHKCONC_C,Ever checked for concussion,Numeric,8,Not Ascertained
+TBICHKCONC_C,Ever checked for concussion,Numeric,9,Don't Know
+TBIHEADSYM_C,"Ever headache, vomit, blurred vision, or mood change after blow to head",Numeric,1,Yes
+TBIHEADSYM_C,"Ever headache, vomit, blurred vision, or mood change after blow to head",Numeric,2,No
+TBIHEADSYM_C,"Ever headache, vomit, blurred vision, or mood change after blow to head",Numeric,7,Refused
+TBIHEADSYM_C,"Ever headache, vomit, blurred vision, or mood change after blow to head",Numeric,8,Not Ascertained
+TBIHEADSYM_C,"Ever headache, vomit, blurred vision, or mood change after blow to head",Numeric,9,Don't Know
+TBIDAZED_C,Ever dazed or memory gap,Numeric,1,Yes
+TBIDAZED_C,Ever dazed or memory gap,Numeric,2,No
+TBIDAZED_C,Ever dazed or memory gap,Numeric,7,Refused
+TBIDAZED_C,Ever dazed or memory gap,Numeric,8,Not Ascertained
+TBIDAZED_C,Ever dazed or memory gap,Numeric,9,Don't Know
+TBILOSTCON_C,Ever lost consciousness,Numeric,1,Yes
+TBILOSTCON_C,Ever lost consciousness,Numeric,2,No
+TBILOSTCON_C,Ever lost consciousness,Numeric,7,Refused
+TBILOSTCON_C,Ever lost consciousness,Numeric,8,Not Ascertained
+TBILOSTCON_C,Ever lost consciousness,Numeric,9,Don't Know
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,0,Never in the past 12 months
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,1,1-2 times in the past 12 months
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,2,1-2 times per month
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,3,1-2 times per week
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,4,Almost every day
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,7,Refused
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,8,Not Ascertained
+BULLYPERP_C,"Frequency of bully perpetration, 12m",Numeric,9,Don't Know
+CYBERVIC_C,Cyberbullied in the past 12 months,Numeric,1,Yes
+CYBERVIC_C,Cyberbullied in the past 12 months,Numeric,2,No
+CYBERVIC_C,Cyberbullied in the past 12 months,Numeric,7,Refused
+CYBERVIC_C,Cyberbullied in the past 12 months,Numeric,8,Not Ascertained
+CYBERVIC_C,Cyberbullied in the past 12 months,Numeric,9,Don't Know
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,0,Never in the past 12 months
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,1,1-2 times in the past 12 months
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,2,1-2 times per month
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,3,1-2 times per week
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,4,Almost every day
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,7,Refused
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,8,Not Ascertained
+BULLYVIC_C,"Frequency of bully victimization, 12m",Numeric,9,Don't Know
+UNFAIRSO_C,Treated/judged based on sexual orientation or gender identity,Numeric,1,Yes
+UNFAIRSO_C,Treated/judged based on sexual orientation or gender identity,Numeric,2,No
+UNFAIRSO_C,Treated/judged based on sexual orientation or gender identity,Numeric,7,Refused
+UNFAIRSO_C,Treated/judged based on sexual orientation or gender identity,Numeric,8,Not Ascertained
+UNFAIRSO_C,Treated/judged based on sexual orientation or gender identity,Numeric,9,Don't Know
+UNFAIRRE_C,Treated/judged based on race/ethnicity,Numeric,1,Yes
+UNFAIRRE_C,Treated/judged based on race/ethnicity,Numeric,2,No
+UNFAIRRE_C,Treated/judged based on race/ethnicity,Numeric,7,Refused
+UNFAIRRE_C,Treated/judged based on race/ethnicity,Numeric,8,Not Ascertained
+UNFAIRRE_C,Treated/judged based on race/ethnicity,Numeric,9,Don't Know
+BNEEDS_C,Lifetime of lacking basic needs,Numeric,1,Yes
+BNEEDS_C,Lifetime of lacking basic needs,Numeric,2,No
+BNEEDS_C,Lifetime of lacking basic needs,Numeric,7,Refused
+BNEEDS_C,Lifetime of lacking basic needs,Numeric,8,Not Ascertained
+BNEEDS_C,Lifetime of lacking basic needs,Numeric,9,Don't Know
+PUTDOWN_C,Lifetime of being put down by adults in home,Numeric,1,Yes
+PUTDOWN_C,Lifetime of being put down by adults in home,Numeric,2,No
+PUTDOWN_C,Lifetime of being put down by adults in home,Numeric,7,Refused
+PUTDOWN_C,Lifetime of being put down by adults in home,Numeric,8,Not Ascertained
+PUTDOWN_C,Lifetime of being put down by adults in home,Numeric,9,Don't Know
+ALCDRUGEV_C,Ever lived with anyone with alcohol/drug problem,Numeric,1,Yes
+ALCDRUGEV_C,Ever lived with anyone with alcohol/drug problem,Numeric,2,No
+ALCDRUGEV_C,Ever lived with anyone with alcohol/drug problem,Numeric,7,Refused
+ALCDRUGEV_C,Ever lived with anyone with alcohol/drug problem,Numeric,8,Not Ascertained
+ALCDRUGEV_C,Ever lived with anyone with alcohol/drug problem,Numeric,9,Don't Know
+MENTDEPEV_C,Ever lived with anyone mentally ill/severely depressed,Numeric,1,Yes
+MENTDEPEV_C,Ever lived with anyone mentally ill/severely depressed,Numeric,2,No
+MENTDEPEV_C,Ever lived with anyone mentally ill/severely depressed,Numeric,7,Refused
+MENTDEPEV_C,Ever lived with anyone mentally ill/severely depressed,Numeric,8,Not Ascertained
+MENTDEPEV_C,Ever lived with anyone mentally ill/severely depressed,Numeric,9,Don't Know
+JAILEV1_C,Ever separated from parent who was incarcerated,Numeric,1,Yes
+JAILEV1_C,Ever separated from parent who was incarcerated,Numeric,2,No
+JAILEV1_C,Ever separated from parent who was incarcerated,Numeric,7,Refused
+JAILEV1_C,Ever separated from parent who was incarcerated,Numeric,8,Not Ascertained
+JAILEV1_C,Ever separated from parent who was incarcerated,Numeric,9,Don't Know
+VIOLENEV_C,Victim of/witnessed violence,Numeric,1,Yes
+VIOLENEV_C,Victim of/witnessed violence,Numeric,2,No
+VIOLENEV_C,Victim of/witnessed violence,Numeric,7,Refused
+VIOLENEV_C,Victim of/witnessed violence,Numeric,8,Not Ascertained
+VIOLENEV_C,Victim of/witnessed violence,Numeric,9,Don't Know
+SDQIMP8_C,Difficulties put burden on family,Numeric,1,Not at all
+SDQIMP8_C,Difficulties put burden on family,Numeric,2,Only a little
+SDQIMP8_C,Difficulties put burden on family,Numeric,3,A medium amount
+SDQIMP8_C,Difficulties put burden on family,Numeric,4,A great deal
+SDQIMP8_C,Difficulties put burden on family,Numeric,7,Refused
+SDQIMP8_C,Difficulties put burden on family,Numeric,8,Not Ascertained
+SDQIMP8_C,Difficulties put burden on family,Numeric,9,Don't Know
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,1,Not at all
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,2,Only a little
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,3,A medium amount
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,4,A great deal
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,7,Refused
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,8,Not Ascertained
+SDQIMP7_C,Difficulties intefere with leisure activities,Numeric,9,Don't Know
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,1,Not at all
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,2,Only a little
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,3,A medium amount
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,4,A great deal
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,7,Refused
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,8,Not Ascertained
+SDQIMP6_C,Difficulties intefere with classroom learning,Numeric,9,Don't Know
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,1,Not at all
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,2,Only a little
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,3,A medium amount
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,4,A great deal
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,7,Refused
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,8,Not Ascertained
+SDQIMP5_C,Difficulties intefere with friendships,Numeric,9,Don't Know
+SDQIMP4_C,Difficulties interfere with home life,Numeric,1,Not at all
+SDQIMP4_C,Difficulties interfere with home life,Numeric,2,Only a little
+SDQIMP4_C,Difficulties interfere with home life,Numeric,3,A medium amount
+SDQIMP4_C,Difficulties interfere with home life,Numeric,4,A great deal
+SDQIMP4_C,Difficulties interfere with home life,Numeric,7,Refused
+SDQIMP4_C,Difficulties interfere with home life,Numeric,8,Not Ascertained
+SDQIMP4_C,Difficulties interfere with home life,Numeric,9,Don't Know
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,1,Not at all
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,2,Only a little
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,3,A medium amount
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,4,A great deal
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,7,Refused
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,8,Not Ascertained
+SDQIMP3_C,Difficulties upset/distress SC,Numeric,9,Don't Know
+SDQIMP2_C,Length of time with difficulties,Numeric,1,Less than a month
+SDQIMP2_C,Length of time with difficulties,Numeric,2,1-5 months
+SDQIMP2_C,Length of time with difficulties,Numeric,3,6-12 months
+SDQIMP2_C,Length of time with difficulties,Numeric,4,Over a year
+SDQIMP2_C,Length of time with difficulties,Numeric,7,Refused
+SDQIMP2_C,Length of time with difficulties,Numeric,8,Not Ascertained
+SDQIMP2_C,Length of time with difficulties,Numeric,9,Don't Know
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,1,No - no difficulties
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,2,Yes - minor difficulties
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,3,Yes - definite difficulties
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,4,Yes - severe difficulties
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,7,Refused
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,8,Not Ascertained
+SDQIMP1_C,"Difficulties with emotions, behaviors",Numeric,9,Don't Know
+SDQ25_C,Good attention span,Numeric,1,Not true
+SDQ25_C,Good attention span,Numeric,2,Somewhat true
+SDQ25_C,Good attention span,Numeric,3,Certainly true
+SDQ25_C,Good attention span,Numeric,7,Refused
+SDQ25_C,Good attention span,Numeric,8,Not Ascertained
+SDQ25_C,Good attention span,Numeric,9,Don't Know
+SDQ24_C,"Many fears, easily scared",Numeric,1,Not true
+SDQ24_C,"Many fears, easily scared",Numeric,2,Somewhat true
+SDQ24_C,"Many fears, easily scared",Numeric,3,Certainly true
+SDQ24_C,"Many fears, easily scared",Numeric,7,Refused
+SDQ24_C,"Many fears, easily scared",Numeric,8,Not Ascertained
+SDQ24_C,"Many fears, easily scared",Numeric,9,Don't Know
+SDQ23_C,Gets along better with adults than children/youth,Numeric,1,Not true
+SDQ23_C,Gets along better with adults than children/youth,Numeric,2,Somewhat true
+SDQ23_C,Gets along better with adults than children/youth,Numeric,3,Certainly true
+SDQ23_C,Gets along better with adults than children/youth,Numeric,7,Refused
+SDQ23_C,Gets along better with adults than children/youth,Numeric,8,Not Ascertained
+SDQ23_C,Gets along better with adults than children/youth,Numeric,9,Don't Know
+SDQ22_C,Steals from home/school/elsewhere,Numeric,1,Not true
+SDQ22_C,Steals from home/school/elsewhere,Numeric,2,Somewhat true
+SDQ22_C,Steals from home/school/elsewhere,Numeric,3,Certainly true
+SDQ22_C,Steals from home/school/elsewhere,Numeric,7,Refused
+SDQ22_C,Steals from home/school/elsewhere,Numeric,8,Not Ascertained
+SDQ22_C,Steals from home/school/elsewhere,Numeric,9,Don't Know
+SDQ21_C,Thinks things out before acting,Numeric,1,Not true
+SDQ21_C,Thinks things out before acting,Numeric,2,Somewhat true
+SDQ21_C,Thinks things out before acting,Numeric,3,Certainly true
+SDQ21_C,Thinks things out before acting,Numeric,7,Refused
+SDQ21_C,Thinks things out before acting,Numeric,8,Not Ascertained
+SDQ21_C,Thinks things out before acting,Numeric,9,Don't Know
+SDQ20_C,Offers to help others,Numeric,1,Not true
+SDQ20_C,Offers to help others,Numeric,2,Somewhat true
+SDQ20_C,Offers to help others,Numeric,3,Certainly true
+SDQ20_C,Offers to help others,Numeric,7,Refused
+SDQ20_C,Offers to help others,Numeric,8,Not Ascertained
+SDQ20_C,Offers to help others,Numeric,9,Don't Know
+SDQ19_C,Picked on or bullied by others,Numeric,1,Not true
+SDQ19_C,Picked on or bullied by others,Numeric,2,Somewhat true
+SDQ19_C,Picked on or bullied by others,Numeric,3,Certainly true
+SDQ19_C,Picked on or bullied by others,Numeric,7,Refused
+SDQ19_C,Picked on or bullied by others,Numeric,8,Not Ascertained
+SDQ19_C,Picked on or bullied by others,Numeric,9,Don't Know
+SDQ18_C,Lies or cheats,Numeric,1,Not true
+SDQ18_C,Lies or cheats,Numeric,2,Somewhat true
+SDQ18_C,Lies or cheats,Numeric,3,Certainly true
+SDQ18_C,Lies or cheats,Numeric,7,Refused
+SDQ18_C,Lies or cheats,Numeric,8,Not Ascertained
+SDQ18_C,Lies or cheats,Numeric,9,Don't Know
+SDQ17_C,Kind to younger children,Numeric,1,Not true
+SDQ17_C,Kind to younger children,Numeric,2,Somewhat true
+SDQ17_C,Kind to younger children,Numeric,3,Certainly true
+SDQ17_C,Kind to younger children,Numeric,7,Refused
+SDQ17_C,Kind to younger children,Numeric,8,Not Ascertained
+SDQ17_C,Kind to younger children,Numeric,9,Don't Know
+SDQ16_C,Nervous in new situation,Numeric,1,Not true
+SDQ16_C,Nervous in new situation,Numeric,2,Somewhat true
+SDQ16_C,Nervous in new situation,Numeric,3,Certainly true
+SDQ16_C,Nervous in new situation,Numeric,7,Refused
+SDQ16_C,Nervous in new situation,Numeric,8,Not Ascertained
+SDQ16_C,Nervous in new situation,Numeric,9,Don't Know
+SDQ15_C,Easily distracted,Numeric,1,Not true
+SDQ15_C,Easily distracted,Numeric,2,Somewhat true
+SDQ15_C,Easily distracted,Numeric,3,Certainly true
+SDQ15_C,Easily distracted,Numeric,7,Refused
+SDQ15_C,Easily distracted,Numeric,8,Not Ascertained
+SDQ15_C,Easily distracted,Numeric,9,Don't Know
+SDQ14_C,Liked by other children/youth,Numeric,1,Not true
+SDQ14_C,Liked by other children/youth,Numeric,2,Somewhat true
+SDQ14_C,Liked by other children/youth,Numeric,3,Certainly true
+SDQ14_C,Liked by other children/youth,Numeric,7,Refused
+SDQ14_C,Liked by other children/youth,Numeric,8,Not Ascertained
+SDQ14_C,Liked by other children/youth,Numeric,9,Don't Know
+SDQ13_C,Often unhappy/depressed/tearful,Numeric,1,Not true
+SDQ13_C,Often unhappy/depressed/tearful,Numeric,2,Somewhat true
+SDQ13_C,Often unhappy/depressed/tearful,Numeric,3,Certainly true
+SDQ13_C,Often unhappy/depressed/tearful,Numeric,7,Refused
+SDQ13_C,Often unhappy/depressed/tearful,Numeric,8,Not Ascertained
+SDQ13_C,Often unhappy/depressed/tearful,Numeric,9,Don't Know
+SDQ12_C,Often fights with others,Numeric,1,Not true
+SDQ12_C,Often fights with others,Numeric,2,Somewhat true
+SDQ12_C,Often fights with others,Numeric,3,Certainly true
+SDQ12_C,Often fights with others,Numeric,7,Refused
+SDQ12_C,Often fights with others,Numeric,8,Not Ascertained
+SDQ12_C,Often fights with others,Numeric,9,Don't Know
+SDQ11_C,At least one good friend,Numeric,1,Not true
+SDQ11_C,At least one good friend,Numeric,2,Somewhat true
+SDQ11_C,At least one good friend,Numeric,3,Certainly true
+SDQ11_C,At least one good friend,Numeric,7,Refused
+SDQ11_C,At least one good friend,Numeric,8,Not Ascertained
+SDQ11_C,At least one good friend,Numeric,9,Don't Know
+SDQ10_C,Constantly fidgeting/squirming,Numeric,1,Not true
+SDQ10_C,Constantly fidgeting/squirming,Numeric,2,Somewhat true
+SDQ10_C,Constantly fidgeting/squirming,Numeric,3,Certainly true
+SDQ10_C,Constantly fidgeting/squirming,Numeric,7,Refused
+SDQ10_C,Constantly fidgeting/squirming,Numeric,8,Not Ascertained
+SDQ10_C,Constantly fidgeting/squirming,Numeric,9,Don't Know
+SDQ9_C,Helpful to others,Numeric,1,Not true
+SDQ9_C,Helpful to others,Numeric,2,Somewhat true
+SDQ9_C,Helpful to others,Numeric,3,Certainly true
+SDQ9_C,Helpful to others,Numeric,7,Refused
+SDQ9_C,Helpful to others,Numeric,8,Not Ascertained
+SDQ9_C,Helpful to others,Numeric,9,Don't Know
+SDQ8_C,Many worries,Numeric,1,Not true
+SDQ8_C,Many worries,Numeric,2,Somewhat true
+SDQ8_C,Many worries,Numeric,3,Certainly true
+SDQ8_C,Many worries,Numeric,7,Refused
+SDQ8_C,Many worries,Numeric,8,Not Ascertained
+SDQ8_C,Many worries,Numeric,9,Don't Know
+SDQ7_C,Well behaved,Numeric,1,Not true
+SDQ7_C,Well behaved,Numeric,2,Somewhat true
+SDQ7_C,Well behaved,Numeric,3,Certainly true
+SDQ7_C,Well behaved,Numeric,7,Refused
+SDQ7_C,Well behaved,Numeric,8,Not Ascertained
+SDQ7_C,Well behaved,Numeric,9,Don't Know
+SDQ6_C,"Solitary, prefers to be alone",Numeric,1,Not true
+SDQ6_C,"Solitary, prefers to be alone",Numeric,2,Somewhat true
+SDQ6_C,"Solitary, prefers to be alone",Numeric,3,Certainly true
+SDQ6_C,"Solitary, prefers to be alone",Numeric,7,Refused
+SDQ6_C,"Solitary, prefers to be alone",Numeric,8,Not Ascertained
+SDQ6_C,"Solitary, prefers to be alone",Numeric,9,Don't Know
+SDQ5_C,Often loses temper,Numeric,1,Not true
+SDQ5_C,Often loses temper,Numeric,2,Somewhat true
+SDQ5_C,Often loses temper,Numeric,3,Certainly true
+SDQ5_C,Often loses temper,Numeric,7,Refused
+SDQ5_C,Often loses temper,Numeric,8,Not Ascertained
+SDQ5_C,Often loses temper,Numeric,9,Don't Know
+SDQ4_C,Shares readily,Numeric,1,Not true
+SDQ4_C,Shares readily,Numeric,2,Somewhat true
+SDQ4_C,Shares readily,Numeric,3,Certainly true
+SDQ4_C,Shares readily,Numeric,7,Refused
+SDQ4_C,Shares readily,Numeric,8,Not Ascertained
+SDQ4_C,Shares readily,Numeric,9,Don't Know
+SDQ3_C,Complains of headaches,Numeric,1,Not true
+SDQ3_C,Complains of headaches,Numeric,2,Somewhat true
+SDQ3_C,Complains of headaches,Numeric,3,Certainly true
+SDQ3_C,Complains of headaches,Numeric,7,Refused
+SDQ3_C,Complains of headaches,Numeric,8,Not Ascertained
+SDQ3_C,Complains of headaches,Numeric,9,Don't Know
+SDQ2_C,"Restless, cannot stay still",Numeric,1,Not true
+SDQ2_C,"Restless, cannot stay still",Numeric,2,Somewhat true
+SDQ2_C,"Restless, cannot stay still",Numeric,3,Certainly true
+SDQ2_C,"Restless, cannot stay still",Numeric,7,Refused
+SDQ2_C,"Restless, cannot stay still",Numeric,8,Not Ascertained
+SDQ2_C,"Restless, cannot stay still",Numeric,9,Don't Know
+SDQ1_C,Considerate of other people's feelings,Numeric,1,Not true
+SDQ1_C,Considerate of other people's feelings,Numeric,2,Somewhat true
+SDQ1_C,Considerate of other people's feelings,Numeric,3,Certainly true
+SDQ1_C,Considerate of other people's feelings,Numeric,7,Refused
+SDQ1_C,Considerate of other people's feelings,Numeric,8,Not Ascertained
+SDQ1_C,Considerate of other people's feelings,Numeric,9,Don't Know
+COMSUPPORT_C,Presence of community support,Numeric,1,Yes
+COMSUPPORT_C,Presence of community support,Numeric,2,No
+COMSUPPORT_C,Presence of community support,Numeric,7,Refused
+COMSUPPORT_C,Presence of community support,Numeric,8,Not Ascertained
+COMSUPPORT_C,Presence of community support,Numeric,9,Don't Know
+SUPPORT_C,How often social/emotional support,Numeric,1,Always
+SUPPORT_C,How often social/emotional support,Numeric,2,Usually
+SUPPORT_C,How often social/emotional support,Numeric,3,Sometimes
+SUPPORT_C,How often social/emotional support,Numeric,4,Rarely
+SUPPORT_C,How often social/emotional support,Numeric,5,Never
+SUPPORT_C,How often social/emotional support,Numeric,7,Refused
+SUPPORT_C,How often social/emotional support,Numeric,8,Not Ascertained
+SUPPORT_C,How often social/emotional support,Numeric,9,Don't Know
+MHTHND_C,"Needed counseling/therapy but did not get it due to cost, past 12m",Numeric,1,Yes
+MHTHND_C,"Needed counseling/therapy but did not get it due to cost, past 12m",Numeric,2,No
+MHTHND_C,"Needed counseling/therapy but did not get it due to cost, past 12m",Numeric,7,Refused
+MHTHND_C,"Needed counseling/therapy but did not get it due to cost, past 12m",Numeric,8,Not Ascertained
+MHTHND_C,"Needed counseling/therapy but did not get it due to cost, past 12m",Numeric,9,Don't Know
+MHTHDLY_C,"Delayed counseling/therapy due to cost, past 12m",Numeric,1,Yes
+MHTHDLY_C,"Delayed counseling/therapy due to cost, past 12m",Numeric,2,No
+MHTHDLY_C,"Delayed counseling/therapy due to cost, past 12m",Numeric,7,Refused
+MHTHDLY_C,"Delayed counseling/therapy due to cost, past 12m",Numeric,8,Not Ascertained
+MHTHDLY_C,"Delayed counseling/therapy due to cost, past 12m",Numeric,9,Don't Know
+MHTHRPY_C,"Received counseling/therapy from mental health professional, past 12m",Numeric,1,Yes
+MHTHRPY_C,"Received counseling/therapy from mental health professional, past 12m",Numeric,2,No
+MHTHRPY_C,"Received counseling/therapy from mental health professional, past 12m",Numeric,7,Refused
+MHTHRPY_C,"Received counseling/therapy from mental health professional, past 12m",Numeric,8,Not Ascertained
+MHTHRPY_C,"Received counseling/therapy from mental health professional, past 12m",Numeric,9,Don't Know
+MHRX_C,"Took medication for emotions/concentration/behavior/mental health, past 12m",Numeric,1,Yes
+MHRX_C,"Took medication for emotions/concentration/behavior/mental health, past 12m",Numeric,2,No
+MHRX_C,"Took medication for emotions/concentration/behavior/mental health, past 12m",Numeric,7,Refused
+MHRX_C,"Took medication for emotions/concentration/behavior/mental health, past 12m",Numeric,8,Not Ascertained
+MHRX_C,"Took medication for emotions/concentration/behavior/mental health, past 12m",Numeric,9,Don't Know
+HOMEHC12M_C,"Received care at home, past 12m",Numeric,1,Yes
+HOMEHC12M_C,"Received care at home, past 12m",Numeric,2,No
+HOMEHC12M_C,"Received care at home, past 12m",Numeric,7,Refused
+HOMEHC12M_C,"Received care at home, past 12m",Numeric,8,Not Ascertained
+HOMEHC12M_C,"Received care at home, past 12m",Numeric,9,Don't Know
+THERA12M_C,"Received physical/speech/rehabilitative/occupational therapy, past 12m",Numeric,1,Yes
+THERA12M_C,"Received physical/speech/rehabilitative/occupational therapy, past 12m",Numeric,2,No
+THERA12M_C,"Received physical/speech/rehabilitative/occupational therapy, past 12m",Numeric,7,Refused
+THERA12M_C,"Received physical/speech/rehabilitative/occupational therapy, past 12m",Numeric,8,Not Ascertained
+THERA12M_C,"Received physical/speech/rehabilitative/occupational therapy, past 12m",Numeric,9,Don't Know
+EYEEX12M_C,"Had eye exam, past 12m",Numeric,1,Yes
+EYEEX12M_C,"Had eye exam, past 12m",Numeric,2,No
+EYEEX12M_C,"Had eye exam, past 12m",Numeric,7,Refused
+EYEEX12M_C,"Had eye exam, past 12m",Numeric,8,Not Ascertained
+EYEEX12M_C,"Had eye exam, past 12m",Numeric,9,Don't Know
+SHTHPVAGE_C,Age received first HPV vaccine,Numeric,01-17,Range of values
+SHTHPVAGE_C,Age received first HPV vaccine,Numeric,97,Refused
+SHTHPVAGE_C,Age received first HPV vaccine,Numeric,98,Not Ascertained
+SHTHPVAGE_C,Age received first HPV vaccine,Numeric,99,Don't Know
+SHTHPV_C,Ever vaccinated for HPV,Numeric,1,Yes
+SHTHPV_C,Ever vaccinated for HPV,Numeric,2,No
+SHTHPV_C,Ever vaccinated for HPV,Numeric,7,Refused
+SHTHPV_C,Ever vaccinated for HPV,Numeric,8,Not Ascertained
+SHTHPV_C,Ever vaccinated for HPV,Numeric,9,Don't Know
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,1,Pfizer-Biontech Comirnaty shot
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,2,Moderna shot
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,3,Johnson and Johnson (Janssen) shot
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,4,"One of the brands that requires two initial shots, but not sure"
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,5,None of these brands
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,7,Refused
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,8,Not Ascertained
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,9,Don't Know
+SHOTTYPE_C,Brand of first COVID-19 shot,Numeric,which,brand
+CVDVAC2Y_C,Year of next most recent COVID-19 vaccination,Numeric,9997,Refused
+CVDVAC2Y_C,Year of next most recent COVID-19 vaccination,Numeric,9998,Not Ascertained
+CVDVAC2Y_C,Year of next most recent COVID-19 vaccination,Numeric,9999,Don't Know
+CVDVAC2Y_C,Year of next most recent COVID-19 vaccination,Numeric,Year,Year
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,01,January
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,02,February
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,03,March
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,04,April
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,05,May
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,06,June
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,07,July
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,08,August
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,09,September
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,10,October
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,11,November
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,12,December
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,97,Refused
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,98,Not Ascertained
+CVDVAC2M_C,Month of next most recent COVID-19 vaccination,Numeric,99,Don't Know
+CVDVAC1Y_C,Year of most recent COVID-19 vaccination,Numeric,9997,Refused
+CVDVAC1Y_C,Year of most recent COVID-19 vaccination,Numeric,9998,Not Ascertained
+CVDVAC1Y_C,Year of most recent COVID-19 vaccination,Numeric,9999,Don't Know
+CVDVAC1Y_C,Year of most recent COVID-19 vaccination,Numeric,Year,Year
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,01,January
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,02,February
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,03,March
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,04,April
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,05,May
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,06,June
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,07,July
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,08,August
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,09,September
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,10,October
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,11,November
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,12,December
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,97,Refused
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,98,Not Ascertained
+CVDVAC1M_C,Month of most recent COVID-19 vaccination,Numeric,99,Don't Know
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,1,1 vaccination
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,2,2 vaccinations
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,3,3 vaccinations
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,4,4 or more vaccinations
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,7,Refused
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,8,Not Ascertained
+SHTCVD19NM_C,Number of COVID-19 vaccinations,Numeric,9,Don't Know
+SHTCVD191_C,COVID-19 vaccination,Numeric,1,Yes
+SHTCVD191_C,COVID-19 vaccination,Numeric,2,No
+SHTCVD191_C,COVID-19 vaccination,Numeric,7,Refused
+SHTCVD191_C,COVID-19 vaccination,Numeric,8,Not Ascertained
+SHTCVD191_C,COVID-19 vaccination,Numeric,9,Don't Know
+FLUVAC2Y_C,Year of next most recent flu vaccine,Numeric,9997,Refused
+FLUVAC2Y_C,Year of next most recent flu vaccine,Numeric,9998,Not Ascertained
+FLUVAC2Y_C,Year of next most recent flu vaccine,Numeric,9999,Don't Know
+FLUVAC2Y_C,Year of next most recent flu vaccine,Numeric,Year,Year
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,01,January
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,02,February
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,03,March
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,04,April
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,05,May
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,06,June
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,07,July
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,08,August
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,09,September
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,10,October
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,11,November
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,12,December
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,97,Refused
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,98,Not Ascertained
+FLUVAC2M_C,Month of next most recent flu vaccine,Numeric,99,Don't Know
+FLUVAC1Y_C,Year of most recent flu vaccine,Numeric,9997,Refused
+FLUVAC1Y_C,Year of most recent flu vaccine,Numeric,9998,Not Ascertained
+FLUVAC1Y_C,Year of most recent flu vaccine,Numeric,9999,Don't Know
+FLUVAC1Y_C,Year of most recent flu vaccine,Numeric,Year,Year
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,01,January
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,02,February
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,03,March
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,04,April
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,05,May
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,06,June
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,07,July
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,08,August
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,09,September
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,10,October
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,11,November
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,12,December
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,97,Refused
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,98,Not Ascertained
+FLUVAC1M_C,Month of most recent flu vaccine,Numeric,99,Don't Know
+SHTFLUNUM_C,"Number of flu vaccines, past 12 months",Numeric,1,1 vaccination
+SHTFLUNUM_C,"Number of flu vaccines, past 12 months",Numeric,2,2 or more vaccinations
+SHTFLUNUM_C,"Number of flu vaccines, past 12 months",Numeric,7,Refused
+SHTFLUNUM_C,"Number of flu vaccines, past 12 months",Numeric,8,Not Ascertained
+SHTFLUNUM_C,"Number of flu vaccines, past 12 months",Numeric,9,Don't Know
+SHTFLU12M_C,"Flu vaccine, past 12 months",Numeric,1,Yes
+SHTFLU12M_C,"Flu vaccine, past 12 months",Numeric,2,No
+SHTFLU12M_C,"Flu vaccine, past 12 months",Numeric,7,Refused
+SHTFLU12M_C,"Flu vaccine, past 12 months",Numeric,8,Not Ascertained
+SHTFLU12M_C,"Flu vaccine, past 12 months",Numeric,9,Don't Know
+RXDG12M_C,"Needed prescription medication but did not get it due to cost, past 12m",Numeric,1,Yes
+RXDG12M_C,"Needed prescription medication but did not get it due to cost, past 12m",Numeric,2,No
+RXDG12M_C,"Needed prescription medication but did not get it due to cost, past 12m",Numeric,7,Refused
+RXDG12M_C,"Needed prescription medication but did not get it due to cost, past 12m",Numeric,8,Not Ascertained
+RXDG12M_C,"Needed prescription medication but did not get it due to cost, past 12m",Numeric,9,Don't Know
+RXDL12M_C,"Delayed filling prescription to save money, past 12m",Numeric,1,Yes
+RXDL12M_C,"Delayed filling prescription to save money, past 12m",Numeric,2,No
+RXDL12M_C,"Delayed filling prescription to save money, past 12m",Numeric,7,Refused
+RXDL12M_C,"Delayed filling prescription to save money, past 12m",Numeric,8,Not Ascertained
+RXDL12M_C,"Delayed filling prescription to save money, past 12m",Numeric,9,Don't Know
+RX12M_C,"Took prescription medication, past 12m",Numeric,1,Yes
+RX12M_C,"Took prescription medication, past 12m",Numeric,2,No
+RX12M_C,"Took prescription medication, past 12m",Numeric,7,Refused
+RX12M_C,"Took prescription medication, past 12m",Numeric,8,Not Ascertained
+RX12M_C,"Took prescription medication, past 12m",Numeric,9,Don't Know
+VIRAPP12M_C,"Virtual medical appointment, past 12m",Numeric,1,Yes
+VIRAPP12M_C,"Virtual medical appointment, past 12m",Numeric,2,No
+VIRAPP12M_C,"Virtual medical appointment, past 12m",Numeric,7,Refused
+VIRAPP12M_C,"Virtual medical appointment, past 12m",Numeric,8,Not Ascertained
+VIRAPP12M_C,"Virtual medical appointment, past 12m",Numeric,9,Don't Know
+MEDNG12M_C,"Needed medical care but did not get it due to cost, past 12m",Numeric,1,Yes
+MEDNG12M_C,"Needed medical care but did not get it due to cost, past 12m",Numeric,2,No
+MEDNG12M_C,"Needed medical care but did not get it due to cost, past 12m",Numeric,7,Refused
+MEDNG12M_C,"Needed medical care but did not get it due to cost, past 12m",Numeric,8,Not Ascertained
+MEDNG12M_C,"Needed medical care but did not get it due to cost, past 12m",Numeric,9,Don't Know
+MEDDL12M_C,"Delayed medical care due to cost, past 12m",Numeric,1,Yes
+MEDDL12M_C,"Delayed medical care due to cost, past 12m",Numeric,2,No
+MEDDL12M_C,"Delayed medical care due to cost, past 12m",Numeric,7,Refused
+MEDDL12M_C,"Delayed medical care due to cost, past 12m",Numeric,8,Not Ascertained
+MEDDL12M_C,"Delayed medical care due to cost, past 12m",Numeric,9,Don't Know
+HOSPONGT_C,"Hospitalized overnight, past 12m",Numeric,1,Yes
+HOSPONGT_C,"Hospitalized overnight, past 12m",Numeric,2,No
+HOSPONGT_C,"Hospitalized overnight, past 12m",Numeric,7,Refused
+HOSPONGT_C,"Hospitalized overnight, past 12m",Numeric,8,Not Ascertained
+HOSPONGT_C,"Hospitalized overnight, past 12m",Numeric,9,Don't Know
+PERSDOC_C,Has personal doctor,Numeric,1,Yes
+PERSDOC_C,Has personal doctor,Numeric,2,No
+PERSDOC_C,Has personal doctor,Numeric,7,Refused
+PERSDOC_C,Has personal doctor,Numeric,8,Not Ascertained
+PERSDOC_C,Has personal doctor,Numeric,9,Don't Know
+USPLKIND_C,Type of place for usual care,Numeric,1,A doctor's office or health center
+USPLKIND_C,Type of place for usual care,Numeric,2,Urgent care center or clinic in a drug store or grocery store
+USPLKIND_C,Type of place for usual care,Numeric,3,Hospital emergency room
+USPLKIND_C,Type of place for usual care,Numeric,4,Some other place
+USPLKIND_C,Type of place for usual care,Numeric,5,Does not go to one place most often
+USPLKIND_C,Type of place for usual care,Numeric,7,Refused
+USPLKIND_C,Type of place for usual care,Numeric,8,Not Ascertained
+USPLKIND_C,Type of place for usual care,Numeric,9,Don't Know
+USUALPL_C,Have a usual place for care,Numeric,1,Yes
+USUALPL_C,Have a usual place for care,Numeric,2,There is NO place
+USUALPL_C,Have a usual place for care,Numeric,3,There is MORE THAN ONE place
+USUALPL_C,Have a usual place for care,Numeric,7,Refused
+USUALPL_C,Have a usual place for care,Numeric,8,Not Ascertained
+USUALPL_C,Have a usual place for care,Numeric,9,Don't Know
+PTIMEALONE_C,Time alone at most recent wellness visit,Numeric,1,Yes
+PTIMEALONE_C,Time alone at most recent wellness visit,Numeric,2,No
+PTIMEALONE_C,Time alone at most recent wellness visit,Numeric,7,Refused
+PTIMEALONE_C,Time alone at most recent wellness visit,Numeric,8,Not Ascertained
+PTIMEALONE_C,Time alone at most recent wellness visit,Numeric,9,Don't Know
+WELLVIS_C,Time since last wellness visit,Numeric,0,Never
+WELLVIS_C,Time since last wellness visit,Numeric,1,Within the past year (anytime less than 12 months ago)
+WELLVIS_C,Time since last wellness visit,Numeric,2,Within the last 2 years (1 year but less than 2 years ago)
+WELLVIS_C,Time since last wellness visit,Numeric,3,Within the last 3 years (2 years but less than 3 years ago)
+WELLVIS_C,Time since last wellness visit,Numeric,4,Within the last 5 years (3 years but less than 5 years ago)
+WELLVIS_C,Time since last wellness visit,Numeric,5,Within the last 10 years (5 years but less than 10 years ago)
+WELLVIS_C,Time since last wellness visit,Numeric,6,10 years ago or more
+WELLVIS_C,Time since last wellness visit,Numeric,7,Refused
+WELLVIS_C,Time since last wellness visit,Numeric,8,Not Ascertained
+WELLNESS_C,Was last visit a wellness visit,Numeric,1,Yes
+WELLNESS_C,Was last visit a wellness visit,Numeric,2,No
+WELLNESS_C,Was last visit a wellness visit,Numeric,7,Refused
+WELLNESS_C,Was last visit a wellness visit,Numeric,8,Not Ascertained
+WELLNESS_C,Was last visit a wellness visit,Numeric,9,Don't Know
+TIMEALONE_C,Time alone at most recent visit,Numeric,1,Yes
+TIMEALONE_C,Time alone at most recent visit,Numeric,2,No
+TIMEALONE_C,Time alone at most recent visit,Numeric,7,Refused
+TIMEALONE_C,Time alone at most recent visit,Numeric,8,Not Ascertained
+TIMEALONE_C,Time alone at most recent visit,Numeric,9,Don't Know
+LASTDR_C,Time since last saw doctor,Numeric,0,Never
+LASTDR_C,Time since last saw doctor,Numeric,1,Within the past year (anytime less than 12 months ago)
+LASTDR_C,Time since last saw doctor,Numeric,2,Within the last 2 years (1 year but less than 2 years ago)
+LASTDR_C,Time since last saw doctor,Numeric,3,Within the last 3 years (2 years but less than 3 years ago)
+LASTDR_C,Time since last saw doctor,Numeric,4,Within the last 5 years (3 years but less than 5 years ago)
+LASTDR_C,Time since last saw doctor,Numeric,5,Within the last 10 years (5 years but less than 10 years ago)
+LASTDR_C,Time since last saw doctor,Numeric,6,10 years ago or more
+LASTDR_C,Time since last saw doctor,Numeric,7,Refused
+LASTDR_C,Time since last saw doctor,Numeric,8,Not Ascertained
+LASTDR_C,Time since last saw doctor,Numeric,9,Don't Know
+DENNG12M_C,"Needed dental care but did not get it due to cost, past 12m",Numeric,1,Yes
+DENNG12M_C,"Needed dental care but did not get it due to cost, past 12m",Numeric,2,No
+DENNG12M_C,"Needed dental care but did not get it due to cost, past 12m",Numeric,7,Refused
+DENNG12M_C,"Needed dental care but did not get it due to cost, past 12m",Numeric,8,Not Ascertained
+DENNG12M_C,"Needed dental care but did not get it due to cost, past 12m",Numeric,9,Don't Know
+DENDL12M_C,"Delayed dental care due to cost, past 12m",Numeric,1,Yes
+DENDL12M_C,"Delayed dental care due to cost, past 12m",Numeric,2,No
+DENDL12M_C,"Delayed dental care due to cost, past 12m",Numeric,7,Refused
+DENDL12M_C,"Delayed dental care due to cost, past 12m",Numeric,8,Not Ascertained
+DENDL12M_C,"Delayed dental care due to cost, past 12m",Numeric,9,Don't Know
+DENPREV_C,Time since last dental exam/cleaning,Numeric,0,Never
+DENPREV_C,Time since last dental exam/cleaning,Numeric,1,Within the past year (anytime less than 12 months ago)
+DENPREV_C,Time since last dental exam/cleaning,Numeric,2,Within the last 2 years (1 year but less than 2 years ago)
+DENPREV_C,Time since last dental exam/cleaning,Numeric,3,Within the last 3 years (2 years but less than 3 years ago)
+DENPREV_C,Time since last dental exam/cleaning,Numeric,4,Within the last 5 years (3 years but less than 5 years ago)
+DENPREV_C,Time since last dental exam/cleaning,Numeric,5,Within the last 10 years (5 years but less than 10 years ago)
+DENPREV_C,Time since last dental exam/cleaning,Numeric,6,10 years ago or more
+DENPREV_C,Time since last dental exam/cleaning,Numeric,7,Refused
+DENPREV_C,Time since last dental exam/cleaning,Numeric,8,Not Ascertained
+DENPREV_C,Time since last dental exam/cleaning,Numeric,9,Don't Know
+SYMPNOW_C,Currently has COVID-19 symptoms,Numeric,1,Yes
+SYMPNOW_C,Currently has COVID-19 symptoms,Numeric,2,No
+SYMPNOW_C,Currently has COVID-19 symptoms,Numeric,7,Refused
+SYMPNOW_C,Currently has COVID-19 symptoms,Numeric,8,Not Ascertained
+SYMPNOW_C,Currently has COVID-19 symptoms,Numeric,9,Don't Know
+LONGCVD_C,Had COVID-19 symptoms for 3 or more months,Numeric,1,Yes
+LONGCVD_C,Had COVID-19 symptoms for 3 or more months,Numeric,2,No
+LONGCVD_C,Had COVID-19 symptoms for 3 or more months,Numeric,7,Refused
+LONGCVD_C,Had COVID-19 symptoms for 3 or more months,Numeric,8,Not Ascertained
+LONGCVD_C,Had COVID-19 symptoms for 3 or more months,Numeric,9,Don't Know
+CVDSEV_C,Symptoms of COVID-19,Numeric,1,No symptoms
+CVDSEV_C,Symptoms of COVID-19,Numeric,2,Mild symptoms
+CVDSEV_C,Symptoms of COVID-19,Numeric,3,Moderate symptoms
+CVDSEV_C,Symptoms of COVID-19,Numeric,4,Severe symptoms
+CVDSEV_C,Symptoms of COVID-19,Numeric,7,Refused
+CVDSEV_C,Symptoms of COVID-19,Numeric,8,Not Ascertained
+CVDSEV_C,Symptoms of COVID-19,Numeric,9,Don't Know
+POSTEST_C,Ever had positive COVID-19 test,Numeric,1,Yes
+POSTEST_C,Ever had positive COVID-19 test,Numeric,2,No
+POSTEST_C,Ever had positive COVID-19 test,Numeric,7,Refused
+POSTEST_C,Ever had positive COVID-19 test,Numeric,8,Not Ascertained
+POSTEST_C,Ever had positive COVID-19 test,Numeric,9,Don't Know
+CVDDIAG_C,Ever had COVID-19,Numeric,1,Yes
+CVDDIAG_C,Ever had COVID-19,Numeric,2,No
+CVDDIAG_C,Ever had COVID-19,Numeric,7,Refused
+CVDDIAG_C,Ever had COVID-19,Numeric,8,Not Ascertained
+CVDDIAG_C,Ever had COVID-19,Numeric,9,Don't Know
+PAYWORRY_C,"Get sick or have accident, worry about paying medical bills",Numeric,1,Very worried
+PAYWORRY_C,"Get sick or have accident, worry about paying medical bills",Numeric,2,Somewhat worried
+PAYWORRY_C,"Get sick or have accident, worry about paying medical bills",Numeric,3,Not at all worried
+PAYWORRY_C,"Get sick or have accident, worry about paying medical bills",Numeric,7,Refused
+PAYWORRY_C,"Get sick or have accident, worry about paying medical bills",Numeric,8,Not Ascertained
+PAYWORRY_C,"Get sick or have accident, worry about paying medical bills",Numeric,9,Don't Know
+PAYNOBLLNW_C,Unable to pay medical bills,Numeric,1,Yes
+PAYNOBLLNW_C,Unable to pay medical bills,Numeric,2,No
+PAYNOBLLNW_C,Unable to pay medical bills,Numeric,7,Refused
+PAYNOBLLNW_C,Unable to pay medical bills,Numeric,8,Not Ascertained
+PAYNOBLLNW_C,Unable to pay medical bills,Numeric,9,Don't Know
+PAYBLL12M_C,"Problems paying medical bills, past 12m",Numeric,1,Yes
+PAYBLL12M_C,"Problems paying medical bills, past 12m",Numeric,2,No
+PAYBLL12M_C,"Problems paying medical bills, past 12m",Numeric,7,Refused
+PAYBLL12M_C,"Problems paying medical bills, past 12m",Numeric,8,Not Ascertained
+PAYBLL12M_C,"Problems paying medical bills, past 12m",Numeric,9,Don't Know
+HINOTMYR_C,Months without coverage in past 12 months,Numeric,01-12,Range of values
+HINOTMYR_C,Months without coverage in past 12 months,Numeric,97,Refused
+HINOTMYR_C,Months without coverage in past 12 months,Numeric,98,Not Ascertained
+HINOTMYR_C,Months without coverage in past 12 months,Numeric,99,Don't Know
+HINOTYR_C,No health coverage during past 12 months,Numeric,1,Yes
+HINOTYR_C,No health coverage during past 12 months,Numeric,2,No
+HINOTYR_C,No health coverage during past 12 months,Numeric,7,Refused
+HINOTYR_C,No health coverage during past 12 months,Numeric,8,Not Ascertained
+HINOTYR_C,No health coverage during past 12 months,Numeric,9,Don't Know
+RSNHIOTH_C,Another reason,Numeric,1,Yes
+RSNHIOTH_C,Another reason,Numeric,2,No
+RSNHIOTH_C,Another reason,Numeric,7,Refused
+RSNHIOTH_C,Another reason,Numeric,8,Not Ascertained
+RSNHIOTH_C,Another reason,Numeric,9,Don't Know
+RSNHIWAIT_C,Coverage has not started yet,Numeric,1,Yes
+RSNHIWAIT_C,Coverage has not started yet,Numeric,2,No
+RSNHIWAIT_C,Coverage has not started yet,Numeric,7,Refused
+RSNHIWAIT_C,Coverage has not started yet,Numeric,8,Not Ascertained
+RSNHIWAIT_C,Coverage has not started yet,Numeric,9,Don't Know
+RSNHIMEET_C,Cannot find a plan that meets the needs,Numeric,1,Yes
+RSNHIMEET_C,Cannot find a plan that meets the needs,Numeric,2,No
+RSNHIMEET_C,Cannot find a plan that meets the needs,Numeric,7,Refused
+RSNHIMEET_C,Cannot find a plan that meets the needs,Numeric,8,Not Ascertained
+RSNHIMEET_C,Cannot find a plan that meets the needs,Numeric,9,Don't Know
+RSNHICONF_C,Signing up too difficult or confusing,Numeric,1,Yes
+RSNHICONF_C,Signing up too difficult or confusing,Numeric,2,No
+RSNHICONF_C,Signing up too difficult or confusing,Numeric,7,Refused
+RSNHICONF_C,Signing up too difficult or confusing,Numeric,8,Not Ascertained
+RSNHICONF_C,Signing up too difficult or confusing,Numeric,9,Don't Know
+RSNHIELIG_C,Not eligible for coverage,Numeric,1,Yes
+RSNHIELIG_C,Not eligible for coverage,Numeric,2,No
+RSNHIELIG_C,Not eligible for coverage,Numeric,7,Refused
+RSNHIELIG_C,Not eligible for coverage,Numeric,8,Not Ascertained
+RSNHIELIG_C,Not eligible for coverage,Numeric,9,Don't Know
+RSNHIWANT_C,Do not need or want coverage,Numeric,1,Yes
+RSNHIWANT_C,Do not need or want coverage,Numeric,2,No
+RSNHIWANT_C,Do not need or want coverage,Numeric,7,Refused
+RSNHIWANT_C,Do not need or want coverage,Numeric,8,Not Ascertained
+RSNHIWANT_C,Do not need or want coverage,Numeric,9,Don't Know
+RSNHICOST_C,Not affordable,Numeric,1,Yes
+RSNHICOST_C,Not affordable,Numeric,2,No
+RSNHICOST_C,Not affordable,Numeric,7,Refused
+RSNHICOST_C,Not affordable,Numeric,8,Not Ascertained
+RSNHICOST_C,Not affordable,Numeric,9,Don't Know
+HISTOPELIG_C,"Not eligible for Medicaid, CHIP, or other public coverage",Numeric,1,Yes
+HISTOPELIG_C,"Not eligible for Medicaid, CHIP, or other public coverage",Numeric,2,No
+HISTOPELIG_C,"Not eligible for Medicaid, CHIP, or other public coverage",Numeric,7,Refused
+HISTOPELIG_C,"Not eligible for Medicaid, CHIP, or other public coverage",Numeric,8,Not Ascertained
+HISTOPELIG_C,"Not eligible for Medicaid, CHIP, or other public coverage",Numeric,9,Don't Know
+HISTOPCOST_C,Cost increase,Numeric,1,Yes
+HISTOPCOST_C,Cost increase,Numeric,2,No
+HISTOPCOST_C,Cost increase,Numeric,7,Refused
+HISTOPCOST_C,Cost increase,Numeric,8,Not Ascertained
+HISTOPCOST_C,Cost increase,Numeric,9,Don't Know
+HISTOPAGE_C,Ineligible because of age/left school,Numeric,1,Yes
+HISTOPAGE_C,Ineligible because of age/left school,Numeric,2,No
+HISTOPAGE_C,Ineligible because of age/left school,Numeric,7,Refused
+HISTOPAGE_C,Ineligible because of age/left school,Numeric,8,Not Ascertained
+HISTOPAGE_C,Ineligible because of age/left school,Numeric,9,Don't Know
+HISTOPMISS_C,Missed deadline,Numeric,1,Yes
+HISTOPMISS_C,Missed deadline,Numeric,2,No
+HISTOPMISS_C,Missed deadline,Numeric,7,Refused
+HISTOPMISS_C,Missed deadline,Numeric,8,Not Ascertained
+HISTOPMISS_C,Missed deadline,Numeric,9,Don't Know
+HISTOPJOB_C,Lost job or changed employers,Numeric,1,Yes
+HISTOPJOB_C,Lost job or changed employers,Numeric,2,No
+HISTOPJOB_C,Lost job or changed employers,Numeric,7,Refused
+HISTOPJOB_C,Lost job or changed employers,Numeric,8,Not Ascertained
+HISTOPJOB_C,Lost job or changed employers,Numeric,9,Don't Know
+HILASTMY_C,Number of months without coverage,Numeric,01-12,Range of values
+HILASTMY_C,Number of months without coverage,Numeric,97,Refused
+HILASTMY_C,Number of months without coverage,Numeric,98,Not Ascertained
+HILASTMY_C,Number of months without coverage,Numeric,99,Don't Know
+HILAST_C,How long since last health coverage,Numeric,0,Never
+HILAST_C,How long since last health coverage,Numeric,1,Within the past year (anytime less than 12 months ago)
+HILAST_C,How long since last health coverage,Numeric,2,Within the last 2 years (1 year but less than 2 years ago)
+HILAST_C,How long since last health coverage,Numeric,3,Within the last 3 years (2 years but less than 3 years ago)
+HILAST_C,How long since last health coverage,Numeric,4,Within the last 5 years (3 years but less than 5 years ago)
+HILAST_C,How long since last health coverage,Numeric,5,Within the last 10 years (5 years but less than 10 years ago)
+HILAST_C,How long since last health coverage,Numeric,6,10 years ago or more
+HILAST_C,How long since last health coverage,Numeric,7,Refused
+HILAST_C,How long since last health coverage,Numeric,8,Not Ascertained
+HILAST_C,How long since last health coverage,Numeric,9,Don't Know
+MILSPC3_C,Types of military health care - CHAMP-VA,Numeric,1,Mentioned
+MILSPC3_C,Types of military health care - CHAMP-VA,Numeric,2,Not mentioned
+MILSPC3_C,Types of military health care - CHAMP-VA,Numeric,7,Refused
+MILSPC3_C,Types of military health care - CHAMP-VA,Numeric,8,Not Ascertained
+MILSPC3_C,Types of military health care - CHAMP-VA,Numeric,9,Don't Know
+MILSPC2_C,Types of military health care - TRICARE,Numeric,1,Mentioned
+MILSPC2_C,Types of military health care - TRICARE,Numeric,2,Not mentioned
+MILSPC2_C,Types of military health care - TRICARE,Numeric,7,Refused
+MILSPC2_C,Types of military health care - TRICARE,Numeric,8,Not Ascertained
+MILSPC2_C,Types of military health care - TRICARE,Numeric,9,Don't Know
+OPHDHP_C,State-sponsored plan HDHP,Numeric,1,"Deductible is less than $1,400"
+OPHDHP_C,State-sponsored plan HDHP,Numeric,2,"Deductible is $1,400 or more"
+OPHDHP_C,State-sponsored plan HDHP,Numeric,7,Refused
+OPHDHP_C,State-sponsored plan HDHP,Numeric,8,Not Ascertained
+OPHDHP_C,State-sponsored plan HDHP,Numeric,9,Don't Know
+OPDEDUC_C,State-sponsored plan deductible,Numeric,1,Yes
+OPDEDUC_C,State-sponsored plan deductible,Numeric,2,No
+OPDEDUC_C,State-sponsored plan deductible,Numeric,7,Refused
+OPDEDUC_C,State-sponsored plan deductible,Numeric,8,Not Ascertained
+OPDEDUC_C,State-sponsored plan deductible,Numeric,9,Don't Know
+OPPREM_C,Pay premium for state-sponsored plan,Numeric,1,Yes
+OPPREM_C,Pay premium for state-sponsored plan,Numeric,2,No
+OPPREM_C,Pay premium for state-sponsored plan,Numeric,7,Refused
+OPPREM_C,Pay premium for state-sponsored plan,Numeric,8,Not Ascertained
+OPPREM_C,Pay premium for state-sponsored plan,Numeric,9,Don't Know
+OPXCHNG_C,State-sponsored plan through Marketplace,Numeric,1,Yes
+OPXCHNG_C,State-sponsored plan through Marketplace,Numeric,2,No
+OPXCHNG_C,State-sponsored plan through Marketplace,Numeric,7,Refused
+OPXCHNG_C,State-sponsored plan through Marketplace,Numeric,8,Not Ascertained
+OPXCHNG_C,State-sponsored plan through Marketplace,Numeric,9,Don't Know
+CHHDHP_C,CHIP HDHP,Numeric,1,"Deductible is less than $1,400"
+CHHDHP_C,CHIP HDHP,Numeric,2,"Deductible is $1,400 or more"
+CHHDHP_C,CHIP HDHP,Numeric,7,Refused
+CHHDHP_C,CHIP HDHP,Numeric,8,Not Ascertained
+CHHDHP_C,CHIP HDHP,Numeric,9,Don't Know
+CHDEDUC_C,CHIP deductible,Numeric,1,Yes
+CHDEDUC_C,CHIP deductible,Numeric,2,No
+CHDEDUC_C,CHIP deductible,Numeric,7,Refused
+CHDEDUC_C,CHIP deductible,Numeric,8,Not Ascertained
+CHDEDUC_C,CHIP deductible,Numeric,9,Don't Know
+CHPREM_C,Pay CHIP premium,Numeric,1,Yes
+CHPREM_C,Pay CHIP premium,Numeric,2,No
+CHPREM_C,Pay CHIP premium,Numeric,7,Refused
+CHPREM_C,Pay CHIP premium,Numeric,8,Not Ascertained
+CHPREM_C,Pay CHIP premium,Numeric,9,Don't Know
+CHXCHNG_C,CHIP through Marketplace,Numeric,1,Yes
+CHXCHNG_C,CHIP through Marketplace,Numeric,2,No
+CHXCHNG_C,CHIP through Marketplace,Numeric,7,Refused
+CHXCHNG_C,CHIP through Marketplace,Numeric,8,Not Ascertained
+CHXCHNG_C,CHIP through Marketplace,Numeric,9,Don't Know
+PRVSCOV2_C,Plan pays for vision care - plan 2,Numeric,1,Yes
+PRVSCOV2_C,Plan pays for vision care - plan 2,Numeric,2,No
+PRVSCOV2_C,Plan pays for vision care - plan 2,Numeric,7,Refused
+PRVSCOV2_C,Plan pays for vision care - plan 2,Numeric,8,Not Ascertained
+PRVSCOV2_C,Plan pays for vision care - plan 2,Numeric,9,Don't Know
+PRVSCOV1_C,Plan pays for vision care - plan 1,Numeric,1,Yes
+PRVSCOV1_C,Plan pays for vision care - plan 1,Numeric,2,No
+PRVSCOV1_C,Plan pays for vision care - plan 1,Numeric,7,Refused
+PRVSCOV1_C,Plan pays for vision care - plan 1,Numeric,8,Not Ascertained
+PRVSCOV1_C,Plan pays for vision care - plan 1,Numeric,9,Don't Know
+PRDNCOV2_C,Plan pays for dental care - plan 2,Numeric,1,Yes
+PRDNCOV2_C,Plan pays for dental care - plan 2,Numeric,2,No
+PRDNCOV2_C,Plan pays for dental care - plan 2,Numeric,7,Refused
+PRDNCOV2_C,Plan pays for dental care - plan 2,Numeric,8,Not Ascertained
+PRDNCOV2_C,Plan pays for dental care - plan 2,Numeric,9,Don't Know
+PRDNCOV1_C,Plan pays for dental care - plan 1,Numeric,1,Yes
+PRDNCOV1_C,Plan pays for dental care - plan 1,Numeric,2,No
+PRDNCOV1_C,Plan pays for dental care - plan 1,Numeric,7,Refused
+PRDNCOV1_C,Plan pays for dental care - plan 1,Numeric,8,Not Ascertained
+PRDNCOV1_C,Plan pays for dental care - plan 1,Numeric,9,Don't Know
+PRRXCOV2_C,Plan pays for prescription drug - plan 2,Numeric,1,Yes
+PRRXCOV2_C,Plan pays for prescription drug - plan 2,Numeric,2,No
+PRRXCOV2_C,Plan pays for prescription drug - plan 2,Numeric,7,Refused
+PRRXCOV2_C,Plan pays for prescription drug - plan 2,Numeric,8,Not Ascertained
+PRRXCOV2_C,Plan pays for prescription drug - plan 2,Numeric,9,Don't Know
+PRRXCOV1_C,Plan pays for prescription drug - plan 1,Numeric,1,Yes
+PRRXCOV1_C,Plan pays for prescription drug - plan 1,Numeric,2,No
+PRRXCOV1_C,Plan pays for prescription drug - plan 1,Numeric,7,Refused
+PRRXCOV1_C,Plan pays for prescription drug - plan 1,Numeric,8,Not Ascertained
+PRRXCOV1_C,Plan pays for prescription drug - plan 1,Numeric,9,Don't Know
+HSAHRA2_C,Health Savings Accounts / Health Reimbursement Accounts - plan 2,Numeric,1,Yes
+HSAHRA2_C,Health Savings Accounts / Health Reimbursement Accounts - plan 2,Numeric,2,No
+HSAHRA2_C,Health Savings Accounts / Health Reimbursement Accounts - plan 2,Numeric,7,Refused
+HSAHRA2_C,Health Savings Accounts / Health Reimbursement Accounts - plan 2,Numeric,8,Not Ascertained
+HSAHRA2_C,Health Savings Accounts / Health Reimbursement Accounts - plan 2,Numeric,9,Don't Know
+HSAHRA1_C,Health Savings Accounts / Health Reimbursement Accounts - plan 1,Numeric,1,Yes
+HSAHRA1_C,Health Savings Accounts / Health Reimbursement Accounts - plan 1,Numeric,2,No
+HSAHRA1_C,Health Savings Accounts / Health Reimbursement Accounts - plan 1,Numeric,7,Refused
+HSAHRA1_C,Health Savings Accounts / Health Reimbursement Accounts - plan 1,Numeric,8,Not Ascertained
+HSAHRA1_C,Health Savings Accounts / Health Reimbursement Accounts - plan 1,Numeric,9,Don't Know
+PRHDHP2_C,High deductible health plan - plan 2,Numeric,1,Less than ^HDHPAMT_C
+PRHDHP2_C,High deductible health plan - plan 2,Numeric,2,^HDHPAMT_C or more
+PRHDHP2_C,High deductible health plan - plan 2,Numeric,7,Refused
+PRHDHP2_C,High deductible health plan - plan 2,Numeric,8,Not Ascertained
+PRHDHP2_C,High deductible health plan - plan 2,Numeric,9,Don't Know
+PRHDHP1_C,High deductible health plan - plan 1,Numeric,1,Less than ^HDHPAMT_C
+PRHDHP1_C,High deductible health plan - plan 1,Numeric,2,^HDHPAMT_C or more
+PRHDHP1_C,High deductible health plan - plan 1,Numeric,7,Refused
+PRHDHP1_C,High deductible health plan - plan 1,Numeric,8,Not Ascertained
+PRHDHP1_C,High deductible health plan - plan 1,Numeric,9,Don't Know
+PRDEDUC2_C,Deductible - plan 2,Numeric,1,Yes
+PRDEDUC2_C,Deductible - plan 2,Numeric,2,No
+PRDEDUC2_C,Deductible - plan 2,Numeric,7,Refused
+PRDEDUC2_C,Deductible - plan 2,Numeric,8,Not Ascertained
+PRDEDUC2_C,Deductible - plan 2,Numeric,9,Don't Know
+PRDEDUC1_C,Deductible - plan 1,Numeric,1,Yes
+PRDEDUC1_C,Deductible - plan 1,Numeric,2,No
+PRDEDUC1_C,Deductible - plan 1,Numeric,7,Refused
+PRDEDUC1_C,Deductible - plan 1,Numeric,8,Not Ascertained
+PRDEDUC1_C,Deductible - plan 1,Numeric,9,Don't Know
+PLN2PAY5_C,Paid for by Medicaid - plan 2,Numeric,1,Mentioned
+PLN2PAY5_C,Paid for by Medicaid - plan 2,Numeric,2,Not mentioned
+PLN2PAY5_C,Paid for by Medicaid - plan 2,Numeric,7,Refused
+PLN2PAY5_C,Paid for by Medicaid - plan 2,Numeric,8,Not Ascertained
+PLN2PAY5_C,Paid for by Medicaid - plan 2,Numeric,9,Don't Know
+PLN2PAY3_C,Paid for by someone outside the household - plan 2,Numeric,1,Mentioned
+PLN2PAY3_C,Paid for by someone outside the household - plan 2,Numeric,2,Not mentioned
+PLN2PAY3_C,Paid for by someone outside the household - plan 2,Numeric,7,Refused
+PLN2PAY3_C,Paid for by someone outside the household - plan 2,Numeric,8,Not Ascertained
+PLN2PAY3_C,Paid for by someone outside the household - plan 2,Numeric,9,Don't Know
+PLN2PAY2_C,Paid for by employer or union - plan 2,Numeric,1,Mentioned
+PLN2PAY2_C,Paid for by employer or union - plan 2,Numeric,2,Not mentioned
+PLN2PAY2_C,Paid for by employer or union - plan 2,Numeric,7,Refused
+PLN2PAY2_C,Paid for by employer or union - plan 2,Numeric,8,Not Ascertained
+PLN2PAY2_C,Paid for by employer or union - plan 2,Numeric,9,Don't Know
+PLN2PAY1_C,Paid for by self or family - plan 2,Numeric,1,Mentioned
+PLN2PAY1_C,Paid for by self or family - plan 2,Numeric,2,Not mentioned
+PLN2PAY1_C,Paid for by self or family - plan 2,Numeric,7,Refused
+PLN2PAY1_C,Paid for by self or family - plan 2,Numeric,8,Not Ascertained
+PLN2PAY1_C,Paid for by self or family - plan 2,Numeric,9,Don't Know
+PLN1PAY5_C,Paid for by Medicaid - plan 1,Numeric,1,Mentioned
+PLN1PAY5_C,Paid for by Medicaid - plan 1,Numeric,2,Not mentioned
+PLN1PAY5_C,Paid for by Medicaid - plan 1,Numeric,7,Refused
+PLN1PAY5_C,Paid for by Medicaid - plan 1,Numeric,8,Not Ascertained
+PLN1PAY5_C,Paid for by Medicaid - plan 1,Numeric,9,Don't Know
+PLN1PAY3_C,Paid for by someone outside the household - plan 1,Numeric,1,Mentioned
+PLN1PAY3_C,Paid for by someone outside the household - plan 1,Numeric,2,Not mentioned
+PLN1PAY3_C,Paid for by someone outside the household - plan 1,Numeric,7,Refused
+PLN1PAY3_C,Paid for by someone outside the household - plan 1,Numeric,8,Not Ascertained
+PLN1PAY3_C,Paid for by someone outside the household - plan 1,Numeric,9,Don't Know
+PLN1PAY2_C,Paid for by employer or union - plan 1,Numeric,1,Mentioned
+PLN1PAY2_C,Paid for by employer or union - plan 1,Numeric,2,Not mentioned
+PLN1PAY2_C,Paid for by employer or union - plan 1,Numeric,7,Refused
+PLN1PAY2_C,Paid for by employer or union - plan 1,Numeric,8,Not Ascertained
+PLN1PAY2_C,Paid for by employer or union - plan 1,Numeric,9,Don't Know
+PLN1PAY1_C,Paid for by self or family - plan 1,Numeric,1,Mentioned
+PLN1PAY1_C,Paid for by self or family - plan 1,Numeric,2,Not mentioned
+PLN1PAY1_C,Paid for by self or family - plan 1,Numeric,7,Refused
+PLN1PAY1_C,Paid for by self or family - plan 1,Numeric,8,Not Ascertained
+PLN1PAY1_C,Paid for by self or family - plan 1,Numeric,9,Don't Know
+PLNEXCHG2_C,Health plan obtained through Marketplace - plan 2,Numeric,1,Yes
+PLNEXCHG2_C,Health plan obtained through Marketplace - plan 2,Numeric,2,No
+PLNEXCHG2_C,Health plan obtained through Marketplace - plan 2,Numeric,7,Refused
+PLNEXCHG2_C,Health plan obtained through Marketplace - plan 2,Numeric,8,Not Ascertained
+PLNEXCHG2_C,Health plan obtained through Marketplace - plan 2,Numeric,9,Don't Know
+PLNEXCHG1_C,Health plan obtained through Marketplace - plan 1,Numeric,1,Yes
+PLNEXCHG1_C,Health plan obtained through Marketplace - plan 1,Numeric,2,No
+PLNEXCHG1_C,Health plan obtained through Marketplace - plan 1,Numeric,7,Refused
+PLNEXCHG1_C,Health plan obtained through Marketplace - plan 1,Numeric,8,Not Ascertained
+PLNEXCHG1_C,Health plan obtained through Marketplace - plan 1,Numeric,9,Don't Know
+PRPLCOV2_C,Plan coverage for others - plan 2,Numeric,1,Yes
+PRPLCOV2_C,Plan coverage for others - plan 2,Numeric,2,No
+PRPLCOV2_C,Plan coverage for others - plan 2,Numeric,7,Refused
+PRPLCOV2_C,Plan coverage for others - plan 2,Numeric,8,Not Ascertained
+PRPLCOV2_C,Plan coverage for others - plan 2,Numeric,9,Don't Know
+PRPLCOV1_C,Plan coverage for others - plan 1,Numeric,1,Yes
+PRPLCOV1_C,Plan coverage for others - plan 1,Numeric,2,No
+PRPLCOV1_C,Plan coverage for others - plan 1,Numeric,7,Refused
+PRPLCOV1_C,Plan coverage for others - plan 1,Numeric,8,Not Ascertained
+PRPLCOV1_C,Plan coverage for others - plan 1,Numeric,9,Don't Know
+POLHLD2_C,Policyholder for private plan 2,Numeric,1,Yes
+POLHLD2_C,Policyholder for private plan 2,Numeric,2,No
+POLHLD2_C,Policyholder for private plan 2,Numeric,7,Refused
+POLHLD2_C,Policyholder for private plan 2,Numeric,8,Not Ascertained
+POLHLD2_C,Policyholder for private plan 2,Numeric,9,Don't Know
+POLHLD1_C,Policyholder for private plan 1,Numeric,1,Yes
+POLHLD1_C,Policyholder for private plan 1,Numeric,2,No
+POLHLD1_C,Policyholder for private plan 1,Numeric,7,Refused
+POLHLD1_C,Policyholder for private plan 1,Numeric,8,Not Ascertained
+POLHLD1_C,Policyholder for private plan 1,Numeric,9,Don't Know
+MAHDHP_C,Medicaid HDHP,Numeric,1,"Deductible is less than $1,400"
+MAHDHP_C,Medicaid HDHP,Numeric,2,"Deductible is $1,400 or more"
+MAHDHP_C,Medicaid HDHP,Numeric,7,Refused
+MAHDHP_C,Medicaid HDHP,Numeric,8,Not Ascertained
+MAHDHP_C,Medicaid HDHP,Numeric,9,Don't Know
+MADEDUC_C,Medicaid deductible,Numeric,1,Yes
+MADEDUC_C,Medicaid deductible,Numeric,2,No
+MADEDUC_C,Medicaid deductible,Numeric,7,Refused
+MADEDUC_C,Medicaid deductible,Numeric,8,Not Ascertained
+MADEDUC_C,Medicaid deductible,Numeric,9,Don't Know
+MAPREM_C,Medicaid premium,Numeric,1,Yes
+MAPREM_C,Medicaid premium,Numeric,2,No
+MAPREM_C,Medicaid premium,Numeric,7,Refused
+MAPREM_C,Medicaid premium,Numeric,8,Not Ascertained
+MAPREM_C,Medicaid premium,Numeric,9,Don't Know
+MAXCHNG_C,Medicaid through Marketplace,Numeric,1,Yes
+MAXCHNG_C,Medicaid through Marketplace,Numeric,2,No
+MAXCHNG_C,Medicaid through Marketplace,Numeric,7,Refused
+MAXCHNG_C,Medicaid through Marketplace,Numeric,8,Not Ascertained
+MAXCHNG_C,Medicaid through Marketplace,Numeric,9,Don't Know
+SINCOVRX_C,Single service plan - prescription,Numeric,1,Yes
+SINCOVRX_C,Single service plan - prescription,Numeric,2,No
+SINCOVRX_C,Single service plan - prescription,Numeric,7,Refused
+SINCOVRX_C,Single service plan - prescription,Numeric,8,Not Ascertained
+SINCOVRX_C,Single service plan - prescription,Numeric,9,Don't Know
+SINCOVVS_C,Single service plan - vision,Numeric,1,Yes
+SINCOVVS_C,Single service plan - vision,Numeric,2,No
+SINCOVVS_C,Single service plan - vision,Numeric,7,Refused
+SINCOVVS_C,Single service plan - vision,Numeric,8,Not Ascertained
+SINCOVVS_C,Single service plan - vision,Numeric,9,Don't Know
+SINCOVDE_C,Single service plan - dental,Numeric,1,Yes
+SINCOVDE_C,Single service plan - dental,Numeric,2,No
+SINCOVDE_C,Single service plan - dental,Numeric,7,Refused
+SINCOVDE_C,Single service plan - dental,Numeric,8,Not Ascertained
+SINCOVDE_C,Single service plan - dental,Numeric,9,Don't Know
+MCAIDPRB_C,Medicaid coverage probe,Numeric,1,Yes
+MCAIDPRB_C,Medicaid coverage probe,Numeric,2,No
+MCAIDPRB_C,Medicaid coverage probe,Numeric,7,Refused
+MCAIDPRB_C,Medicaid coverage probe,Numeric,8,Not Ascertained
+MCAIDPRB_C,Medicaid coverage probe,Numeric,9,Don't Know
+HIKIND10_C,Kind(s) of health insurance - No coverage of any type,Numeric,1,Mentioned
+HIKIND10_C,Kind(s) of health insurance - No coverage of any type,Numeric,2,Not mentioned
+HIKIND10_C,Kind(s) of health insurance - No coverage of any type,Numeric,7,Refused
+HIKIND10_C,Kind(s) of health insurance - No coverage of any type,Numeric,8,Not Ascertained
+HIKIND10_C,Kind(s) of health insurance - No coverage of any type,Numeric,9,Don't Know
+HIKIND08_C,Kind(s) of health insurance - State-sponsored health plan,Numeric,1,Mentioned
+HIKIND08_C,Kind(s) of health insurance - State-sponsored health plan,Numeric,2,Not mentioned
+HIKIND08_C,Kind(s) of health insurance - State-sponsored health plan,Numeric,7,Refused
+HIKIND08_C,Kind(s) of health insurance - State-sponsored health plan,Numeric,8,Not Ascertained
+HIKIND08_C,Kind(s) of health insurance - State-sponsored health plan,Numeric,9,Don't Know
+HIKIND07_C,Kind(s) of health insurance - Indian Health Service,Numeric,1,Mentioned
+HIKIND07_C,Kind(s) of health insurance - Indian Health Service,Numeric,2,Not mentioned
+HIKIND07_C,Kind(s) of health insurance - Indian Health Service,Numeric,7,Refused
+HIKIND07_C,Kind(s) of health insurance - Indian Health Service,Numeric,8,Not Ascertained
+HIKIND07_C,Kind(s) of health insurance - Indian Health Service,Numeric,9,Don't Know
+HIKIND06_C,Kind(s) of health insurance - military related health care,Numeric,1,Mentioned
+HIKIND06_C,Kind(s) of health insurance - military related health care,Numeric,2,Not mentioned
+HIKIND06_C,Kind(s) of health insurance - military related health care,Numeric,7,Refused
+HIKIND06_C,Kind(s) of health insurance - military related health care,Numeric,8,Not Ascertained
+HIKIND06_C,Kind(s) of health insurance - military related health care,Numeric,9,Don't Know
+HIKIND05_C,Kind(s) of health insurance - CHIP,Numeric,1,Mentioned
+HIKIND05_C,Kind(s) of health insurance - CHIP,Numeric,2,Not mentioned
+HIKIND05_C,Kind(s) of health insurance - CHIP,Numeric,7,Refused
+HIKIND05_C,Kind(s) of health insurance - CHIP,Numeric,8,Not Ascertained
+HIKIND05_C,Kind(s) of health insurance - CHIP,Numeric,9,Don't Know
+HIKIND04_C,Kind(s) of health insurance - Medicaid,Numeric,1,Mentioned
+HIKIND04_C,Kind(s) of health insurance - Medicaid,Numeric,2,Not mentioned
+HIKIND04_C,Kind(s) of health insurance - Medicaid,Numeric,7,Refused
+HIKIND04_C,Kind(s) of health insurance - Medicaid,Numeric,8,Not Ascertained
+HIKIND04_C,Kind(s) of health insurance - Medicaid,Numeric,9,Don't Know
+HICOV_C,Have health insurance,Numeric,1,Yes
+HICOV_C,Have health insurance,Numeric,2,No
+HICOV_C,Have health insurance,Numeric,7,Refused
+HICOV_C,Have health insurance,Numeric,8,Not Ascertained
+HICOV_C,Have health insurance,Numeric,9,Don't Know
+SCHSPEDEM_C,Currently receives services for mental health,Numeric,1,Yes
+SCHSPEDEM_C,Currently receives services for mental health,Numeric,2,No
+SCHSPEDEM_C,Currently receives services for mental health,Numeric,7,Refused
+SCHSPEDEM_C,Currently receives services for mental health,Numeric,8,Not Ascertained
+SCHSPEDEM_C,Currently receives services for mental health,Numeric,9,Don't Know
+SCHSPED_C,Currently receives special education,Numeric,1,Yes
+SCHSPED_C,Currently receives special education,Numeric,2,No
+SCHSPED_C,Currently receives special education,Numeric,7,Refused
+SCHSPED_C,Currently receives special education,Numeric,8,Not Ascertained
+SCHSPED_C,Currently receives special education,Numeric,9,Don't Know
+SCHSPEDEV_C,Ever received special education,Numeric,1,Yes
+SCHSPEDEV_C,Ever received special education,Numeric,2,No
+SCHSPEDEV_C,Ever received special education,Numeric,7,Refused
+SCHSPEDEV_C,Ever received special education,Numeric,8,Not Ascertained
+SCHSPEDEV_C,Ever received special education,Numeric,9,Don't Know
+BSCPRLKSL_C,Hard to get sleep due to SC,Numeric,1,Not at all
+BSCPRLKSL_C,Hard to get sleep due to SC,Numeric,2,Somewhat
+BSCPRLKSL_C,Hard to get sleep due to SC,Numeric,3,Very much
+BSCPRLKSL_C,Hard to get sleep due to SC,Numeric,7,Refused
+BSCPRLKSL_C,Hard to get sleep due to SC,Numeric,8,Not Ascertained
+BSCPRLKSL_C,Hard to get sleep due to SC,Numeric,9,Don't Know
+BSCSTYSLP_C,Trouble staying asleep,Numeric,1,Not at all
+BSCSTYSLP_C,Trouble staying asleep,Numeric,2,Somewhat
+BSCSTYSLP_C,Trouble staying asleep,Numeric,3,Very much
+BSCSTYSLP_C,Trouble staying asleep,Numeric,7,Refused
+BSCSTYSLP_C,Trouble staying asleep,Numeric,8,Not Ascertained
+BSCSTYSLP_C,Trouble staying asleep,Numeric,9,Don't Know
+BSCPTSLP_C,Hard to put to sleep,Numeric,1,Not at all
+BSCPTSLP_C,Hard to put to sleep,Numeric,2,Somewhat
+BSCPTSLP_C,Hard to put to sleep,Numeric,3,Very much
+BSCPTSLP_C,Hard to put to sleep,Numeric,7,Refused
+BSCPTSLP_C,Hard to put to sleep,Numeric,8,Not Ascertained
+BSCPTSLP_C,Hard to put to sleep,Numeric,9,Don't Know
+BSCSCHD_C,Hard to keep on schedule,Numeric,1,Not at all
+BSCSCHD_C,Hard to keep on schedule,Numeric,2,Somewhat
+BSCSCHD_C,Hard to keep on schedule,Numeric,3,Very much
+BSCSCHD_C,Hard to keep on schedule,Numeric,7,Refused
+BSCSCHD_C,Hard to keep on schedule,Numeric,8,Not Ascertained
+BSCSCHD_C,Hard to keep on schedule,Numeric,9,Don't Know
+BSCSTHE_C,Hard to comfort,Numeric,1,Not at all
+BSCSTHE_C,Hard to comfort,Numeric,2,Somewhat
+BSCSTHE_C,Hard to comfort,Numeric,3,Very much
+BSCSTHE_C,Hard to comfort,Numeric,7,Refused
+BSCSTHE_C,Hard to comfort,Numeric,8,Not Ascertained
+BSCSTHE_C,Hard to comfort,Numeric,9,Don't Know
+BSCFUSSY_C,Fussy or irritable,Numeric,1,Not at all
+BSCFUSSY_C,Fussy or irritable,Numeric,2,Somewhat
+BSCFUSSY_C,Fussy or irritable,Numeric,3,Very much
+BSCFUSSY_C,Fussy or irritable,Numeric,7,Refused
+BSCFUSSY_C,Fussy or irritable,Numeric,8,Not Ascertained
+BSCFUSSY_C,Fussy or irritable,Numeric,9,Don't Know
+BSCCLMDWN_C,Hard time calming down,Numeric,1,Not at all
+BSCCLMDWN_C,Hard time calming down,Numeric,2,Somewhat
+BSCCLMDWN_C,Hard time calming down,Numeric,3,Very much
+BSCCLMDWN_C,Hard time calming down,Numeric,7,Refused
+BSCCLMDWN_C,Hard time calming down,Numeric,8,Not Ascertained
+BSCCLMDWN_C,Hard time calming down,Numeric,9,Don't Know
+BSCCRYALT_C,Cries a lot,Numeric,1,Not at all
+BSCCRYALT_C,Cries a lot,Numeric,2,Somewhat
+BSCCRYALT_C,Cries a lot,Numeric,3,Very much
+BSCCRYALT_C,Cries a lot,Numeric,7,Refused
+BSCCRYALT_C,Cries a lot,Numeric,8,Not Ascertained
+BSCCRYALT_C,Cries a lot,Numeric,9,Don't Know
+BSCHLOPPL_C,Held by other people,Numeric,1,Not at all
+BSCHLOPPL_C,Held by other people,Numeric,2,Somewhat
+BSCHLOPPL_C,Held by other people,Numeric,3,Very much
+BSCHLOPPL_C,Held by other people,Numeric,7,Refused
+BSCHLOPPL_C,Held by other people,Numeric,8,Not Ascertained
+BSCHLOPPL_C,Held by other people,Numeric,9,Don't Know
+BSCCHG_C,Hard time with change,Numeric,1,Not at all
+BSCCHG_C,Hard time with change,Numeric,2,Somewhat
+BSCCHG_C,Hard time with change,Numeric,3,Very much
+BSCCHG_C,Hard time with change,Numeric,7,Refused
+BSCCHG_C,Hard time with change,Numeric,8,Not Ascertained
+BSCCHG_C,Hard time with change,Numeric,9,Don't Know
+BSCNWPLCS_C,Hard time in new places,Numeric,1,Not at all
+BSCNWPLCS_C,Hard time in new places,Numeric,2,Somewhat
+BSCNWPLCS_C,Hard time in new places,Numeric,3,Very much
+BSCNWPLCS_C,Hard time in new places,Numeric,7,Refused
+BSCNWPLCS_C,Hard time in new places,Numeric,8,Not Ascertained
+BSCNWPLCS_C,Hard time in new places,Numeric,9,Don't Know
+BSCNWPPL_C,Hard time with new people,Numeric,1,Not at all
+BSCNWPPL_C,Hard time with new people,Numeric,2,Somewhat
+BSCNWPPL_C,Hard time with new people,Numeric,3,Very much
+BSCNWPPL_C,Hard time with new people,Numeric,7,Refused
+BSCNWPPL_C,Hard time with new people,Numeric,8,Not Ascertained
+BSCNWPPL_C,Hard time with new people,Numeric,9,Don't Know
+BEHDFMKFR_C,Difficulty making friends,Numeric,1,No difficulty
+BEHDFMKFR_C,Difficulty making friends,Numeric,2,Some difficulty
+BEHDFMKFR_C,Difficulty making friends,Numeric,3,A lot of difficulty
+BEHDFMKFR_C,Difficulty making friends,Numeric,4,Cannot do at all
+BEHDFMKFR_C,Difficulty making friends,Numeric,7,Refused
+BEHDFMKFR_C,Difficulty making friends,Numeric,8,Not Ascertained
+BEHDFMKFR_C,Difficulty making friends,Numeric,9,Don't Know
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,1,No difficulty
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,2,Some difficulty
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,3,A lot of difficulty
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,4,Cannot do at all
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,7,Refused
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,8,Not Ascertained
+BEHDFCHG_C,Difficulty with changes in routine,Numeric,9,Don't Know
+BEHDFFCS_C,Difficulty concentrating,Numeric,1,No difficulty
+BEHDFFCS_C,Difficulty concentrating,Numeric,2,Some difficulty
+BEHDFFCS_C,Difficulty concentrating,Numeric,3,A lot of difficulty
+BEHDFFCS_C,Difficulty concentrating,Numeric,4,Cannot do at all
+BEHDFFCS_C,Difficulty concentrating,Numeric,7,Refused
+BEHDFFCS_C,Difficulty concentrating,Numeric,8,Not Ascertained
+BEHDFFCS_C,Difficulty concentrating,Numeric,9,Don't Know
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,1,No difficulty
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,2,Some difficulty
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,3,A lot of difficulty
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,4,Cannot do at all
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,7,Refused
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,8,Not Ascertained
+BEHDFCNTR_C,Difficulty controlling behavior,Numeric,9,Don't Know
+BEHKBHYG_C,"Kick, bite or hit",Numeric,1,Not at all
+BEHKBHYG_C,"Kick, bite or hit",Numeric,2,The same or less
+BEHKBHYG_C,"Kick, bite or hit",Numeric,3,More
+BEHKBHYG_C,"Kick, bite or hit",Numeric,4,A lot more
+BEHKBHYG_C,"Kick, bite or hit",Numeric,7,Refused
+BEHKBHYG_C,"Kick, bite or hit",Numeric,8,Not Ascertained
+BEHKBHYG_C,"Kick, bite or hit",Numeric,9,Don't Know
+BEHDFPLYG_C,Difficulty playing,Numeric,1,No difficulty
+BEHDFPLYG_C,Difficulty playing,Numeric,2,Some difficulty
+BEHDFPLYG_C,Difficulty playing,Numeric,3,A lot of difficulty
+BEHDFPLYG_C,Difficulty playing,Numeric,4,Cannot do at all
+BEHDFPLYG_C,Difficulty playing,Numeric,7,Refused
+BEHDFPLYG_C,Difficulty playing,Numeric,8,Not Ascertained
+BEHDFPLYG_C,Difficulty playing,Numeric,9,Don't Know
+DEPFREQ_C,How often seems sad or depressed,Numeric,1,Daily
+DEPFREQ_C,How often seems sad or depressed,Numeric,2,Weekly
+DEPFREQ_C,How often seems sad or depressed,Numeric,3,Monthly
+DEPFREQ_C,How often seems sad or depressed,Numeric,4,A few times a year
+DEPFREQ_C,How often seems sad or depressed,Numeric,5,Never
+DEPFREQ_C,How often seems sad or depressed,Numeric,7,Refused
+DEPFREQ_C,How often seems sad or depressed,Numeric,8,Not Ascertained
+DEPFREQ_C,How often seems sad or depressed,Numeric,9,Don't Know
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,1,Daily
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,2,Weekly
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,3,Monthly
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,4,A few times a year
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,5,Never
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,7,Refused
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,8,Not Ascertained
+ANXFREQ_C,"How often seems anxious, nervous, or worried",Numeric,9,Don't Know
+REMEMBERDF_C,Difficulty remembering things,Numeric,1,No difficulty
+REMEMBERDF_C,Difficulty remembering things,Numeric,2,Some difficulty
+REMEMBERDF_C,Difficulty remembering things,Numeric,3,A lot of difficulty
+REMEMBERDF_C,Difficulty remembering things,Numeric,4,Cannot do at all
+REMEMBERDF_C,Difficulty remembering things,Numeric,7,Refused
+REMEMBERDF_C,Difficulty remembering things,Numeric,8,Not Ascertained
+REMEMBERDF_C,Difficulty remembering things,Numeric,9,Don't Know
+LEARNDF_C,Difficulty learning things,Numeric,1,No difficulty
+LEARNDF_C,Difficulty learning things,Numeric,2,Some difficulty
+LEARNDF_C,Difficulty learning things,Numeric,3,A lot of difficulty
+LEARNDF_C,Difficulty learning things,Numeric,4,Cannot do at all
+LEARNDF_C,Difficulty learning things,Numeric,7,Refused
+LEARNDF_C,Difficulty learning things,Numeric,8,Not Ascertained
+LEARNDF_C,Difficulty learning things,Numeric,9,Don't Know
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,1,No difficulty
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,2,Some difficulty
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,3,A lot of difficulty
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,4,Cannot do at all
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,7,Refused
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,8,Not Ascertained
+UNDRSTOHH_C,Difficulty being understood by people outside household,Numeric,9,Don't Know
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,1,No difficulty
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,2,Some difficulty
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,3,A lot of difficulty
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,4,Cannot do at all
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,7,Refused
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,8,Not Ascertained
+UNDRSTIHH_C,Difficulty being understood by people inside household,Numeric,9,Don't Know
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,1,No difficulty
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,2,Some difficulty
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,3,A lot of difficulty
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,4,Cannot do at all
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,7,Refused
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,8,Not Ascertained
+UNDRSTCHD_C,Respondent's difficulty understanding child,Numeric,9,Don't Know
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,1,No difficulty
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,2,Some difficulty
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,3,A lot of difficulty
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,4,Cannot do at all
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,7,Refused
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,8,Not Ascertained
+UNDRSTYOU_C,Child's difficulty understanding respondent,Numeric,9,Don't Know
+SELFCAREDF_C,Motor skills difficulty,Numeric,1,No difficulty
+SELFCAREDF_C,Motor skills difficulty,Numeric,2,Some difficulty
+SELFCAREDF_C,Motor skills difficulty,Numeric,3,A lot of difficulty
+SELFCAREDF_C,Motor skills difficulty,Numeric,4,Cannot do at all
+SELFCAREDF_C,Motor skills difficulty,Numeric,7,Refused
+SELFCAREDF_C,Motor skills difficulty,Numeric,8,Not Ascertained
+SELFCAREDF_C,Motor skills difficulty,Numeric,9,Don't Know
+PICKUPDF_C,Motor skills difficulty,Numeric,1,No difficulty
+PICKUPDF_C,Motor skills difficulty,Numeric,2,Some difficulty
+PICKUPDF_C,Motor skills difficulty,Numeric,3,A lot of difficulty
+PICKUPDF_C,Motor skills difficulty,Numeric,4,Cannot do at all
+PICKUPDF_C,Motor skills difficulty,Numeric,7,Refused
+PICKUPDF_C,Motor skills difficulty,Numeric,8,Not Ascertained
+PICKUPDF_C,Motor skills difficulty,Numeric,9,Don't Know
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,1,No difficulty
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,2,Some difficulty
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,3,A lot of difficulty
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,4,Cannot do at all
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,7,Refused
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,8,Not Ascertained
+WLK13M_C,"Difficulty walking 1/3 mile, for those who do not use equipment",Numeric,9,Don't Know
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,1,No difficulty
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,2,Some difficulty
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,3,A lot of difficulty
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,4,Cannot do at all
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,7,Refused
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,8,Not Ascertained
+WLK100_C,"Difficulty walking 100 yards, for those who do not use equipment",Numeric,9,Don't Know
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,1,No difficulty
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,2,Some difficulty
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,3,A lot of difficulty
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,4,Cannot do at all
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,7,Refused
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,8,Not Ascertained
+EQWLK13M_C,Difficulty walking 1/3 mile when using equipment,Numeric,9,Don't Know
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,1,No difficulty
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,2,Some difficulty
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,3,A lot of difficulty
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,4,Cannot do at all
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,7,Refused
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,8,Not Ascertained
+EQWLK100_C,Difficulty walking 100 yards when using equipment,Numeric,9,Don't Know
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,1,No difficulty
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,2,Some difficulty
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,3,A lot of difficulty
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,4,Cannot do at all
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,7,Refused
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,8,Not Ascertained
+NOEQWLK13M_C,Difficulty walking 1/3 mile without using equipment,Numeric,9,Don't Know
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,1,No difficulty
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,2,Some difficulty
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,3,A lot of difficulty
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,4,Cannot do at all
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,7,Refused
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,8,Not Ascertained
+NOEQWLK100_C,Difficulty walking 100 yards without using equipment,Numeric,9,Don't Know
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,1,No difficulty
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,2,Some difficulty
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,3,A lot of difficulty
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,4,Cannot do at all
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,7,Refused
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,8,Not Ascertained
+WLKDF_C,"Difficulty walking, for those who do not use equipment",Numeric,9,Don't Know
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,1,No difficulty
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,2,Some difficulty
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,3,A lot of difficulty
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,4,Cannot do at all
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,7,Refused
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,8,Not Ascertained
+EQWLKDF_C,Difficulty walking when using equipment,Numeric,9,Don't Know
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,1,No difficulty
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,2,Some difficulty
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,3,A lot of difficulty
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,4,Cannot do at all
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,7,Refused
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,8,Not Ascertained
+NOEQWLKDF_C,Difficulty walking without using equipment,Numeric,9,Don't Know
+EQUIP_C,Use of equipment for mobility,Numeric,1,Yes
+EQUIP_C,Use of equipment for mobility,Numeric,2,No
+EQUIP_C,Use of equipment for mobility,Numeric,7,Refused
+EQUIP_C,Use of equipment for mobility,Numeric,8,Not Ascertained
+EQUIP_C,Use of equipment for mobility,Numeric,9,Don't Know
+HEARINGDF_C,Difficulty hearing sounds,Numeric,1,No difficulty
+HEARINGDF_C,Difficulty hearing sounds,Numeric,2,Some difficulty
+HEARINGDF_C,Difficulty hearing sounds,Numeric,3,A lot of difficulty
+HEARINGDF_C,Difficulty hearing sounds,Numeric,4,Cannot do at all
+HEARINGDF_C,Difficulty hearing sounds,Numeric,7,Refused
+HEARINGDF_C,Difficulty hearing sounds,Numeric,8,Not Ascertained
+HEARINGDF_C,Difficulty hearing sounds,Numeric,9,Don't Know
+HEARAID_C,Use hearing aid,Numeric,1,Yes
+HEARAID_C,Use hearing aid,Numeric,2,No
+HEARAID_C,Use hearing aid,Numeric,7,Refused
+HEARAID_C,Use hearing aid,Numeric,8,Not Ascertained
+HEARAID_C,Use hearing aid,Numeric,9,Don't Know
+VISIONDF_C,Difficulty seeing,Numeric,1,No difficulty
+VISIONDF_C,Difficulty seeing,Numeric,2,Some difficulty
+VISIONDF_C,Difficulty seeing,Numeric,3,A lot of difficulty
+VISIONDF_C,Difficulty seeing,Numeric,4,Cannot do at all
+VISIONDF_C,Difficulty seeing,Numeric,7,Refused
+VISIONDF_C,Difficulty seeing,Numeric,8,Not Ascertained
+VISIONDF_C,Difficulty seeing,Numeric,9,Don't Know
+WEARGLSS_C,Wear glasses/contact lenses,Numeric,1,Yes
+WEARGLSS_C,Wear glasses/contact lenses,Numeric,2,No
+WEARGLSS_C,Wear glasses/contact lenses,Numeric,7,Refused
+WEARGLSS_C,Wear glasses/contact lenses,Numeric,8,Not Ascertained
+WEARGLSS_C,Wear glasses/contact lenses,Numeric,9,Don't Know
+LDNW_C,Currently has learning disability,Numeric,1,Yes
+LDNW_C,Currently has learning disability,Numeric,2,No
+LDNW_C,Currently has learning disability,Numeric,7,Refused
+LDNW_C,Currently has learning disability,Numeric,8,Not Ascertained
+LDNW_C,Currently has learning disability,Numeric,9,Don't Know
+LDEV_C,Ever had learning disability,Numeric,1,Yes
+LDEV_C,Ever had learning disability,Numeric,2,No
+LDEV_C,Ever had learning disability,Numeric,7,Refused
+LDEV_C,Ever had learning disability,Numeric,8,Not Ascertained
+LDEV_C,Ever had learning disability,Numeric,9,Don't Know
+DDNW_C,Currently has developmental delay,Numeric,1,Yes
+DDNW_C,Currently has developmental delay,Numeric,2,No
+DDNW_C,Currently has developmental delay,Numeric,7,Refused
+DDNW_C,Currently has developmental delay,Numeric,8,Not Ascertained
+DDNW_C,Currently has developmental delay,Numeric,9,Don't Know
+DDEV_C,Ever had developmental delay,Numeric,1,Yes
+DDEV_C,Ever had developmental delay,Numeric,2,No
+DDEV_C,Ever had developmental delay,Numeric,7,Refused
+DDEV_C,Ever had developmental delay,Numeric,8,Not Ascertained
+DDEV_C,Ever had developmental delay,Numeric,9,Don't Know
+ASDNW_C,Currently has autism,Numeric,1,Yes
+ASDNW_C,Currently has autism,Numeric,2,No
+ASDNW_C,Currently has autism,Numeric,7,Refused
+ASDNW_C,Currently has autism,Numeric,8,Not Ascertained
+ASDNW_C,Currently has autism,Numeric,9,Don't Know
+ASDEV_C,Ever had autism,Numeric,1,Yes
+ASDEV_C,Ever had autism,Numeric,2,No
+ASDEV_C,Ever had autism,Numeric,7,Refused
+ASDEV_C,Ever had autism,Numeric,8,Not Ascertained
+ASDEV_C,Ever had autism,Numeric,9,Don't Know
+IDNW1_C,Currently has intellectual disability,Numeric,1,Yes
+IDNW1_C,Currently has intellectual disability,Numeric,2,No
+IDNW1_C,Currently has intellectual disability,Numeric,7,Refused
+IDNW1_C,Currently has intellectual disability,Numeric,8,Not Ascertained
+IDNW1_C,Currently has intellectual disability,Numeric,9,Don't Know
+IDEV1_C,Ever had intellectual disability,Numeric,1,Yes
+IDEV1_C,Ever had intellectual disability,Numeric,2,No
+IDEV1_C,Ever had intellectual disability,Numeric,7,Refused
+IDEV1_C,Ever had intellectual disability,Numeric,8,Not Ascertained
+IDEV1_C,Ever had intellectual disability,Numeric,9,Don't Know
+ADHDNW_C,Currently has ADD/ADHD,Numeric,1,Yes
+ADHDNW_C,Currently has ADD/ADHD,Numeric,2,No
+ADHDNW_C,Currently has ADD/ADHD,Numeric,7,Refused
+ADHDNW_C,Currently has ADD/ADHD,Numeric,8,Not Ascertained
+ADHDNW_C,Currently has ADD/ADHD,Numeric,9,Don't Know
+ADHDEV_C,Ever had ADD/ADHD,Numeric,1,Yes
+ADHDEV_C,Ever had ADD/ADHD,Numeric,2,No
+ADHDEV_C,Ever had ADD/ADHD,Numeric,7,Refused
+ADHDEV_C,Ever had ADD/ADHD,Numeric,8,Not Ascertained
+ADHDEV_C,Ever had ADD/ADHD,Numeric,9,Don't Know
+DIBEV_C,Ever had diabetes,Numeric,1,Yes
+DIBEV_C,Ever had diabetes,Numeric,2,No
+DIBEV_C,Ever had diabetes,Numeric,7,Refused
+DIBEV_C,Ever had diabetes,Numeric,8,Not Ascertained
+DIBEV_C,Ever had diabetes,Numeric,9,Don't Know
+PREDIB_C,Ever had prediabetes,Numeric,1,Yes
+PREDIB_C,Ever had prediabetes,Numeric,2,No
+PREDIB_C,Ever had prediabetes,Numeric,7,Refused
+PREDIB_C,Ever had prediabetes,Numeric,8,Not Ascertained
+PREDIB_C,Ever had prediabetes,Numeric,9,Don't Know
+ASER12M_C,"Asthma ER visit, past 12m",Numeric,1,Yes
+ASER12M_C,"Asthma ER visit, past 12m",Numeric,2,No
+ASER12M_C,"Asthma ER visit, past 12m",Numeric,7,Refused
+ASER12M_C,"Asthma ER visit, past 12m",Numeric,8,Not Ascertained
+ASER12M_C,"Asthma ER visit, past 12m",Numeric,9,Don't Know
+ASAT12M_C,Asthma episode past 12m,Numeric,1,Yes
+ASAT12M_C,Asthma episode past 12m,Numeric,2,No
+ASAT12M_C,Asthma episode past 12m,Numeric,7,Refused
+ASAT12M_C,Asthma episode past 12m,Numeric,8,Not Ascertained
+ASAT12M_C,Asthma episode past 12m,Numeric,9,Don't Know
+ASTILL_C,Still have asthma,Numeric,1,Yes
+ASTILL_C,Still have asthma,Numeric,2,No
+ASTILL_C,Still have asthma,Numeric,7,Refused
+ASTILL_C,Still have asthma,Numeric,8,Not Ascertained
+ASTILL_C,Still have asthma,Numeric,9,Don't Know
+ASEV_C,Ever had asthma,Numeric,1,Yes
+ASEV_C,Ever had asthma,Numeric,2,No
+ASEV_C,Ever had asthma,Numeric,7,Refused
+ASEV_C,Ever had asthma,Numeric,8,Not Ascertained
+ASEV_C,Ever had asthma,Numeric,9,Don't Know
+LSATIS11_C,Life satisfaction-number,Numeric,00-10,Range of values
+LSATIS11_C,Life satisfaction-number,Numeric,97,Refused
+LSATIS11_C,Life satisfaction-number,Numeric,98,Not Ascertained
+LSATIS11_C,Life satisfaction-number,Numeric,99,Don't Know
+PHSTAT_C,General health status,Numeric,1,Excellent
+PHSTAT_C,General health status,Numeric,2,Very Good
+PHSTAT_C,General health status,Numeric,3,Good
+PHSTAT_C,General health status,Numeric,4,Fair
+PHSTAT_C,General health status,Numeric,5,Poor
+PHSTAT_C,General health status,Numeric,7,Refused
+PHSTAT_C,General health status,Numeric,8,Not Ascertained
+PHSTAT_C,General health status,Numeric,9,Don't Know
+HHSTAT_C,Indicates the person is the Sample Child,Numeric,1,Person is sample child
+INTV_MON,Interview month,Numeric,01,January
+INTV_MON,Interview month,Numeric,02,February
+INTV_MON,Interview month,Numeric,03,March
+INTV_MON,Interview month,Numeric,04,April
+INTV_MON,Interview month,Numeric,05,May
+INTV_MON,Interview month,Numeric,06,June
+INTV_MON,Interview month,Numeric,07,July
+INTV_MON,Interview month,Numeric,08,August
+INTV_MON,Interview month,Numeric,09,September
+INTV_MON,Interview month,Numeric,10,October
+INTV_MON,Interview month,Numeric,11,November
+INTV_MON,Interview month,Numeric,12,December
+RECTYPE,Record type,Numeric,10,Sample Adult
+RECTYPE,Record type,Numeric,20,Sample Child
+RECTYPE,Record type,Numeric,30,Sample Adult Income
+RECTYPE,Record type,Numeric,40,Sample Child Income
+RECTYPE,Record type,Numeric,50,Paradata
+IMPNUM_C,Imputation number,Numeric,01-10,Imputation number
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,1,Biological or Adoptive
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,2,Step
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,3,Other
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,4,No residential parent
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,7,Refused
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,8,Not Ascertained
+RELCHPARENTP1_C,Relationship of first residential parent to sample child,Numeric,9,Don't Know
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,1,Biological or Adoptive
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,2,Step
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,3,Other
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,4,No second residential parent
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,7,Refused
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,8,Not Ascertained
+RELCHPARENTP2_C,Relationship of second residential parent to sample child,Numeric,9,Don't Know
+WTFA_C,Weight - Final Annual,Numeric,Range of values,
+HHX,Randomly assigned household number unique to a household,Character,Range of values,
+POVRATTC_C,Sample child family poverty ratio (top-coded),Numeric,00.00-10.99,0.00 to 10.99
+POVRATTC_C,Sample child family poverty ratio (top-coded),Numeric,11.00,11.00+
