@@ -1,0 +1,579 @@
+---
+title: "R Coding Sample (Code and Output)"
+author: "M. Cole Callen"
+date: "2025-10-05"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: false
+    theme: default
+---
+
+## NHIS 2022 Speech-Language Analysis
+
+## Setup, Data Import and Data Wrangling
+
+##### Load packages to be used 
+```{r setup, include=TRUE, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Load required packages and set analysis options. Visualize results with ggplot2 (estimates and confidence intervals).
+library(tidyverse)
+library(knitr)
+library(stats)
+library(RColorBrewer)
+library(readxl)
+library(broom) 
+library(arm) 
+library(readr)
+library(lme4)
+library(car)
+library(plotly)
+
+my_ggplot <- function(...) {
+  ggplot(...) + scale_fill_brewer(palette = "Dark2")
+}
+```
+
+
+#### Load data and recode variables
+
+```{r load NHIS data, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Import NHIS 2022 child dataset and any metadata files. Clean, recode, and select variables: mental health, speech-language difficulties, rehabilitation services, coverage, and covariates.
+NHIS22_survey <- read_csv("NHIS_2022_Child_Data.csv")
+
+col_names_list <- colnames(NHIS22_survey)
+
+NHIS22_codebook <- read_excel("NHIS_2022_selected_variables.xlsx", sheet = 1, col_types = "text")
+
+
+# Filter rows, Group data for grouped operations, then Summarize statistics.
+NHIS22_codebook %>%
+  filter(Variable == "COVER_C") %>%
+  group_by(Variable) %>%
+  summarize(Code = Code, Code_Desc = `Code Description`) %>% kable() 
+
+# create a named list of recode vectors, one element per Variable name
+# Create/transform variables, Group data for grouped operations, then Summarize statistics.
+recode_list <- NHIS22_codebook %>%
+  mutate(Code = as.character(Code)) %>%
+  group_by(Variable) %>%
+  summarize(
+    recode_vec = list(set_names(`Code Description`, Code)),
+    .groups = "drop"
+# Pipeline transformation.
+  ) %>%
+  deframe() # gives a named list: names = Variable name, values = named vector
+
+# which(names(NHIS22_survey) == "COVER_C")
+
+recode_vector <- lapply(recode_list, function(x) unlist(x, use.names = TRUE))
+
+# Apply recodes: for each mapping in recode_list, create a new variable with suffix _lab
+
+NHIS22_recoded <- reduce(
+  names(recode_vector),
+  .init = NHIS22_survey,
+  .f = function(dat, varname) {
+    rec_vec <- recode_vector[[varname]]
+    if (!varname %in% names(dat)) return(dat)
+    newname <- paste0(varname, "_lab")
+
+# Recode values.
+  dat[[newname]] <- do.call(dplyr::recode, c(list(as.character(dat[[varname]])), as.list(rec_vec), .default = NA_character_))
+
+    dat
+  }
+)
+
+
+
+```
+
+
+```{r variable search, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Filter dataset and handle missing values.
+# Filter rows for speech-language questions. 
+NHIS22_codebook %>% filter(str_detect(Variable, regex("VSLLGYR", ignore_case = TRUE))) %>% kable(caption="Retrieve the NHIS variable(s) related to Language Difficulty with code descriptions")
+
+
+```
+
+
+## Prevalence of Child Language Difficulties in NHIS 2022 Dataset
+
+#### The following code generates figures for the purpose of exploratory data analysis, using data wrangling, static, and interactive plots. 
+
+```{r prevalence of language, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Clean, recode, and select variables: mental health, speech-language difficulties, rehabilitation services, coverage, and covariates. Visualize results with ggplot2.
+
+
+# Create/transform variables then Conditional recoding with case_when.
+NHIS22_recoded %>%
+  mutate(Lang_Recent = case_when(VSLLGYR_C %in% c("7","8","9") ~ "Unknown",
+                                 is.na(VSLLGYR_C) ~ "Unknown",
+# Create/transform variables, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+                                 TRUE ~ as.character(VSLLGYR_C_lab))) %>%
+  # drop_na(REGION_lab, URBRRL_lab, RACEALLP_C_lab, HISPALLP_C, ) %>%
+  group_by(Lang_Recent) %>%
+  summarize(count = n()) %>% mutate(proportion = count/sum(count), total = sum(count)) %>%
+  my_ggplot(aes(group = Lang_Recent)) +
+  geom_col(aes(x = Lang_Recent, y = count, fill = Lang_Recent)) +
+  geom_label(aes(x = Lang_Recent, y = count, label = count), vjust = -0.5) +
+  ggtitle("Prevalence of Language Difficulties Overall") +
+  xlab("Child had Language Difficulty (past 12 months)") +
+  ylab("Count of Child Records") +
+  labs(fill="Language Difficulty\n(past 12 months)") +
+  theme(
+  ) +
+  scale_y_continuous(limits=c(0,6500))
+
+
+# Prevalence of Language Difficulties across race
+# Create/transform variables then Conditional recoding with case_when.
+NHIS22_recoded %>%
+  mutate(Lang_Recent = case_when(VSLLGYR_C %in% c("7","8","9") ~ "Unknown",
+                                 is.na(VSLLGYR_C) ~ "Unknown",
+# Create/transform variables, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+                                 TRUE ~ as.character(VSLLGYR_C_lab))) %>%
+  # drop_na(REGION_lab, URBRRL_lab, RACEALLP_C_lab, HISPALLP_C, ) %>%
+  group_by(RACEALLP_C_lab, Lang_Recent) %>%
+  summarize(count = n()) %>% mutate(proportion = count/sum(count), total = sum(count)) %>%
+  my_ggplot(aes(group = RACEALLP_C_lab)) +
+  geom_col(aes(x = RACEALLP_C_lab, y = proportion, fill = Lang_Recent), position = "fill") +
+  geom_label(aes(x = RACEALLP_C_lab, y = proportion, label = count), position = position_fill(vjust = 0.5)) +
+  ggtitle("Prevalence of Language Difficulties across Race/Ethnicity") +
+  xlab("Race/Ethnicity Categories (from RACEALLP_C)")+
+  ylab("Percentage of Records")+
+    labs(fill="Language Difficulty\n(past 12 months)") +
+  theme(
+    axis.text.x = element_text(angle = 30, vjust=0.75)
+  ) +
+  scale_y_continuous(labels = scales::percent)
+
+
+
+# Prevalence of Language Difficulties across Type of Health Insurance
+# Create/transform variables then Conditional recoding with case_when.
+NHIS22_recoded %>%
+  mutate(Lang_Recent = case_when(VSLLGYR_C %in% c("7","8","9") ~ "Unknown",
+                                 is.na(VSLLGYR_C) ~ "Unknown",
+                                 TRUE ~ as.character(VSLLGYR_C_lab))) %>%
+# Create/transform variables, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+  group_by(COVER_C_lab, Lang_Recent) %>%
+  summarize(count = n()) %>% mutate(proportion = count/sum(count), total = sum(count)) %>%
+  my_ggplot(aes(group = COVER_C_lab)) +
+  geom_col(aes(x = COVER_C_lab, y = proportion, fill = Lang_Recent), position = "fill") +
+  geom_label(aes(x = COVER_C_lab, y = proportion, label = count), position = position_fill(vjust = 0.5)) +
+  ggtitle("Prevalence of Language Difficulties") +
+  xlab("Type of Health Insurance Coverage\n(from COVER_C)")+
+ylab("Percentage of Records") +
+    labs(fill="Language Difficulty\n(past 12 months)") +
+  theme(
+    axis.text.x = element_text(angle = 15, vjust=0.75)
+  ) +
+  scale_y_continuous(labels = scales::percent)
+
+
+# Prevalence of Language Difficulties across Speech_Difficulties
+# Create/transform variables then Conditional recoding with case_when.
+Speech_boxplot <- NHIS22_recoded %>%
+  filter(RATCAT_C != "14", RATCAT_C != "98") %>%
+  mutate(Speech_Recent = case_when(VSLSPYR_C %in% c("7","8","9") ~ "Unknown",
+                                 is.na(VSLSPYR_C) ~ "Unknown",
+# Create/transform variables, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+                                 TRUE ~ as.character(VSLSPYR_C_lab))) %>%
+  # drop_na(REGION_lab, URBRRL_lab, RACEALLP_C_lab, HISPALLP_C, ) %>%
+  group_by(Speech_Recent) %>%
+  my_ggplot(aes(group = Speech_Recent)) +
+  geom_boxplot(aes(x = Speech_Recent, y = POVRATTC_C, fill = Speech_Recent)) +
+    xlab("Child had Speech Difficulty (past 12 months)") +
+  ylab("Family Income Ratio\n(from POVRATTC_C)")+
+      labs(fill="Speech Difficulty\n(past 12 months)") +
+  ggtitle("Overall Prevalence of Speech Difficulties") +
+  theme(  ) 
+
+ggplotly(Speech_boxplot)
+
+# Prevalence of Speech Difficulties across Coverage type
+NHIS22_recoded %>%
+  mutate(Speech_Recent = case_when(VSLSPYR_C %in% c("7","8","9") ~ "Unknown",
+                                 is.na(VSLSPYR_C) ~ "Unknown",
+# Create/transform variables, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+                                 TRUE ~ as.character(VSLSPYR_C_lab))) %>%
+  # drop_na(REGION_lab, URBRRL_lab, RACEALLP_C_lab, HISPALLP_C, ) %>%
+group_by(Speech_Recent, COVER_C_lab) %>%
+  summarize(count = n()) %>% mutate(proportion = count/sum(count), total = sum(count)) %>%
+  my_ggplot(aes(group = COVER_C_lab)) +
+  geom_col(aes(x = COVER_C_lab, y = proportion, fill = Speech_Recent), position = "fill") +
+  geom_label(aes(x = COVER_C_lab, y = proportion, label = count), position = position_fill(vjust = 0.5)) +
+  ggtitle("Prevalence of Speech Difficulties by Coverage Type") +
+    xlab("Type of Health Insurance Coverage\n(from COVER_C)")+
+    ylab("Proportion of Records")+
+labs(fill="Speech Difficulty\n(past 12 months)") +
+  theme(
+    axis.text.x = element_text(angle = 30)
+  ) +
+  scale_y_continuous(labels = scales::percent)
+
+# Prevalence of Speech Difficulties and Therapy Services
+# Create/transform variables then Conditional recoding with case_when.
+NHIS22_recoded %>%
+  filter(VSLSPYR_C %in% c(1,2), THERA12M_C_lab %in% c("Yes","No")) %>% 
+  mutate(Speech_Recent = VSLSPYR_C_lab) %>%
+  group_by(Speech_Recent, THERA12M_C_lab) %>%
+  summarize(count = n()) %>% mutate(proportion = count/sum(count), total = sum(count)) %>%
+  ggplot(aes(group=THERA12M_C_lab)) +
+  geom_col(aes(x = Speech_Recent, y = proportion, fill = THERA12M_C_lab), position="stack") +
+  scale_fill_brewer(palette="Dark2")+
+  geom_label(aes(x = Speech_Recent, y = proportion, label = count, fill = THERA12M_C_lab), fill="white", position=position_stack(vjust=0.5)) +
+  ggtitle("Speech Difficulties and Therapy Services") +
+  xlab("Child had Speech Difficulty (past 12 months)") +
+  ylab("Proportion of Records")+
+  labs(fill="Child Received Therapy\n(past 12 months)")
+
+
+NHIS22_recoded %>%
+  filter(VSLSPYR_C %in% c(1,2), THERA12M_C_lab %in% c("Yes","No"),
+         COVER_C_lab != "Don't Know") %>% 
+  mutate(Speech_Recent = VSLSPYR_C_lab) %>%
+  group_by(Speech_Recent, COVER_C_lab, THERA12M_C_lab) %>%
+  summarize(count = n()) %>% mutate(proportion = count/sum(count), total = sum(count)) %>%
+  ggplot(aes(group=THERA12M_C_lab)) +
+  geom_col(aes(x = Speech_Recent, y = proportion, fill = THERA12M_C_lab), position="stack") +
+  scale_fill_brewer(palette="Dark2")+
+  geom_label(aes(x = Speech_Recent, y = proportion, label = count, fill = THERA12M_C_lab), fill="white", position=position_stack(vjust=0.5)) +
+  ggtitle("Speech Difficulties and Therapy Services") +
+  xlab("Child had Speech Difficulty (past 12 months)") +
+  ylab("Proportion of Records")+
+  labs(fill="Child Received Therapy\n(past 12 months)") +
+  facet_wrap(~COVER_C_lab, nrow=2)
+
+# Binned residual plot
+# binnedplot(x = fitted_vals, y = resid_response,
+  #         xlab = "Fitted values (response scale)",
+   #        ylab = "Residuals (response scale)",
+    #       main = "Binned Residual Plot")
+
+
+```
+
+
+
+## Multiple Regression in R 
+The analysis below includes a logistic regresion model with a binary outcome reflecting whether the child did ("Yes" or 1) or did not ("No" or 0) have a Language Difficulty, with predictors being Type of Health Insurance Coverage (Coverage_glm, categorical) and Income Ratio to Poverty Threshold (POVRATTC_C, numeric). This analysis is meant to be exploratory (given the nature of the NHIS dataset), with a goal of examining whether health insurance coverage and family income have an impact on diagnosis of pediatric language and speech disorders. 
+
+```{r regression example, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Load required packages and set analysis options. Clean, recode, and select variables: mental health, speech-language difficulties, rehabilitation services, coverage, and covariates. Fit generalized linear models (non-survey).
+NHIS22_recoded$LangDiff_YN <- case_match(NHIS22_recoded$VSLLGYR_C, 2 ~ 0, .default = NHIS22_recoded$VSLLGYR_C)
+NHIS22_recoded$Race_glm <- relevel(as.factor(NHIS22_recoded$RACEALLP_C_lab), ref = "White only")
+
+unique(NHIS22_recoded$COVER_C_lab) %>% kable(col.names="Coverage Type Labels")
+
+NHIS22_recoded$Coverage_glm <- relevel(as.factor(NHIS22_recoded$COVER_C_lab), ref = "Private")
+NHIS22_recoded$Hisp_glm <- relevel(as.factor(NHIS22_recoded$HISP_C_lab), ref = "No")
+
+# Generalized linear regression with binomial response (i.e., logistic regression)
+# Determine the effect of Type of Health Insurance/Coverage and poverty ratio (i.e., household income) on the presence of language difficulties
+Cov.lang.glm <- glm(LangDiff_YN ~ Coverage_glm * POVRATTC_C,
+                   data = filter(NHIS22_recoded, LangDiff_YN %in% c(0,1), Coverage_glm != "Don't Know"), family = binomial)
+
+tidy(Cov.lang.glm) %>% kable(caption="Output of logistic regression model with the output 0='No' and 1='Yes' regarding children who have presented with a Language Difficulty in the past 12 months.", align='l')
+
+NHIS22_glm_fit_check <- filter(NHIS22_recoded, LangDiff_YN %in% c(0,1),Coverage_glm != "Don't Know")
+
+NHIS22_glm_fit_check$predicted_prob <- predict(Cov.lang.glm, type = "response")
+
+NHIS22_glm_fit_check$residuals <- residuals(Cov.lang.glm, type = "deviance")
+
+par(mfrow = c(2, 2))
+plot(Cov.lang.glm) 
+
+
+# 1. Density plot of predicted probabilities by actual class
+ggplot(NHIS22_glm_fit_check, aes(x = predicted_prob, fill = as.factor(LangDiff_YN))) +
+  geom_density(alpha = 0.4) +
+  labs(title = "Predicted Probabilities by Actual Language Difficulty Status",
+       x = "Predicted Probability", y = "Density", fill = "LangDiff_YN (0=No, 1=Yes)") +
+  theme_minimal()
+
+# 2. ROC-like scatter to see separation
+#ggplot(NHIS22_glm_fit_check, aes(x = predicted_prob, y = LangDiff_YN)) +
+ # geom_jitter(height = 0.05, alpha = 0.4) +
+  #geom_smooth(method = "glm", method.args = list(family = "binomial"), se = FALSE, color = "red") +
+  #labs(title = "Predicted vs Actual (Logistic Fit)", x = "Predicted Probability", y = "Actual Outcome") +
+  #theme_minimal()
+
+# 3. Confusion matrix (threshold = 0.5)
+NHIS22_glm_fit_check$predicted_class <- ifelse(NHIS22_glm_fit_check$predicted_prob >= 0.5, 1, 0)
+
+table(Predicted = NHIS22_glm_fit_check$predicted_class, Actual = NHIS22_glm_fit_check$LangDiff_YN)
+
+# 4. Model accuracy summary ; not useful for very unbalanced samples
+mean(NHIS22_glm_fit_check$predicted_class)
+mean(NHIS22_glm_fit_check$predicted_class == NHIS22_glm_fit_check$LangDiff_YN)
+
+                                  
+# Check unbalanced sample
+# Group Ns
+NHIS22_recoded %>% 
+  filter(LangDiff_YN %in% c(0,1)) %>%
+  group_by(LangDiff_YN) %>%
+  summarize("Sample Size" = n()) %>% kable()
+
+```
+
+
+
+## Undersampling and Multiple Regression
+The following code generates samples of children without language difficulties to generate more balance with the sample of children with language difficulties. The new "No Language Difficulty" sample size will be double that of the "Language Difficulty" group.
+
+
+```{r undersampling}
+
+# Separate Language Difficulty groups
+# Filter rows.
+majority_LangDiff <- NHIS22_recoded %>% filter(LangDiff_YN == 0, COVER_C_lab != "Don't Know")
+minority_LangDiff <- NHIS22_recoded %>% filter(LangDiff_YN == 1, COVER_C_lab != "Don't Know")
+
+majority_LangDiff$Coverage_glm <- relevel(as.factor(majority_LangDiff$COVER_C_lab), ref = "Private")
+minority_LangDiff$Coverage_glm <- relevel(as.factor(minority_LangDiff$COVER_C_lab), ref = "Private")
+
+
+# Sample from majority class to obtain three different random but more balanced samples
+set.seed(100)
+majority_sample <- majority_LangDiff %>% sample_n(size = 2*nrow(minority_LangDiff), replace=FALSE)
+
+# Reset seed to ensure reproducibility of sampling method
+set.seed(100)
+majority_sampleTEST <- majority_LangDiff %>% sample_n(size = 2*nrow(minority_LangDiff),  replace=FALSE)
+
+# Check that samples match for reproducibility
+identical(majority_sample, majority_sampleTEST)
+
+# Set different seed for second sample (_sample1)
+set.seed(123)
+majority_sample1 <- majority_LangDiff %>% sample_n(size = 2*nrow(minority_LangDiff))
+
+# Set different seed for second sample (_sample1)
+set.seed(250)
+majority_sample2 <- majority_LangDiff %>% sample_n(size = 2*nrow(minority_LangDiff))
+
+
+
+# Combine balanced datasets
+balanced_data <- bind_rows(minority_LangDiff, majority_sample)
+balanced_data1 <- bind_rows(minority_LangDiff, majority_sample1)
+balanced_data2 <- bind_rows(minority_LangDiff, majority_sample2)
+
+
+balanced_data$Coverage_glm <- relevel(as.factor(balanced_data$COVER_C_lab), ref = "Private")
+balanced_data1$Coverage_glm <- relevel(as.factor(balanced_data1$COVER_C_lab), ref = "Private")
+balanced_data2$Coverage_glm <- relevel(as.factor(balanced_data2$COVER_C_lab), ref = "Private")
+
+
+# Refit Model
+model_balanced <- glm(LangDiff_YN ~ Coverage_glm * POVRATTC_C, family = binomial, data = filter(balanced_data,Coverage_glm != "Don't Know"))
+tidy(model_balanced) %>% kable(caption="Output of logistic regression model of the first random sample.", align='l')
+
+model_balanced1 <- glm(LangDiff_YN ~ Coverage_glm * POVRATTC_C, family = binomial, data = filter(balanced_data1,Coverage_glm != "Don't Know"))
+tidy(model_balanced1) %>% kable(caption="Output of logistic regression model of the second random sample.", align='l')
+
+model_balanced2 <- glm(LangDiff_YN ~ Coverage_glm * POVRATTC_C, family = binomial, data = filter(balanced_data2, Coverage_glm != "Don't Know"))
+tidy(model_balanced2) %>% kable(caption="Output of logistic regression model of the third random sample.", align='l')
+#boxTidwell(LangDiff_YN ~ Race_glm + POVRATTC_C, data = balanced_data1)
+
+# Assumptions checking: 
+
+plot(residuals(model_balanced1, type = "deviance"))
+
+# Cook's distance
+# plot(cooks.distance(model_balanced1), type = "h")
+
+# Leverage
+# plot(hatvalues(model_balanced1), type = "h")
+
+# Influence plot
+influencePlot(model_balanced1)
+
+# Predicted Probabilities
+pred_prob <- predict(model_balanced, type = "response")
+# Convert to binary predictions using a threshold (e.g., 0.5)
+pred_class <- ifelse(pred_prob > 0.5, 1, 0)
+# Create confusion matrix
+Conf.matrix <- table(Predicted = pred_class, Actual = balanced_data$LangDiff_YN)
+Conf.matrix
+
+# Predicted Probabilities
+pred_prob1 <- predict(model_balanced1, type = "response")
+# Convert to binary predictions using a threshold (e.g., 0.5)
+pred_class1 <- ifelse(pred_prob1 > 0.5, 1, 0)
+# Create confusion matrix
+Conf.matrix1 <- table(Predicted = pred_class1, Actual = balanced_data1$LangDiff_YN)
+Conf.matrix1
+
+# Predicted Probabilities
+pred_prob2 <- predict(model_balanced2, type = "response")
+# Convert to binary predictions using a threshold (e.g., 0.5)
+pred_class2 <- ifelse(pred_prob2 > 0.5, 1, 0)
+# Create confusion matrix
+Conf.matrix2 <- table(Predicted = pred_class2, Actual = balanced_data2$LangDiff_YN)
+Conf.matrix2
+```
+
+
+
+```{r undersampling error rates, include=FALSE,echo=TRUE,message=FALSE,warning=FALSE}
+
+tibble("Sample Model" = c("First random sample","First random sample","Second random sample", "Second random sample", "Third random sample","Third random sample"), 
+           "False Result Type" = c("False positive rate", "False negative rate", "False positive rate", "False negative rate","False positive rate", "False negative rate"),
+           "Rate" = c(paste0(round(100*(Conf.matrix[2,2]/Conf.matrix[1,2]), 2),"%"),
+                      paste0(round(100*(Conf.matrix[2,1]/Conf.matrix[1,1]), 2),"%"),
+                      paste0(round(100*(Conf.matrix1[2,2]/Conf.matrix1[1,2]), 2),"%"),
+                      paste0(round(100*(Conf.matrix1[2,1]/Conf.matrix1[1,1]), 2),"%"),
+                      paste0(round(100*(Conf.matrix2[2,2]/Conf.matrix2[1,2]), 2),"%"),
+                      paste0(round(100*(Conf.matrix2[2,1]/Conf.matrix2[1,1]), 2),"%")),
+           "Observations" = c(paste0(Conf.matrix[2,2],"/", sum(Conf.matrix[1,2],Conf.matrix[2,2])),
+                              paste0(Conf.matrix[2,1],"/", sum(Conf.matrix[1,2],Conf.matrix[2,2])),
+                              paste0(Conf.matrix1[2,2],"/", sum(Conf.matrix1[1,2],Conf.matrix1[2,2])),
+                              paste0(Conf.matrix1[2,1],"/", sum(Conf.matrix1[1,2],Conf.matrix1[2,2])),
+                              paste0(Conf.matrix2[2,2],"/", sum(Conf.matrix[1,2],Conf.matrix[2,2])),
+                              paste0(Conf.matrix2[2,1],"/", sum(Conf.matrix2[1,2],Conf.matrix2[2,2]))
+           )
+) %>% kable(caption="Error Rates from the three Undersampling logistic regression models.")
+
+
+```
+
+
+
+
+```{r important variables, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Filter dataset and handle missing values.
+# Filter rows.
+NHIS22_codebook %>% filter(str_detect(Variable, regex("THERA", ignore_case = TRUE)))
+
+
+```
+
+
+
+
+## Miscellaneous Figures (unfinished) 
+
+```{r old figures, echo=TRUE, message=FALSE, warning=FALSE}
+
+
+# Clean, recode, and select variables: mental health, speech-language difficulties, rehabilitation services, coverage, and covariates. Visualize results with ggplot2 (estimates and confidence intervals).
+# Create/transform variables, Conditional recoding with case_when, then Drop missing values.
+NHIS22_recoded %>%
+    drop_na(REGION, URBRRL, RACEALLP_C, HISPALLP_C, MHTHND_C) %>%
+  mutate(Mental_Health_Need = case_when(
+    MHTHND_C == 1 ~ "Mental Health Need",
+    MHTHND_C == 2 ~ "No Mental Health Need"
+# Filter rows.
+  )) %>%
+  filter(
+    Mental_Health_Need %in% c("Mental Health Need", "No Mental Health Need"),
+# Pipeline transformation.
+    ANXFREQ_C %in% c(1, 2)) %>%
+    ggplot(aes(group = RACEALLP_C_lab)) +
+  geom_bar(aes(x = REGION_lab, y = ..count.. / sum(..count..), fill = RACEALLP_C_lab), position = "fill") +
+  scale_fill_brewer(palette = "Dark2")+
+  scale_y_continuous(labels = scales::percent) +
+  facet_wrap(~ Mental_Health_Need)
+
+
+# Create/transform variables, Conditional recoding with case_when, then Drop missing values.
+NHIS22_recoded %>%
+    drop_na(REGION, URBRRL, RACEALLP_C, HISPALLP_C, MHTHND_C) %>%
+  mutate(Mental_Health_Need = case_when(
+    VSLSPYR_C == 1 ~ "Mental Health Need",
+    VSLSPYR_C == 2 ~ "No Mental Health Need"
+# Filter rows.
+  )) %>%
+  filter(
+    Mental_Health_Need %in% c("Mental Health Need", "No Mental Health Need"),
+# Pipeline transformation.
+    DEPFREQ_C %in% c(1, 2)) %>%
+    ggplot(aes(group = URBRRL_lab)) +
+  geom_bar(aes(x = Mental_Health_Need, y = ..count.. / sum(..count..), fill = URBRRL_lab), position = "fill") +
+  scale_y_continuous(labels = scales::percent)
+
+
+
+# Create/transform variables, Conditional recoding with case_when, then Drop missing values.
+NHIS22_recoded %>%
+    drop_na(REGION, COVER_C, RACEALLP_C, HISPALLP_C, VSLSPDIF_C) %>%
+    mutate(Speech_Difficulty = case_when(
+    VSLSPDIF_C == 1 ~ "Speech Difficulty",
+    VSLSPDIF_C == 2 ~ "No Speech Difficulty",
+    TRUE ~ "Unknown"
+  ), Received_Therapy = case_when(
+    THERA12M_C == 1 ~ "Received Therapy",
+    THERA12M_C == 2 ~ "No Therapy",
+    TRUE ~ "Unknown"
+# Create/transform variables, Filter rows, Group data for grouped operations, Ungroup data, then Summarize statistics.
+  )) %>% filter(Speech_Difficulty!="Unknown", Received_Therapy != "Unknown") %>%
+  group_by(Speech_Difficulty, Received_Therapy, COVER_C_lab) %>%
+  summarize(Counts=n()) %>% mutate(proportion = Counts/sum(Counts)) %>% ungroup() %>%
+    ggplot() +
+  geom_col(aes(x = COVER_C_lab, y = proportion, fill = COVER_C_lab)) +
+  facet_grid(Speech_Difficulty~Received_Therapy)
+
+# Create/transform variables, Filter rows, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+NHIS22_recoded %>%    
+  drop_na(REGION, COVER_C, RACEALLP_C, HISP_C, MHTHND_C, DEPFREQ_C) %>%
+    mutate(DEPFREQ_C = as.numeric(DEPFREQ_C)) %>%
+  filter(DEPFREQ_C %in% c(1:5)) %>%
+  group_by(REGION_lab, HISP_C_lab) %>%
+  summarize(count = n(), avg_Depression = mean(DEPFREQ_C)) %>%
+    my_ggplot(aes(group = HISP_C_lab)) +
+  geom_col(aes(x = REGION_lab, y = avg_Depression, fill = HISP_C_lab), position = "dodge2")
+
+Therapy_labels <- c(`1` = "Received Therapy", `2` = "No Therapy")
+
+# Create/transform variables, Filter rows, Group data for grouped operations, Summarize statistics, Count rows by group, then Drop missing values.
+NHIS22_recoded %>%
+  drop_na(REGION, COVER_C, RACEALLP_C, HISP_C, MHTHND_C, DEPFREQ_C, ANXFREQ_C) %>%
+    mutate(ANXFREQ_C = as.numeric(ANXFREQ_C)) %>%
+  filter(ANXFREQ_C %in% c(1:5), PHSTAT_C %in% c(1,2,3,4,5),
+         MHTHRPY_C %in% c(1,2)) %>%
+  group_by(HISP_C_lab, MHTHRPY_C, PHSTAT_C) %>%
+  summarize(count = n(), avg_Anxty = mean(ANXFREQ_C)) %>%
+    my_ggplot(aes(group = HISP_C_lab)) +
+  geom_col(aes(x = PHSTAT_C, y = avg_Anxty, fill = HISP_C_lab), position = "dodge2") +
+  xlab("Overall Health Status\n(1 = Excellent, 5 = Poor)") +
+  ylab("Average Frequency of Anxious Feelings\n(1 = Daily, 5 = Never") +
+  ggtitle("General Health and Anxiety among Hispanic Children") +
+  facet_wrap(~MHTHRPY_C, labeller = as_labeller(Therapy_labels))
+
+# Filter rows then Drop missing values.
+NHIS22_recoded %>%
+  drop_na(REGION, COVER_C, RACEALLP_C, HISP_C, MHTHND_C, DEPFREQ_C, ANXFREQ_C) %>%
+  filter(HISP_C_lab == "Yes", ANXFREQ_C %in% c(1:5),
+         MHTHRPY_C %in% c(1,2), COVER_C_lab!="Don't Know") %>%
+  group_by(HISP_C_lab, COVER_C_lab, ANXFREQ_C, MHTHRPY_C_lab) %>%
+  summarize(count = n(), avg_Anxty = mean(ANXFREQ_C)) %>% mutate(proportion=count/sum(count)) %>%
+    my_ggplot(aes(group = ANXFREQ_C)) +
+  geom_col(aes(x = ANXFREQ_C, y = proportion, fill = MHTHRPY_C_lab), position = "stack") +
+  xlab("Average Frequency of Anxious Feelings\n(1 = Daily, 5 = Never)") +
+  ylab("Proportion of ") +
+  ggtitle("Health Coverage, Anxiety, and Mental Health services for Hispanic Children") +
+  labs(fill="Mental Health\nServices Received?")+
+  facet_wrap(~COVER_C_lab, nrow=2)
+
+
+
+
+```
+
+
+
+
