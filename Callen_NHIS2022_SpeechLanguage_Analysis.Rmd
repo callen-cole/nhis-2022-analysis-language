@@ -1,0 +1,446 @@
+---
+title: "NHIS 2022 Child Health Needs Analysis"
+author: "M. Cole Callen"
+startdate: "2026-10-05"
+updated: "2026-11-24"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: default
+  pdf_document:
+    toc: true
+    toc_depth: '3'
+---
+
+# Exploring children's speech-language and mental health differences across the United States 
+
+The following report has two primary objectives: 
+<br>
+* First, I present nationwide data on children with **speech-language difficulties** across the U.S. in terms of prevalence. I am specifically interested in the percentage of children who demonstrate difficulties with either speech or language, and how this percentage may differ across different social and economic factors.
+<br>
+<br>
+* Second, I share a brief report of an analysis of children's mental health needs nationwide. 
+
+
+
+## **Key Insights** 
+### Language and Speech insights
+* Language difficulties are reported for approximately 1 in 25 children (in 2022)
+* Children whose parents reported a ***language difficulty*** tend to 
+    * come from families with lower household income,
+    * be covered under publicly-funded health insurance (e.g., Medicaid, CHIP), 
+    * come from racial and ethnic minority groups, especially American Indian/Alaskan Native and Black/African American. 
+* Similar trends are shown for children with reported ***speech difficulties***.  
+* Parents tend to report that their children have difficulties with both language and speech, rather than only speech *or* language alone. 
+<br>
+<br>
+### Mental Health Need insights
+* The prevalence of children's mental health need is lower than 1% across the United States. 
+* Household income seems to be associated with mental health need, but further indicators of mental health needs should be examined.  
+
+<br>
+<br>
+
+
+
+```{r setup, include=FALSE}
+## Setup, Data Import and Data Wrangling
+
+library(tidyverse)
+library(survey)
+library(broom)
+library(knitr)
+library(RColorBrewer)
+library(readr)
+library(tinytex)
+```
+
+
+```{r file-check, echo=FALSE, warning=FALSE}
+
+knit_root_dir <- getwd()
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+```
+
+
+```{r data-import, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+NHIS22 <- read_csv("NHIS_2022_Child_Data.csv")
+codebook <- read_csv("NHIS_2022_selected_variables.csv")
+
+# Build recoded vectors from the codebook and apply as _lab columns
+recode_list <- codebook %>%
+  mutate(Code = as.character(Code)) %>%
+  group_by(Variable) %>%
+  summarize(recode_vec = list(set_names(`Code Description`, Code)), .groups = "drop") %>%
+  deframe()
+
+NHIS22_recoded <- reduce(names(recode_list), .init = NHIS22,
+  .f = function(dat, v) {
+    if (!v %in% names(dat)) return(dat)
+    rv <- recode_list[[v]]
+    dat[[paste0(v, "_lab")]] <- do.call(dplyr::recode,
+      c(list(as.character(dat[[v]])), as.list(rv), .default = NA_character_))
+    dat
+  })
+
+# Binary outcomes (1 = Yes, 0 = No, NA otherwise)
+NHIS22_recoded$LangDiff_YN   <- ifelse(NHIS22_recoded$VSLLGYR_C == 1, 1,
+                               ifelse(NHIS22_recoded$VSLLGYR_C == 2, 0, NA))
+NHIS22_recoded$SpeechDiff_YN <- ifelse(NHIS22_recoded$VSLSPYR_C == 1, 1,
+                               ifelse(NHIS22_recoded$VSLSPYR_C == 2, 0, NA))
+NHIS22_recoded$MH_YN <- ifelse(NHIS22_recoded$MHTHND_C == 1, 1,
+                       ifelse(NHIS22_recoded$MHTHND_C == 2, 0, NA))
+
+# Factors with reference levels
+NHIS22_recoded$Coverage_glm <- relevel(as.factor(NHIS22_recoded$COVER_C_lab), ref = "Private")
+NHIS22_recoded$Race_glm     <- relevel(as.factor(NHIS22_recoded$RACEALLP_C_lab), ref = "White only")
+NHIS22_recoded$URBRRL_glm   <- relevel(as.factor(NHIS22_recoded$URBRRL_lab), ref = "Large central metro")
+```
+
+*The analysis was conducted using methods and tools from the `survey`, `dplyr`, `stats`, and `ggplot2` packages in R/RStudio. The data come from the CDC's National Health Interview Survey conducted in 2022.*
+
+<br>
+```{r design, echo=TRUE}
+# Full design; subset per analysis below
+nhis_design <- svydesign(id = ~PPSU, strata = ~PSTRAT,
+                         weights = ~WTFA_C, nest = TRUE,
+                         data = NHIS22_recoded)
+
+lang_design   <- subset(nhis_design, LangDiff_YN %in% c(0, 1))
+speech_design <- subset(nhis_design, SpeechDiff_YN %in% c(0, 1))
+mh_design     <- subset(nhis_design, MH_YN %in% c(0, 1))
+```
+
+```{r helper, echo=FALSE}
+# Weighted proportion of a binary outcome, optionally by group, with 95% CI
+weighted_prop <- function(design, outcome, by = NULL) {
+  f <- make.formula(outcome)
+  if (is.null(by)) {
+    m  <- svymean(f, design, na.rm = TRUE)
+    ci <- confint(m)
+    tibble(group = "Overall", prop = as.numeric(coef(m)), lo = ci[1], hi = ci[2])
+  } else {
+    m  <- svyby(f, make.formula(by), design, svymean, na.rm = TRUE)
+    ci <- confint(m)
+    tibble(group = as.character(m[[by]]), prop = as.numeric(m[[outcome]]),
+           lo = ci[, 1], hi = ci[, 2])
+  }
+}
+```
+<br>
+
+## Section 1. Children with Language and Speech Difficulties
+
+In speech-language pathology, clinical criteria for language disorders and speech disorders are considered independent. This means that a child can be diagnosed with a speech disorder without a language disorder, and vice versa. Below, we take a brief look at whether reported speech difficulties are related to reported language difficulties.  
+
+
+### 1a. Language 
+
+```{r fig-overall, echo=FALSE, fig.width=6, fig.height=4}
+weighted_prop(lang_design, "LangDiff_YN") %>%
+  ggplot(aes(group, prop)) +
+  geom_col(fill = "steelblue", width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Weighted Prevalence of Language Difficulties",
+       x = NULL, y = "Prevalence (past 12 months)")
+```
+
+In the graph above, we see that the overall prevalence of children's speech difficulties across the United States is about 4% or 1 in 25 children. While this does not confirm clinical status of the children, it tells us how common this type of communication difficulty is. 
+
+```{r fig-coverage, echo=FALSE, fig.width=7, fig.height=4}
+weighted_prop(lang_design, "LangDiff_YN", "Coverage_glm") %>%
+  ggplot(aes(group, prop)) +
+  geom_col(fill = "steelblue", width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.15) +
+  scale_y_continuous(labels = scales::percent, limits = c(0,0.15)) +
+  labs(title = "Prevalence of Language Difficulties by Coverage Type",
+       x = NULL, y = "Prevalence") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+```
+
+The above graph visualizes the prevalence of language difficulties in children across the United states grouped by their type of health insurance coverage. Those children covered by Medicaid or other public health insurance policies show the highest prevalence of language difficulties. Uninsured children, those with private insurance coverage, and those with "other" types of coverage all show relatively low prevalence. Type of coverage may be closely linked to other social and economic factors, which are explored below. 
+
+
+
+```{r fig-race, echo=FALSE, fig.width=8, fig.height=4}
+
+# Group the three non-response categories into one, then reorder so it's last
+race_wt_prop <- weighted_prop(lang_design, "LangDiff_YN", "Race_glm") %>%
+  mutate(group = case_when(
+    group %in% c("Don't know", "Not Ascertained", "Refused") ~ "Don't know / Not ascertained",
+    TRUE ~ group
+  )) %>%
+  mutate(group = factor(group, levels = c(
+    setdiff(unique(group), "Don't know / Not ascertained"),  
+    "Don't know / Not ascertained"                            
+  ))) %>%
+  group_by(group) %>%
+  summarize(prop = mean(prop), lo = mean(lo), hi = mean(hi))
+
+race_wt_prop %>%
+  ggplot(aes(x=group, y=prop)) +
+  geom_col(aes(fill=group), width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.15) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 0.17)) +
+  labs(title = "Prevalence of Language Difficulties by Race/Ethnicity",
+       x = NULL, y = "Prevalence") +
+  scale_fill_manual(
+    values = c(setNames(brewer.pal(7, "Dark2")[1:length(unique(race_wt_prop$group)) - 1],setdiff(unique(race_wt_prop$group), "Don't know / Not ascertained")),
+               "Don't know / Not ascertained" = "gray50")
+  ) +
+  theme(axis.text.x = element_text(angle = 30, hjust = 0.85))
+
+
+```
+
+The above graph looks at the differences in prevalence of reported language difficulties by race/ethnicity. First, we notice thatthe groups with a higher prevalence of language difficulties are American Indian/Native Americans (the first two bars), followed by Black/African Americans. Asian-only, white-only, and other/multiple races all show prevalence below 5%. These group differences may point to difference in social stigma around language use in certain racialized groups.
+
+The language(s) used by people of racial and/or ethnic minority populations tend to be stigmatized, which can lead to misdiagnosis in speech-language pathology settings. Examples of the variety of language use can include non-mainstream dialects (e.g., Chicano English, African-American Vernacular English, Appalachian English) or multilingualism (e.g., migrant populations with varying levels of English language proficiency). 
+
+```{r fig-lang-box, include=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+
+NHIS22_recoded %>%
+  filter(LangDiff_YN %in% c(0, 1), !is.na(POVRATTC_C)) %>%
+  mutate(Lang = ifelse(LangDiff_YN == 1, "Yes", "No")) %>%
+  ggplot(aes(Lang, POVRATTC_C, fill = Lang)) +
+  geom_boxplot() +
+  scale_fill_brewer(palette = "Dark2") +
+  labs(title = "Family Income Ratio by Language Difficulty",
+       x = "Language difficulty (past 12 months)",
+       y = "Family income ratio (POVRATTC_C)") +
+  theme(legend.position = "none")
+
+```
+
+
+```{r fig-lang-pov-line, echo=FALSE, fig.width=7, fig.height=5}
+
+lang_design$variables$POV_bin <- cut(lang_design$variables$POVRATTC_C, breaks = c(0, 1, 1.5, 3, 5, 8, 11), include.lowest = TRUE, labels = c("< 1", "1-1.5", "1.5-3", "3-5", "5-8", "8+"))
+
+weighted_prop(lang_design, "SpeechDiff_YN", "POV_bin") %>%
+  ggplot(aes(group, prop)) +
+  geom_line(aes(group = 1), color = "maroon", linewidth = 1) +
+  geom_point(size = 3, color = "maroon") +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.08, color = "maroon") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Weighted Prevalence of Speech Difficulties by Poverty Ratio",
+       x = "Family income / poverty threshold (POVRATTC_C)",
+       y = "Prevalence") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+
+```
+
+Finally, we explore the differences in income as the poverty ratio. A higher ratio means that the family's income is greater than the poverty line. For example, a poverty ratio of 6 means that the family income is 6 times larger than the poverty line for that family size. 
+
+Here, we see that children presenting with language difficulties tend to come from lower income families. This pattern likely reflects the fact that lower income families typically have fewer educational opportunities. For that reason, parents may be reporting language difficulties in reading or writing, and not necessarily difficulties with everyday language or communication. 
+
+This income-based difference also relates to the differences found for health insurance coverage: children covered by Medicaid showed a higher prevalence of language difficulties. Because income is a primary criterion in eligibility for Medicaid coverage, the trend of overall lower median family income for children with language difficulties may factor into how coverage type is related to language difficulties and/or diagnoses of language disorders. 
+
+
+```{r model-lang, include=FALSE, echo=FALSE}
+m_lang <- svyglm(LangDiff_YN ~ Coverage_glm * POVRATTC_C,
+                 design = lang_design, family = quasibinomial)
+
+tidy(m_lang, conf.int = TRUE, exponentiate = TRUE) %>%
+  kable(caption = "Survey-weighted logistic regression: language difficulty ~ coverage x income ratio")
+
+median(NHIS22_recoded$POVRATTC_C)
+```
+
+Using survey regression modelling in R, family income shows a more prevalent relationship with language difficulties than health insurance coverage. In other words, the likelihood of having a language difficulty is higher for children from lower income families (near or below the median income-to-poverty ratio). A similar statistical association is found between family income and speech difficulties. 
+
+
+```{r diag-lang, include=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+lang_design$variables$fitted <- predict(m_lang, type = "response")
+lang_design$variables$resid  <- residuals(m_lang, type = "deviance")
+
+lang_design$variables %>%
+  ggplot(aes(fitted, resid)) +
+  geom_point(alpha = 0.3) +
+  geom_smooth(method = "loess", se = FALSE, color = "red") +
+  scale_y_continuous() +
+  scale_x_continuous() +
+  labs(title = "Deviance Residuals vs Fitted (Language Model)",
+       x = "Fitted probability", y = "Deviance residual")
+```
+
+
+
+### 1b. Speech
+
+
+```{r speech-lang-col, echo=FALSE, fig.width=6, fig.height=4}
+# Unweighted EDA of the SES gradient
+
+weighted_prop(lang_design, "SpeechDiff_YN", "LangDiff_YN") %>%
+    filter(group %in% c(0, 1)) %>%
+    mutate(`Language Difficulties` = ifelse(group == 1, "Yes", "No")) %>%
+  ggplot(aes(x=`Language Difficulties`, y=prop, fill=`Language Difficulties`)) + 
+  geom_col( width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.15) +
+    scale_fill_brewer(palette = "Dark2") +
+  scale_y_continuous(labels = scales::percent, limits = c(0,0.8)) +
+  labs(title = "Prevalence of Speech Difficulties by Language Difficulties",x = NULL, y = "Prevalence of Speech\nDifficulties") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+  
+```
+
+The graph above tells us that most of the children who had language difficulties (69%) were also reported to have speech difficulties. While less than 5% of children with language difficulties did not have a speech difficulties. It is likely that these two concepts are considered the same or very closely related among the general population. 
+
+```{r fig-speech-box, include=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+
+NHIS22_recoded %>%
+  filter(SpeechDiff_YN %in% c(0, 1), !is.na(POVRATTC_C)) %>%
+    mutate(Speech = ifelse(SpeechDiff_YN == 1, "Yes", "No")) %>%
+  ggplot(aes(Speech, POVRATTC_C, fill = Speech)) +
+  geom_boxplot() +
+  scale_fill_brewer(palette = "Dark2") +
+  labs(title = "Family Income Ratio by Speech Difficulty",
+       x = "Speech difficulty (past 12 months)",
+       y = "Family income ratio (POVRATTC_C)") +
+  theme(legend.position = "none")
+
+```
+
+
+```{r fig-speech-pov-line, echo=FALSE, fig.width=7, fig.height=5}
+
+speech_design$variables$POV_bin <- cut(speech_design$variables$POVRATTC_C, breaks = c(0, 1, 1.5, 3, 5, 8, 11), include.lowest = TRUE, labels = c("< 1", "1-1.5", "1.5-3", "3-5", "5-8", "8+"))
+
+weighted_prop(speech_design, "SpeechDiff_YN", "POV_bin") %>%
+  ggplot(aes(group, prop)) +
+  geom_line(aes(group = 1), color = "maroon", linewidth = 1) +
+  geom_point(size = 3, color = "maroon") +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.08, color = "maroon") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Weighted Prevalence of Speech Difficulties by Poverty Ratio",
+       x = "Family income / poverty threshold (POVRATTC_C)",
+       y = "Prevalence") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+
+# summary(NHIS22_recoded$POVRATTC_C)
+
+```
+
+
+The differences above show that the pattern of family income ratio is similar for children with speech difficulties as for children with language difficulties. Children from lower-income families tend to have a higher prevalence of speech difficulties compared to those from higher-income families.   
+
+
+
+Below, we see that prevalence of speech difficulties is also associated with health insurance coverage type, similar to the trend seen for language difficulties. 
+
+```{r fig-speech-coverage, echo=FALSE, fig.width=7, fig.height=4}
+weighted_prop(speech_design, "SpeechDiff_YN", "Coverage_glm") %>%
+  ggplot(aes(group, prop)) +
+  geom_col(fill = "lightslateblue", color="gray30", width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.15) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Prevalence of Speech Difficulties by Coverage Type",
+       x = NULL, y = "Prevalence") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+```
+
+
+
+```{r model-speech, include=FALSE, echo=FALSE}
+## Logistic Regression: Speech Difficulties
+
+m_speech <- svyglm(SpeechDiff_YN ~ Coverage_glm * POVRATTC_C,
+                   design = speech_design, family = quasibinomial)
+
+tidy(m_speech, conf.int = TRUE, exponentiate = TRUE) %>%
+  kable(caption = "Survey-weighted logistic regression: speech difficulty ~ coverage x income ratio")
+```
+
+## Section 2: Children's Mental Health Needs 
+
+Finally, we look at how children's mental health needs vary by socioeconomic and geographic factors. 
+
+
+```{r fig-pov-line, echo=FALSE, fig.width=7, fig.height=5}
+# Bin poverty ratio into meaningful bands, then compute weighted prevalence per band
+mh_design$variables$POV_bin <- cut(mh_design$variables$POVRATTC_C,
+                                   breaks = c(0, 0.5, 1.5, 3, 5, 8, 11),
+                                   include.lowest = TRUE,
+                                   labels = c("<0.5", "0.5-1.5", "1.5-3", "3-5", "5-8", "8+"))
+
+weighted_prop(mh_design, "MH_YN", "POV_bin") %>%
+  ggplot(aes(group, prop)) +
+  geom_line(aes(group = 1), color = "maroon", linewidth = 1) +
+  geom_point(size = 3, color = "maroon") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Weighted Prevalence of Mental Health Need by Poverty Ratio",
+       x = "Family income / poverty threshold (POVRATTC_C)",
+       y = "Prevalence") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+
+```
+
+Looking above at the relationship between Family income and prevalence of children's mental health needs, we see that mental health needs are most prevalent in the poverty ratio range of 3-5. It is not immediately clear why this trend would peak in this specific income range. Other factors may play a role in mental health needs. 
+
+
+Next, we look at geographic factors that might be related to children's mental health needs. 
+
+
+```{r fig-mh-region, echo=FALSE, fig.width=6, fig.height=4}
+
+weighted_prop(mh_design, "MH_YN", "REGION_lab") %>%
+  ggplot(aes(group, prop, fill = group)) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.15) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 0.025)) +
+  labs(title = "Weighted Prevalence of Mental Health Need by U.S. Region",
+       x = NULL, y = "Prevalence") +
+  scale_fill_brewer(palette = "Dark2") +
+  theme(axis.text.x = element_text())
+
+```
+
+The graph shows the prevalence of children's mental health needs across four predetermined regions of the U.S. The South and West regions show very similar prevalence patterns, and the Midwest shows the highest prevalence (nearly 1%), although not much higher than the other two. Northeast shows the lowest prevalence of mental health needs in children (around 0.4%).
+
+
+```{r fig-mh-urbrrl, echo=FALSE, fig.width=7, fig.height=4}
+weighted_prop(mh_design, "MH_YN", "URBRRL_glm") %>%
+  ggplot(aes(group, prop)) +
+  geom_col(fill = "seagreen", width = 0.6) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.15) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Weighted Prevalence of Mental Health Need by Urban/Rural Status",
+       x = NULL, y = "Prevalence") +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+```
+
+Explanations of each geographical category: 
+* *large central metropolitan areas* include counties containing large and more densely-populated cities like San Francisco, CA; Minneapolis-Saint Paul, MN; Miami, FL; and Boston, MA
+* *large fringe metropolitan areas* mostly include counties surrounding the large fringe metros as well as highly, but more sparsely populated counties (e.g., areas colloquially called "suburban")
+* *medium and small metro areas* tend to have both lower density and lower overall population 
+* *nonmetropolitan areas* are typically rural and/or very sparsely populated
+
+*For more information, see the CDC's resource on how these categories were determined: https://www.cdc.gov/nchs/data-analysis-tools/urban-rural.html.*
+
+
+```{r model-mh, include=FALSE, echo=FALSE}
+m_mh <- svyglm(MH_YN ~ URBRRL_glm + Coverage_glm + POVRATTC_C,
+               design = mh_design, family = quasibinomial)
+
+tidy(m_mh, conf.int = TRUE, exponentiate = TRUE) %>%
+  kable(caption = "Survey-weighted logistic regression: mental health need ~ urban/rural + coverage + income ratio")
+
+# Interaction version: does coverage's association differ by urban/rural status?
+m_mh_int <- svyglm(MH_YN ~ URBRRL_glm * Coverage_glm + POVRATTC_C,
+                   design = mh_design, family = quasibinomial)
+
+tidy(m_mh_int, conf.int = TRUE, exponentiate = TRUE) %>%
+  kable(caption = "Survey-weighted logistic regression with urban/rural x coverage interaction")
+
+```
+
+
+
+
+
+
