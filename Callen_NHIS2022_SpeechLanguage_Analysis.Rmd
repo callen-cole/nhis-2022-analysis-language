@@ -18,9 +18,11 @@ output:
 
 The following report has two primary objectives: 
 <br>
+
 * First, I present nationwide data on children with **speech-language difficulties** across the U.S. in terms of prevalence. I am specifically interested in the percentage of children who demonstrate difficulties with either speech or language, and how this percentage may differ across different social and economic factors.
 <br>
 <br>
+
 * Second, I share a brief report of an analysis of children's mental health needs nationwide. 
 
 
@@ -36,9 +38,10 @@ The following report has two primary objectives:
 * Parents tend to report that their children have difficulties with both language and speech, rather than only speech *or* language alone. 
 <br>
 <br>
+
 ### Mental Health Need insights
 * The prevalence of children's mental health need is lower than 1% across the United States. 
-* Household income seems to be associated with mental health need, but further indicators of mental health needs should be examined.  
+* Household income seems to be associated with mental health need, but further indicators of mental health need should be examined.  
 
 <br>
 <br>
@@ -254,7 +257,7 @@ median(NHIS22_recoded$POVRATTC_C)
 Using survey regression modelling in R, family income shows a more prevalent relationship with language difficulties than health insurance coverage. In other words, the likelihood of having a language difficulty is higher for children from lower income families (near or below the median income-to-poverty ratio). A similar statistical association is found between family income and speech difficulties. 
 
 
-```{r diag-lang, include=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+```{r diag-lang, include=TRUE, echo=FALSE, fig.width=6, fig.height=4}
 lang_design$variables$fitted <- predict(m_lang, type = "response")
 lang_design$variables$resid  <- residuals(m_lang, type = "deviance")
 
@@ -273,7 +276,7 @@ lang_design$variables %>%
 ### 1b. Speech
 
 
-```{r speech-lang-col, echo=FALSE, fig.width=6, fig.height=4}
+```{r speech-lang-col, echo=TRUE, echo=FALSE, fig.width=6, fig.height=4}
 # Unweighted EDA of the SES gradient
 
 weighted_prop(lang_design, "SpeechDiff_YN", "LangDiff_YN") %>%
@@ -291,7 +294,7 @@ weighted_prop(lang_design, "SpeechDiff_YN", "LangDiff_YN") %>%
 
 The graph above tells us that most of the children who had language difficulties (69%) were also reported to have speech difficulties. While less than 5% of children with language difficulties did not have a speech difficulties. It is likely that these two concepts are considered the same or very closely related among the general population. 
 
-```{r fig-speech-box, include=FALSE, echo=FALSE, fig.width=6, fig.height=4}
+```{r fig-speech-box, include=TRUE, echo=FALSE, fig.width=6, fig.height=4}
 
 NHIS22_recoded %>%
   filter(SpeechDiff_YN %in% c(0, 1), !is.na(POVRATTC_C)) %>%
@@ -346,7 +349,7 @@ weighted_prop(speech_design, "SpeechDiff_YN", "Coverage_glm") %>%
 
 
 
-```{r model-speech, include=FALSE, echo=FALSE}
+```{r model-speech, include=TRUE, echo=FALSE}
 ## Logistic Regression: Speech Difficulties
 
 m_speech <- svyglm(SpeechDiff_YN ~ Coverage_glm * POVRATTC_C,
@@ -415,15 +418,19 @@ weighted_prop(mh_design, "MH_YN", "URBRRL_glm") %>%
 ```
 
 Explanations of each geographical category: 
+
 * *large central metropolitan areas* include counties containing large and more densely-populated cities like San Francisco, CA; Minneapolis-Saint Paul, MN; Miami, FL; and Boston, MA
+
 * *large fringe metropolitan areas* mostly include counties surrounding the large fringe metros as well as highly, but more sparsely populated counties (e.g., areas colloquially called "suburban")
+
 * *medium and small metro areas* tend to have both lower density and lower overall population 
+
 * *nonmetropolitan areas* are typically rural and/or very sparsely populated
 
 *For more information, see the CDC's resource on how these categories were determined: https://www.cdc.gov/nchs/data-analysis-tools/urban-rural.html.*
 
 
-```{r model-mh, include=FALSE, echo=FALSE}
+```{r model-mh, echo=FALSE}
 m_mh <- svyglm(MH_YN ~ URBRRL_glm + Coverage_glm + POVRATTC_C,
                design = mh_design, family = quasibinomial)
 
